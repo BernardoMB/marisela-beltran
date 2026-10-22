@@ -1,0 +1,314 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/*
+ * Theme for brief "Minimalist" (monochrome).
+ * Derived from design tokens extracted by chhapify from https://www.patycantu.com/
+ * (base hue 23°, base color #c49273).
+ * Variable names follow shadcn/ui conventions, so components/ui/* work unchanged.
+ */
+:root {
+  --background: #fbfbfb;
+  --foreground: #191715;
+  --surface: #f6f5f5;
+  --surface-foreground: #191715;
+  --muted: #efeeee;
+  --muted-foreground: #6c6560;
+  --primary: #191715;
+  --primary-foreground: #fbfbfb;
+  --secondary: #e8e6e6;
+  --secondary-foreground: #191715;
+  --accent: #86583c;
+  --accent-foreground: #fbfbfb;
+  --border: #e0dddc;
+  --ring: #191715;
+  --input: #d3d1cf;
+  --card: #f6f5f5;
+  --card-foreground: #191715;
+  --popover: #f6f5f5;
+  --popover-foreground: #191715;
+  --destructive: #b42318;
+  --destructive-foreground: #ffffff;
+  --gradient-from: #fbfbfb;
+  --gradient-via: #f4f3f3;
+  --gradient-to: #eceae9;
+  --glow: rgb(25 23 21 / 0.06);
+  --overlay: rgb(25 23 21 / 0.35);
+  --radius: 2px;
+  --radius-sm: 0px;
+  --radius-lg: 4px;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-color: 25 23 21;
+  --container-max: 1280px;
+  --section-space: clamp(4rem, 9vw, 9rem);
+  --grain-opacity: 0;
+  --glass-bg: #f6f5f5;
+  --glass-border: #e0dddc;
+  --glass-blur: 0px;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), "Helvetica Neue", Arial, sans-serif;
+  }
+  ::selection {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+  img, video, iframe {
+    max-width: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Brief styles: templates/briefs/01-minimalist/styles.css
+ * ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------
+ * Skin base (templates/shared/styles/skin-base.css)
+ * Neutral defaults for the classes the shared section components use. Every brief's styles.css
+ * (appended after this file) overrides them to give the shared sections its own look.
+ * ------------------------------------------------------------------------- */
+@layer components {
+  .skin-section {
+    padding-block: var(--section-space);
+  }
+  .skin-container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 3rem);
+  }
+  .skin-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    margin-bottom: 0.75rem;
+  }
+  .skin-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    line-height: 1.05;
+  }
+  .skin-lead {
+    color: var(--muted-foreground);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+  .skin-muted {
+    color: var(--muted-foreground);
+  }
+  .skin-card {
+    background: var(--surface);
+    color: var(--surface-foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .skin-media {
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .skin-btn {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .skin-btn:hover {
+    opacity: 0.9;
+  }
+  .skin-btn-ghost {
+    border: 1px solid currentColor;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease;
+  }
+  .skin-btn-ghost:hover {
+    background: var(--muted);
+  }
+  .skin-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .skin-link:hover {
+    color: var(--accent);
+  }
+  .skin-chip {
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  .skin-chip:hover {
+    border-color: var(--foreground);
+  }
+  .divider-hairline {
+    border: 0;
+    border-top: 1px solid var(--border);
+  }
+  .divider-glow {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gradient-from), var(--gradient-via), var(--gradient-to), transparent);
+  }
+  .divider-marquee-track {
+    animation: skin-marquee 30s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .divider-marquee-track {
+      animation: none;
+    }
+  }
+}
+
+@keyframes skin-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Minimalist — Swiss grid, hairlines, thin type, monochrome. */
+@layer components {
+  .skin-section {
+    padding-block: clamp(4.5rem, 10vw, 9rem);
+  }
+  .skin-heading {
+    display: grid;
+    gap: 0.75rem 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .skin-heading {
+      grid-template-columns: 1fr 3fr;
+    }
+    .skin-heading > .skin-eyebrow {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+    .skin-heading > .skin-title,
+    .skin-heading > .skin-lead {
+      grid-column: 2;
+    }
+  }
+  .skin-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted-foreground);
+    margin: 0.4rem 0 0;
+  }
+  .skin-title {
+    font-weight: 200;
+    font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .skin-lead {
+    font-weight: 300;
+  }
+  .skin-card {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--border);
+    border-radius: 0;
+  }
+  .skin-media {
+    border-radius: var(--radius-sm);
+    filter: grayscale(1);
+    transition: filter 0.5s ease;
+  }
+  .skin-media:hover,
+  .skin-media:focus-within {
+    filter: grayscale(0);
+  }
+  .skin-btn {
+    background: transparent;
+    color: var(--foreground);
+    border-radius: 0;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    padding-inline: 0 !important;
+  }
+  .skin-btn:hover {
+    text-decoration-color: var(--accent);
+    color: var(--accent);
+    opacity: 1;
+  }
+  .skin-btn-ghost {
+    border: 0;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    padding-inline: 0 !important;
+  }
+  .skin-btn-ghost:hover {
+    background: transparent;
+    color: var(--accent);
+  }
+  .skin-chip {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+  }
+  .skin-chip:hover {
+    border-color: var(--accent);
+  }
+  .c-stats .stat-value {
+    font-weight: 200;
+  }
+  .c-stats dl {
+    border-bottom: 1px solid var(--border);
+  }
+  .c-videos .video-title {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+  .divider-hairline {
+    border-top-color: var(--border);
+  }
+  .min-rule {
+    height: 1px;
+    background: var(--border);
+    transform-origin: left;
+  }
+  .min-label {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+}

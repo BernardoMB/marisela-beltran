@@ -1,0 +1,114 @@
+/* Minimalist — Swiss grid, hairlines, thin type, monochrome. */
+@layer components {
+  .skin-section {
+    padding-block: clamp(4.5rem, 10vw, 9rem);
+  }
+  .skin-heading {
+    display: grid;
+    gap: 0.75rem 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .skin-heading {
+      grid-template-columns: 1fr 3fr;
+    }
+    .skin-heading > .skin-eyebrow {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+    .skin-heading > .skin-title,
+    .skin-heading > .skin-lead {
+      grid-column: 2;
+    }
+  }
+  .skin-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted-foreground);
+    margin: 0.4rem 0 0;
+  }
+  .skin-title {
+    font-weight: 200;
+    font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .skin-lead {
+    font-weight: 300;
+  }
+  .skin-card {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--border);
+    border-radius: 0;
+  }
+  .skin-media {
+    border-radius: var(--radius-sm);
+    filter: grayscale(1);
+    transition: filter 0.5s ease;
+  }
+  .skin-media:hover,
+  .skin-media:focus-within {
+    filter: grayscale(0);
+  }
+  .skin-btn {
+    background: transparent;
+    color: var(--foreground);
+    border-radius: 0;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    padding-inline: 0 !important;
+  }
+  .skin-btn:hover {
+    text-decoration-color: var(--accent);
+    color: var(--accent);
+    opacity: 1;
+  }
+  .skin-btn-ghost {
+    border: 0;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    padding-inline: 0 !important;
+  }
+  .skin-btn-ghost:hover {
+    background: transparent;
+    color: var(--accent);
+  }
+  .skin-chip {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+  }
+  .skin-chip:hover {
+    border-color: var(--accent);
+  }
+  .c-stats .stat-value {
+    font-weight: 200;
+  }
+  .c-stats dl {
+    border-bottom: 1px solid var(--border);
+  }
+  .c-videos .video-title {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+  .divider-hairline {
+    border-top-color: var(--border);
+  }
+  .min-rule {
+    height: 1px;
+    background: var(--border);
+    transform-origin: left;
+  }
+  .min-label {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+}

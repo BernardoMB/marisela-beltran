@@ -1,0 +1,427 @@
+{
+  "$comment": "Copy tokens: {name}, {alias}, {debutYear} are resolved from VERIFIED content; a segment whose token cannot be resolved is dropped (separator ' · '). The six design briefs. Each brief produces one generated site. `variations` in factory.config.json selects the first N. Fonts must be valid next/font/google exports. Copy presets are UI microcopy only (never artist facts) and are used by the deterministic spec builder; the json-render LLM path may rewrite them.",
+  "version": 1,
+  "briefs": [
+    {
+      "id": "01-minimalist",
+      "number": 1,
+      "slug": "minimalist",
+      "name": "Minimalist",
+      "projectName": "marisela-site-01-minimalist",
+      "promptFile": "prompts/design-brief-01-minimalist.md",
+      "templateDir": "templates/briefs/01-minimalist",
+      "keyCharacteristics": "White space, thin typography, monochrome palette, grid-based",
+      "mode": "light",
+      "fonts": {
+        "display": { "family": "Jost", "importName": "Jost", "weights": ["200", "300", "400", "500"], "styles": ["normal"], "fallback": ["Helvetica Neue", "Arial", "sans-serif"] },
+        "body": { "family": "Manrope", "importName": "Manrope", "weights": ["300", "400", "500", "600"], "styles": ["normal"], "fallback": ["Helvetica Neue", "Arial", "sans-serif"] },
+        "mono": null
+      },
+      "palette": {
+        "strategy": "monochrome",
+        "saturationCap": 0.12,
+        "fallbackHue": 24
+      },
+      "radius": { "base": 2, "sm": 0, "lg": 4 },
+      "shadows": "none",
+      "motion": { "preset": "quiet-fade", "duration": 0.9, "ease": [0.22, 1, 0.36, 1], "distance": 14 },
+      "containerWidth": 1280,
+      "sectionOrder": ["navigation", "hero", "music-player", "discography", "top-songs", "tour-dates", "biography", "stats", "video", "photo-gallery", "press-quotes", "news", "merch", "fan-club", "countdown", "lyrics", "newsletter", "contact", "social-links", "footer"],
+      "dividers": { "after": [], "variant": "hairline" },
+      "jsonRenderRules": [
+        "Favor restraint: generous whitespace, few words per heading, no exclamation marks.",
+        "Use numbered eyebrows like \"01\", \"02\" for sections in order.",
+        "Prefer the Hero variant 'centered' unless a hero image is available, then 'split'.",
+        "Discography should use layout 'grid'; TopSongs a clean numbered list."
+      ],
+      "copy": {
+        "es": {
+          "nav": { "cta": "Escuchar" },
+          "hero": { "eyebrow": "{alias}", "primaryCta": "Escuchar ahora", "secondaryCta": "Ver fechas" },
+          "music-player": { "title": "Escucha", "eyebrow": "01", "intro": "Su voz, sin intermediarios." },
+          "discography": { "title": "Discografía", "eyebrow": "02", "intro": "Una trayectoria en álbumes." },
+          "top-songs": { "title": "Canciones esenciales", "eyebrow": "03" },
+          "tour-dates": { "title": "En vivo", "eyebrow": "04", "emptyTitle": "Sin fechas anunciadas", "emptyMessage": "Las próximas presentaciones se anunciarán pronto. Suscríbete para enterarte primero.", "ctaLabel": "Boletos" },
+          "biography": { "title": "Biografía", "eyebrow": "05" },
+          "stats": { "title": "En cifras", "eyebrow": "06" },
+          "video": { "title": "Videos", "eyebrow": "07" },
+          "photo-gallery": { "title": "Galería", "eyebrow": "08" },
+          "press-quotes": { "title": "Lo que se ha dicho", "eyebrow": "09" },
+          "newsletter": { "title": "Boletín", "eyebrow": "10", "body": "Noticias, lanzamientos y fechas. Nada más.", "placeholder": "tu@correo.com", "buttonLabel": "Suscribirme", "successMessage": "Gracias. Estás en la lista.", "errorMessage": "Escribe un correo válido.", "privacyNote": "Sin spam. Puedes darte de baja cuando quieras." },
+          "contact": { "title": "Contrataciones", "eyebrow": "11", "body": "Para presentaciones, prensa y colaboraciones." },
+          "social-links": { "title": "Redes", "eyebrow": "12" },
+          "feature": { "title": "Más", "eyebrow": "—", "ctaLabel": "Visitar" },
+          "footer": { "copyrightPrefix": "©" }
+        },
+        "en": {
+          "nav": { "cta": "Listen" },
+          "hero": { "eyebrow": "{alias}", "primaryCta": "Listen now", "secondaryCta": "See dates" },
+          "music-player": { "title": "Listen", "eyebrow": "01", "intro": "Her voice, unfiltered." },
+          "discography": { "title": "Discography", "eyebrow": "02", "intro": "A career in albums." },
+          "top-songs": { "title": "Essential songs", "eyebrow": "03" },
+          "tour-dates": { "title": "Live", "eyebrow": "04", "emptyTitle": "No dates announced", "emptyMessage": "Upcoming shows will be announced soon. Subscribe to hear first.", "ctaLabel": "Tickets" },
+          "biography": { "title": "Biography", "eyebrow": "05" },
+          "stats": { "title": "By the numbers", "eyebrow": "06" },
+          "video": { "title": "Videos", "eyebrow": "07" },
+          "photo-gallery": { "title": "Gallery", "eyebrow": "08" },
+          "press-quotes": { "title": "What they said", "eyebrow": "09" },
+          "newsletter": { "title": "Newsletter", "eyebrow": "10", "body": "News, releases and dates. Nothing else.", "placeholder": "you@email.com", "buttonLabel": "Subscribe", "successMessage": "Thank you. You're on the list.", "errorMessage": "Please enter a valid email.", "privacyNote": "No spam. Unsubscribe anytime." },
+          "contact": { "title": "Booking", "eyebrow": "11", "body": "For shows, press and collaborations." },
+          "social-links": { "title": "Social", "eyebrow": "12" },
+          "feature": { "title": "More", "eyebrow": "—", "ctaLabel": "Visit" },
+          "footer": { "copyrightPrefix": "©" }
+        }
+      }
+    },
+    {
+      "id": "02-bold",
+      "number": 2,
+      "slug": "bold",
+      "name": "Bold & Colorful",
+      "projectName": "marisela-site-02-bold",
+      "promptFile": "prompts/design-brief-02-bold.md",
+      "templateDir": "templates/briefs/02-bold",
+      "keyCharacteristics": "Vibrant gradients, large type, overlapping elements, dynamic",
+      "mode": "dark",
+      "fonts": {
+        "display": { "family": "Anton", "importName": "Anton", "weights": ["400"], "styles": ["normal"], "fallback": ["Impact", "Haettenschweiler", "sans-serif"] },
+        "body": { "family": "Archivo", "importName": "Archivo", "weights": ["400", "500", "700", "800"], "styles": ["normal"], "fallback": ["Arial", "sans-serif"] },
+        "mono": null
+      },
+      "palette": {
+        "strategy": "vibrant",
+        "hueRotation": [0, 150, 60],
+        "fallbackHue": 330
+      },
+      "radius": { "base": 28, "sm": 14, "lg": 44 },
+      "shadows": "glow",
+      "motion": { "preset": "punchy-spring", "duration": 0.6, "ease": [0.34, 1.56, 0.64, 1], "distance": 60 },
+      "containerWidth": 1440,
+      "sectionOrder": ["navigation", "hero", "stats", "top-songs", "tour-dates", "countdown", "video", "discography", "music-player", "press-quotes", "biography", "photo-gallery", "merch", "fan-club", "news", "lyrics", "newsletter", "social-links", "contact", "footer"],
+      "dividers": { "after": ["hero", "tour-dates", "press-quotes"], "variant": "marquee" },
+      "jsonRenderRules": [
+        "Be loud: short uppercase headlines, exclamation energy, Mexican Spanish slang is welcome but keep it respectful.",
+        "Insert SectionDivider elements with a marquee label (for example the artist name or a verified alias taken from the provided state) between high-energy sections.",
+        "Prefer the Hero variant 'stacked' with oversized type; Discography layout 'carousel'."
+      ],
+      "copy": {
+        "es": {
+          "nav": { "cta": "¡Dale play!" },
+          "hero": { "eyebrow": "{alias}", "primaryCta": "¡Escúchala ya!", "secondaryCta": "Boletos" },
+          "stats": { "title": "Puro poder", "eyebrow": "Las cifras" },
+          "top-songs": { "title": "¡Los éxitos!", "eyebrow": "Top canciones", "intro": "Las que todo México canta de memoria." },
+          "tour-dates": { "title": "¡En vivo!", "eyebrow": "La gira", "emptyTitle": "¡Muy pronto en tu ciudad!", "emptyMessage": "Las nuevas fechas están por anunciarse. Únete a la familia para no perderte nada.", "ctaLabel": "Boletos" },
+          "video": { "title": "Mírala", "eyebrow": "Videos" },
+          "discography": { "title": "La discografía", "eyebrow": "Álbumes", "intro": "Décadas de clásicos, uno tras otro." },
+          "music-player": { "title": "Dale play", "eyebrow": "Escuchar", "intro": "Sube el volumen." },
+          "press-quotes": { "title": "Lo que dicen", "eyebrow": "Prensa" },
+          "biography": { "title": "La historia", "eyebrow": "Biografía" },
+          "photo-gallery": { "title": "Momentos", "eyebrow": "Galería" },
+          "newsletter": { "title": "Únete a la familia", "eyebrow": "Boletín", "body": "Primero tú: fechas, lanzamientos y sorpresas.", "placeholder": "tu correo", "buttonLabel": "¡Me apunto!", "successMessage": "¡Listo! Ya eres parte de la familia.", "errorMessage": "Ese correo no se ve bien. ¿Lo revisas?", "privacyNote": "Cero spam. Palabra." },
+          "social-links": { "title": "Síguela", "eyebrow": "Redes" },
+          "contact": { "title": "Contrataciones", "eyebrow": "Booking", "body": "¿Un evento inolvidable? Hablemos." },
+          "feature": { "title": "Hay más", "eyebrow": "Extra", "ctaLabel": "Ver más" },
+          "footer": { "copyrightPrefix": "©" }
+        },
+        "en": {
+          "nav": { "cta": "Press play!" },
+          "hero": { "eyebrow": "{alias}", "primaryCta": "Listen now!", "secondaryCta": "Tickets" },
+          "stats": { "title": "Pure power", "eyebrow": "The numbers" },
+          "top-songs": { "title": "The hits!", "eyebrow": "Top songs", "intro": "The ones everybody knows by heart." },
+          "tour-dates": { "title": "Live!", "eyebrow": "On tour", "emptyTitle": "Coming to your city soon!", "emptyMessage": "New dates are about to drop. Join the family so you don't miss a thing.", "ctaLabel": "Tickets" },
+          "video": { "title": "Watch her", "eyebrow": "Videos" },
+          "discography": { "title": "The discography", "eyebrow": "Albums", "intro": "Decades of classics, back to back." },
+          "music-player": { "title": "Press play", "eyebrow": "Listen", "intro": "Turn it up." },
+          "press-quotes": { "title": "What they say", "eyebrow": "Press" },
+          "biography": { "title": "The story", "eyebrow": "Biography" },
+          "photo-gallery": { "title": "Moments", "eyebrow": "Gallery" },
+          "newsletter": { "title": "Join the family", "eyebrow": "Newsletter", "body": "You first: dates, releases and surprises.", "placeholder": "your email", "buttonLabel": "I'm in!", "successMessage": "Done! You're part of the family.", "errorMessage": "That email doesn't look right. Check it?", "privacyNote": "Zero spam. Promise." },
+          "social-links": { "title": "Follow her", "eyebrow": "Social" },
+          "contact": { "title": "Booking", "eyebrow": "Booking", "body": "Planning something unforgettable? Let's talk." },
+          "feature": { "title": "There's more", "eyebrow": "Extra", "ctaLabel": "See more" },
+          "footer": { "copyrightPrefix": "©" }
+        }
+      }
+    },
+    {
+      "id": "03-editorial",
+      "number": 3,
+      "slug": "editorial",
+      "name": "Editorial",
+      "projectName": "marisela-site-03-editorial",
+      "promptFile": "prompts/design-brief-03-editorial.md",
+      "templateDir": "templates/briefs/03-editorial",
+      "keyCharacteristics": "Magazine-style, asymmetric layout, serif display fonts",
+      "mode": "light",
+      "fonts": {
+        "display": { "family": "Playfair Display", "importName": "Playfair_Display", "weights": ["400", "600", "700", "900"], "styles": ["normal", "italic"], "fallback": ["Georgia", "Times New Roman", "serif"] },
+        "body": { "family": "Newsreader", "importName": "Newsreader", "weights": ["400", "500", "600"], "styles": ["normal", "italic"], "fallback": ["Georgia", "serif"] },
+        "mono": null
+      },
+      "palette": {
+        "strategy": "ink-and-paper",
+        "paperHue": 40,
+        "fallbackHue": 355
+      },
+      "radius": { "base": 0, "sm": 0, "lg": 0 },
+      "shadows": "none",
+      "motion": { "preset": "editorial-reveal", "duration": 1.1, "ease": [0.16, 1, 0.3, 1], "distance": 24 },
+      "containerWidth": 1360,
+      "sectionOrder": ["navigation", "hero", "biography", "press-quotes", "discography", "top-songs", "photo-gallery", "video", "tour-dates", "stats", "news", "music-player", "lyrics", "merch", "fan-club", "countdown", "newsletter", "contact", "social-links", "footer"],
+      "dividers": { "after": ["biography", "top-songs", "tour-dates"], "variant": "chapter-rule" },
+      "jsonRenderRules": [
+        "Write like a cultural magazine: chapter-like eyebrows (\"Perfil\", \"Crónica\"), elegant headlines, a lead paragraph on the Biography.",
+        "Prefer the Hero variant 'cover' (magazine cover) and Discography layout 'timeline'.",
+        "Insert SectionDivider elements as chapter breaks with short labels such as 'Capítulo II'."
+      ],
+      "copy": {
+        "es": {
+          "nav": { "cta": "Suscríbete" },
+          "hero": { "eyebrow": "Edición especial · Perfil", "primaryCta": "Leer el perfil", "secondaryCta": "Consultar la agenda" },
+          "biography": { "title": "La voz que se volvió leyenda", "eyebrow": "Perfil" },
+          "press-quotes": { "title": "Reseñas y crónicas", "eyebrow": "La crítica" },
+          "discography": { "title": "Discografía comentada", "eyebrow": "Archivo", "intro": "Cada álbum, un capítulo." },
+          "top-songs": { "title": "Las canciones", "eyebrow": "Repertorio" },
+          "photo-gallery": { "title": "En imágenes", "eyebrow": "Portafolio" },
+          "video": { "title": "En pantalla", "eyebrow": "Video" },
+          "tour-dates": { "title": "Agenda", "eyebrow": "Presentaciones", "emptyTitle": "Agenda por anunciar", "emptyMessage": "La próxima temporada de conciertos se dará a conocer en breve. Recíbela antes que nadie en tu correo.", "ctaLabel": "Boletos" },
+          "stats": { "title": "La trayectoria, en números", "eyebrow": "Datos" },
+          "music-player": { "title": "Para escuchar", "eyebrow": "Sonido" },
+          "newsletter": { "title": "Suscríbete a la edición", "eyebrow": "Correspondencia", "body": "Una carta ocasional con noticias, lanzamientos y fechas.", "placeholder": "Correo electrónico", "buttonLabel": "Suscribirme", "successMessage": "Bienvenida, bienvenido: la próxima edición llegará a tu correo.", "errorMessage": "Revisa la dirección de correo, por favor.", "privacyNote": "Respetamos tu privacidad." },
+          "contact": { "title": "Contrataciones y prensa", "eyebrow": "Contacto", "body": "Solicitudes de presentaciones, entrevistas y material de prensa." },
+          "social-links": { "title": "Seguir la conversación", "eyebrow": "Redes" },
+          "feature": { "title": "Suplemento", "eyebrow": "Anexo", "ctaLabel": "Continuar" },
+          "footer": { "copyrightPrefix": "©" }
+        },
+        "en": {
+          "nav": { "cta": "Subscribe" },
+          "hero": { "eyebrow": "Special edition · Profile", "primaryCta": "Read the profile", "secondaryCta": "See the calendar" },
+          "biography": { "title": "The voice that became a legend", "eyebrow": "Profile" },
+          "press-quotes": { "title": "Reviews & chronicles", "eyebrow": "Criticism" },
+          "discography": { "title": "Annotated discography", "eyebrow": "Archive", "intro": "Every album, a chapter." },
+          "top-songs": { "title": "The songs", "eyebrow": "Repertoire" },
+          "photo-gallery": { "title": "In pictures", "eyebrow": "Portfolio" },
+          "video": { "title": "On screen", "eyebrow": "Video" },
+          "tour-dates": { "title": "Calendar", "eyebrow": "Performances", "emptyTitle": "Calendar to be announced", "emptyMessage": "The next concert season will be revealed shortly. Get it before anyone else.", "ctaLabel": "Tickets" },
+          "stats": { "title": "A career in numbers", "eyebrow": "Facts" },
+          "music-player": { "title": "To listen", "eyebrow": "Sound" },
+          "newsletter": { "title": "Subscribe to the edition", "eyebrow": "Correspondence", "body": "An occasional letter with news, releases and dates.", "placeholder": "Email address", "buttonLabel": "Subscribe", "successMessage": "Welcome — the next edition will reach your inbox.", "errorMessage": "Please check the email address.", "privacyNote": "We respect your privacy." },
+          "contact": { "title": "Booking & press", "eyebrow": "Contact", "body": "Requests for performances, interviews and press kits." },
+          "social-links": { "title": "Follow the conversation", "eyebrow": "Social" },
+          "feature": { "title": "Supplement", "eyebrow": "Annex", "ctaLabel": "Continue" },
+          "footer": { "copyrightPrefix": "©" }
+        }
+      }
+    },
+    {
+      "id": "04-glassmorphism",
+      "number": 4,
+      "slug": "glassmorphism",
+      "name": "Glassmorphism",
+      "projectName": "marisela-site-04-glassmorphism",
+      "promptFile": "prompts/design-brief-04-glassmorphism.md",
+      "templateDir": "templates/briefs/04-glassmorphism",
+      "keyCharacteristics": "Frosted glass panels, blur effects, soft gradients",
+      "mode": "dark",
+      "fonts": {
+        "display": { "family": "Sora", "importName": "Sora", "weights": ["300", "400", "600", "700"], "styles": ["normal"], "fallback": ["Segoe UI", "Arial", "sans-serif"] },
+        "body": { "family": "Plus Jakarta Sans", "importName": "Plus_Jakarta_Sans", "weights": ["400", "500", "600"], "styles": ["normal"], "fallback": ["Segoe UI", "Arial", "sans-serif"] },
+        "mono": null
+      },
+      "palette": {
+        "strategy": "aurora-glass",
+        "hueSpread": [0, 55, 120],
+        "fallbackHue": 265
+      },
+      "radius": { "base": 24, "sm": 14, "lg": 36 },
+      "shadows": "soft",
+      "motion": { "preset": "floating-blur", "duration": 0.8, "ease": [0.25, 0.8, 0.25, 1], "distance": 30 },
+      "containerWidth": 1280,
+      "sectionOrder": ["navigation", "hero", "music-player", "top-songs", "tour-dates", "countdown", "discography", "stats", "video", "biography", "photo-gallery", "press-quotes", "news", "fan-club", "merch", "lyrics", "social-links", "newsletter", "contact", "footer"],
+      "dividers": { "after": [], "variant": "glow" },
+      "jsonRenderRules": [
+        "Tone: intimate, dreamy and modern. Short, warm sentences.",
+        "Prefer the Hero variant 'floating-card' and Discography layout 'grid'.",
+        "Keep every section inside glass panels; avoid dividers."
+      ],
+      "copy": {
+        "es": {
+          "nav": { "cta": "Escuchar" },
+          "hero": { "eyebrow": "{alias}", "primaryCta": "Escuchar", "secondaryCta": "Próximos conciertos" },
+          "music-player": { "title": "Ahora suena", "eyebrow": "Escucha", "intro": "Ponte cómodo y dale play." },
+          "top-songs": { "title": "Lo más escuchado", "eyebrow": "Favoritas" },
+          "tour-dates": { "title": "Próximos conciertos", "eyebrow": "En vivo", "emptyTitle": "Nuevas fechas muy pronto", "emptyMessage": "Estamos preparando los próximos encuentros. Déjanos tu correo y te avisamos.", "ctaLabel": "Boletos" },
+          "discography": { "title": "Universo musical", "eyebrow": "Discografía" },
+          "stats": { "title": "Una carrera luminosa", "eyebrow": "Cifras" },
+          "video": { "title": "Videos", "eyebrow": "Mira" },
+          "biography": { "title": "Su historia", "eyebrow": "Biografía" },
+          "photo-gallery": { "title": "Momentos", "eyebrow": "Galería" },
+          "press-quotes": { "title": "Voces", "eyebrow": "Prensa" },
+          "social-links": { "title": "Conecta", "eyebrow": "Redes" },
+          "newsletter": { "title": "Mantente cerca", "eyebrow": "Boletín", "body": "Recibe noticias, lanzamientos y fechas antes que nadie.", "placeholder": "tu@correo.com", "buttonLabel": "Unirme", "successMessage": "¡Bienvenido! Pronto tendrás noticias.", "errorMessage": "Revisa tu correo, por favor.", "privacyNote": "Solo lo importante. Nunca spam." },
+          "contact": { "title": "Contrataciones", "eyebrow": "Contacto", "body": "Eventos, prensa y colaboraciones." },
+          "feature": { "title": "Descubre más", "eyebrow": "Extra", "ctaLabel": "Explorar" },
+          "footer": { "copyrightPrefix": "©" }
+        },
+        "en": {
+          "nav": { "cta": "Listen" },
+          "hero": { "eyebrow": "{alias}", "primaryCta": "Listen", "secondaryCta": "Upcoming shows" },
+          "music-player": { "title": "Now playing", "eyebrow": "Listen", "intro": "Get comfortable and press play." },
+          "top-songs": { "title": "Most played", "eyebrow": "Favorites" },
+          "tour-dates": { "title": "Upcoming shows", "eyebrow": "Live", "emptyTitle": "New dates coming soon", "emptyMessage": "We're preparing the next encounters. Leave your email and we'll let you know.", "ctaLabel": "Tickets" },
+          "discography": { "title": "Musical universe", "eyebrow": "Discography" },
+          "stats": { "title": "A luminous career", "eyebrow": "Numbers" },
+          "video": { "title": "Videos", "eyebrow": "Watch" },
+          "biography": { "title": "Her story", "eyebrow": "Biography" },
+          "photo-gallery": { "title": "Moments", "eyebrow": "Gallery" },
+          "press-quotes": { "title": "Voices", "eyebrow": "Press" },
+          "social-links": { "title": "Connect", "eyebrow": "Social" },
+          "newsletter": { "title": "Stay close", "eyebrow": "Newsletter", "body": "Get news, releases and dates before anyone else.", "placeholder": "you@email.com", "buttonLabel": "Join", "successMessage": "Welcome! News is on its way.", "errorMessage": "Please check your email.", "privacyNote": "Only what matters. Never spam." },
+          "contact": { "title": "Booking", "eyebrow": "Contact", "body": "Events, press and collaborations." },
+          "feature": { "title": "Discover more", "eyebrow": "Extra", "ctaLabel": "Explore" },
+          "footer": { "copyrightPrefix": "©" }
+        }
+      }
+    },
+    {
+      "id": "05-brutalist",
+      "number": 5,
+      "slug": "brutalist",
+      "name": "Brutalist",
+      "projectName": "marisela-site-05-brutalist",
+      "promptFile": "prompts/design-brief-05-brutalist.md",
+      "templateDir": "templates/briefs/05-brutalist",
+      "keyCharacteristics": "Raw HTML aesthetic, monospace, harsh borders, high contrast",
+      "mode": "light",
+      "fonts": {
+        "display": { "family": "Space Mono", "importName": "Space_Mono", "weights": ["400", "700"], "styles": ["normal"], "fallback": ["Courier New", "monospace"] },
+        "body": { "family": "IBM Plex Mono", "importName": "IBM_Plex_Mono", "weights": ["400", "500", "700"], "styles": ["normal"], "fallback": ["Courier New", "monospace"] },
+        "mono": null
+      },
+      "palette": {
+        "strategy": "high-contrast",
+        "fallbackAccent": "#ff3b00",
+        "fallbackHue": 14
+      },
+      "radius": { "base": 0, "sm": 0, "lg": 0 },
+      "shadows": "hard",
+      "motion": { "preset": "hard-cut", "duration": 0.18, "ease": "steps", "distance": 0 },
+      "containerWidth": 1600,
+      "sectionOrder": ["navigation", "hero", "tour-dates", "countdown", "discography", "top-songs", "stats", "biography", "video", "press-quotes", "news", "music-player", "photo-gallery", "lyrics", "merch", "fan-club", "contact", "social-links", "newsletter", "footer"],
+      "dividers": { "after": ["hero", "stats", "press-quotes"], "variant": "ascii" },
+      "jsonRenderRules": [
+        "Write like a terminal index: uppercase labels, bracketed CTAs like [ESCUCHAR], file-like eyebrows such as 'FECHAS.TXT'.",
+        "Prefer the Hero variant 'index' and Discography layout 'list' (a table).",
+        "Insert SectionDivider elements as ASCII rules."
+      ],
+      "copy": {
+        "es": {
+          "nav": { "cta": "[ESCUCHAR]" },
+          "hero": { "eyebrow": "ARTISTA/001", "primaryCta": "[ESCUCHAR]", "secondaryCta": "[FECHAS]" },
+          "tour-dates": { "title": "FECHAS", "eyebrow": "FECHAS.TXT", "emptyTitle": "SIN FECHAS PUBLICADAS", "emptyMessage": "NO HAY FECHAS CONFIRMADAS EN ESTE MOMENTO. SUSCRÍBETE PARA RECIBIR EL AVISO.", "ctaLabel": "[BOLETOS]" },
+          "discography": { "title": "DISCOGRAFÍA", "eyebrow": "/DISCOS" },
+          "top-songs": { "title": "TOP_CANCIONES", "eyebrow": "/CANCIONES" },
+          "stats": { "title": "DATOS", "eyebrow": "STATS.JSON" },
+          "biography": { "title": "BIO", "eyebrow": "BIO.TXT" },
+          "video": { "title": "VIDEO", "eyebrow": "/VIDEO" },
+          "press-quotes": { "title": "PRENSA", "eyebrow": "CITAS.MD" },
+          "music-player": { "title": "REPRODUCIR", "eyebrow": "AUDIO.EXE" },
+          "photo-gallery": { "title": "IMÁGENES", "eyebrow": "/IMG" },
+          "contact": { "title": "CONTACTO", "eyebrow": "MAILTO:", "body": "CONTRATACIONES / PRENSA / COLABORACIONES." },
+          "social-links": { "title": "LINKS", "eyebrow": "/REDES" },
+          "newsletter": { "title": "SUSCRIBIR", "eyebrow": "LISTA.TXT", "body": "INGRESA TU CORREO. RECIBE FECHAS Y LANZAMIENTOS.", "placeholder": "CORREO@DOMINIO.COM", "buttonLabel": "[ENVIAR]", "successMessage": "OK. SUSCRIPCIÓN REGISTRADA.", "errorMessage": "ERROR: CORREO INVÁLIDO.", "privacyNote": "SIN SPAM. BAJA EN CUALQUIER MOMENTO." },
+          "feature": { "title": "EXTRA", "eyebrow": "/EXTRA", "ctaLabel": "[ABRIR]" },
+          "footer": { "copyrightPrefix": "(C)" }
+        },
+        "en": {
+          "nav": { "cta": "[LISTEN]" },
+          "hero": { "eyebrow": "ARTIST/001", "primaryCta": "[LISTEN]", "secondaryCta": "[DATES]" },
+          "tour-dates": { "title": "DATES", "eyebrow": "DATES.TXT", "emptyTitle": "NO DATES PUBLISHED", "emptyMessage": "NO CONFIRMED DATES RIGHT NOW. SUBSCRIBE TO GET THE NOTICE.", "ctaLabel": "[TICKETS]" },
+          "discography": { "title": "DISCOGRAPHY", "eyebrow": "/RECORDS" },
+          "top-songs": { "title": "TOP_SONGS", "eyebrow": "/SONGS" },
+          "stats": { "title": "DATA", "eyebrow": "STATS.JSON" },
+          "biography": { "title": "BIO", "eyebrow": "BIO.TXT" },
+          "video": { "title": "VIDEO", "eyebrow": "/VIDEO" },
+          "press-quotes": { "title": "PRESS", "eyebrow": "QUOTES.MD" },
+          "music-player": { "title": "PLAY", "eyebrow": "AUDIO.EXE" },
+          "photo-gallery": { "title": "IMAGES", "eyebrow": "/IMG" },
+          "contact": { "title": "CONTACT", "eyebrow": "MAILTO:", "body": "BOOKING / PRESS / COLLABORATIONS." },
+          "social-links": { "title": "LINKS", "eyebrow": "/SOCIAL" },
+          "newsletter": { "title": "SUBSCRIBE", "eyebrow": "LIST.TXT", "body": "ENTER YOUR EMAIL. GET DATES AND RELEASES.", "placeholder": "EMAIL@DOMAIN.COM", "buttonLabel": "[SEND]", "successMessage": "OK. SUBSCRIPTION RECORDED.", "errorMessage": "ERROR: INVALID EMAIL.", "privacyNote": "NO SPAM. UNSUBSCRIBE ANYTIME." },
+          "feature": { "title": "EXTRA", "eyebrow": "/EXTRA", "ctaLabel": "[OPEN]" },
+          "footer": { "copyrightPrefix": "(C)" }
+        }
+      }
+    },
+    {
+      "id": "06-retro",
+      "number": 6,
+      "slug": "retro",
+      "name": "Retro / Vintage",
+      "projectName": "marisela-site-06-retro",
+      "promptFile": "prompts/design-brief-06-retro.md",
+      "templateDir": "templates/briefs/06-retro",
+      "keyCharacteristics": "Warm tones, grain texture, retro typography, nostalgic",
+      "mode": "light",
+      "fonts": {
+        "display": { "family": "Shrikhand", "importName": "Shrikhand", "weights": ["400"], "styles": ["normal"], "fallback": ["Georgia", "serif"] },
+        "body": { "family": "Bitter", "importName": "Bitter", "weights": ["400", "500", "700"], "styles": ["normal", "italic"], "fallback": ["Georgia", "serif"] },
+        "mono": { "family": "Courier Prime", "importName": "Courier_Prime", "weights": ["400", "700"], "styles": ["normal"], "fallback": ["Courier New", "monospace"] }
+      },
+      "palette": {
+        "strategy": "warm-vintage",
+        "warmRange": [8, 30],
+        "fallbackHue": 22
+      },
+      "radius": { "base": 14, "sm": 8, "lg": 999 },
+      "shadows": "offset",
+      "motion": { "preset": "vinyl-wobble", "duration": 0.7, "ease": [0.45, 0, 0.55, 1], "distance": 20 },
+      "containerWidth": 1200,
+      "sectionOrder": ["navigation", "hero", "discography", "top-songs", "biography", "video", "tour-dates", "countdown", "press-quotes", "photo-gallery", "music-player", "stats", "lyrics", "news", "fan-club", "merch", "newsletter", "social-links", "contact", "footer"],
+      "dividers": { "after": ["hero", "biography", "press-quotes"], "variant": "ornament" },
+      "jsonRenderRules": [
+        "Voice: warm and nostalgic, like a 1980s LP sleeve or a TV variety show announcer.",
+        "Prefer the Hero variant 'record-sleeve' and Discography layout 'carousel' styled as a crate of vinyl.",
+        "Insert SectionDivider elements as small ornaments with labels like 'Lado A' / 'Lado B'."
+      ],
+      "copy": {
+        "es": {
+          "nav": { "cta": "¡Pon el disco!" },
+          "hero": { "eyebrow": "Desde {debutYear} · {alias}", "primaryCta": "¡Pon el disco!", "secondaryCta": "Ver funciones" },
+          "discography": { "title": "Lado A: los discos", "eyebrow": "Colección", "intro": "Saca los acetatos del baúl." },
+          "top-songs": { "title": "Los grandes éxitos", "eyebrow": "Lado B" },
+          "biography": { "title": "Su historia", "eyebrow": "Había una vez" },
+          "video": { "title": "Videoteca", "eyebrow": "En la tele" },
+          "tour-dates": { "title": "¡En concierto!", "eyebrow": "Funciones", "emptyTitle": "Próximamente en esta sala", "emptyMessage": "Las nuevas funciones se anunciarán muy pronto. Inscríbete al club y sé de los primeros en saberlo.", "ctaLabel": "Boletos" },
+          "press-quotes": { "title": "Lo que dijo la prensa", "eyebrow": "Recortes" },
+          "photo-gallery": { "title": "Álbum de fotos", "eyebrow": "Recuerdos" },
+          "music-player": { "title": "En la radio", "eyebrow": "Sintoniza" },
+          "stats": { "title": "Discos de oro", "eyebrow": "Récords" },
+          "newsletter": { "title": "Club de fans", "eyebrow": "Correspondencia", "body": "Inscríbete y recibe noticias como en los buenos tiempos.", "placeholder": "Tu correo", "buttonLabel": "¡Inscríbeme!", "successMessage": "¡Bienvenido al club!", "errorMessage": "Uy, ese correo no parece válido.", "privacyNote": "Prometemos no llenar tu buzón." },
+          "social-links": { "title": "Síguela", "eyebrow": "Redes" },
+          "contact": { "title": "Contrataciones", "eyebrow": "Llame ya", "body": "Bailes, eventos, prensa y televisión." },
+          "feature": { "title": "Y hay más", "eyebrow": "Extra", "ctaLabel": "Ver" },
+          "footer": { "copyrightPrefix": "©" }
+        },
+        "en": {
+          "nav": { "cta": "Drop the needle!" },
+          "hero": { "eyebrow": "Since {debutYear} · {alias}", "primaryCta": "Drop the needle!", "secondaryCta": "See shows" },
+          "discography": { "title": "Side A: the records", "eyebrow": "Collection", "intro": "Dust off the vinyl." },
+          "top-songs": { "title": "Greatest hits", "eyebrow": "Side B" },
+          "biography": { "title": "Her story", "eyebrow": "Once upon a time" },
+          "video": { "title": "Video vault", "eyebrow": "On TV" },
+          "tour-dates": { "title": "In concert!", "eyebrow": "Shows", "emptyTitle": "Coming soon to this theater", "emptyMessage": "New shows will be announced very soon. Join the club and be among the first to know.", "ctaLabel": "Tickets" },
+          "press-quotes": { "title": "What the press said", "eyebrow": "Clippings" },
+          "photo-gallery": { "title": "Photo album", "eyebrow": "Memories" },
+          "music-player": { "title": "On the radio", "eyebrow": "Tune in" },
+          "stats": { "title": "Gold records", "eyebrow": "Records" },
+          "newsletter": { "title": "Fan club", "eyebrow": "Mail", "body": "Sign up and get news like in the good old days.", "placeholder": "Your email", "buttonLabel": "Sign me up!", "successMessage": "Welcome to the club!", "errorMessage": "Oops, that email doesn't look valid.", "privacyNote": "We promise not to flood your mailbox." },
+          "social-links": { "title": "Follow her", "eyebrow": "Social" },
+          "contact": { "title": "Booking", "eyebrow": "Call now", "body": "Dances, events, press and television." },
+          "feature": { "title": "And there's more", "eyebrow": "Extra", "ctaLabel": "See" },
+          "footer": { "copyrightPrefix": "©" }
+        }
+      }
+    }
+  ]
+}

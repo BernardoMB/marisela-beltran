@@ -1,0 +1,13 @@
+{
+  "briefId": "05-brutalist",
+  "components": ["NavBar", "Hero", "StatsBand", "Biography", "Discography", "TopSongs", "TourDates", "VideoGallery", "PhotoGallery", "MusicPlayer", "PressQuotes", "Newsletter", "SocialLinks", "ContactBooking", "FeatureSection", "SectionDivider", "Footer"],
+  "variants": {
+    "Hero": ["index", "poster"],
+    "Discography": ["list", "grid"],
+    "TopSongs": ["table"],
+    "TourDates": ["table"],
+    "PressQuotes": ["markdown"],
+    "SectionDivider": ["ascii"]
+  },
+  "notes": "Monospace document aesthetic: 3px borders, tables, bracketed links, accent blocks, hover inversion, ASCII rules."
+}

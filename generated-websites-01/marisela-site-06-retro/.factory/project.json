@@ -1,0 +1,58 @@
+{
+  "briefId": "06-retro",
+  "briefName": "Retro / Vintage",
+  "projectName": "marisela-site-06-retro",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-06-retro",
+  "inspiration": {
+    "url": "https://www.shakira.com/",
+    "slug": "shakira-com",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-06-retro.spec.json",
+  "specSource": "deterministic",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "discography",
+    "top-songs",
+    "biography",
+    "video",
+    "tour-dates",
+    "press-quotes",
+    "merch",
+    "newsletter",
+    "social-links",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "SectionDivider",
+    "Discography",
+    "TopSongs",
+    "Biography",
+    "VideoGallery",
+    "TourDates",
+    "PressQuotes",
+    "FeatureSection",
+    "Newsletter",
+    "SocialLinks",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "warm-vintage",
+    "mode": "light",
+    "baseHue": 206,
+    "background": "#f5e2c7",
+    "foreground": "#321b11",
+    "primary": "#9e4b1a",
+    "accent": "#225955",
+    "fonts": {
+      "display": "Shrikhand",
+      "body": "Bitter",
+      "mono": "Courier Prime"
+    }
+  },
+  "generatedAt": "2026-10-17T07:06:53Z",
+  "warnings": []
+}

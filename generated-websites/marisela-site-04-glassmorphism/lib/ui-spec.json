@@ -1,0 +1,278 @@
+{
+  "root": "page",
+  "elements": {
+    "nav": {
+      "type": "NavBar",
+      "props": {
+        "brand": "Marisela Beltrán",
+        "links": [
+          {
+            "label": "Inicio",
+            "href": "#inicio"
+          },
+          {
+            "label": "Biografía",
+            "href": "#biografia"
+          },
+          {
+            "label": "Música",
+            "href": "#discografia"
+          },
+          {
+            "label": "Gira",
+            "href": "#gira"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          },
+          {
+            "label": "Contacto",
+            "href": "#contacto"
+          }
+        ],
+        "socials": {
+          "$state": "/socialLinks"
+        }
+      },
+      "children": []
+    },
+    "hero": {
+      "type": "Hero",
+      "props": {
+        "anchorId": "inicio",
+        "variant": "floating-card",
+        "title": "Marisela Beltrán",
+        "eyebrow": {
+          "$state": "/tagline"
+        },
+        "subtitle": "Una voz que nace del esfuerzo y la pasión",
+        "primaryCta": {
+          "label": "Conoce mi historia",
+          "href": "#biografia"
+        },
+        "stats": {
+          "$state": "/stats/items"
+        },
+        "showScrollIndicator": true
+      },
+      "children": []
+    },
+    "divider-1": {
+      "type": "SectionDivider",
+      "props": {
+        "variant": "glow"
+      },
+      "children": []
+    },
+    "biography": {
+      "type": "Biography",
+      "props": {
+        "anchorId": "biografia",
+        "title": "Mi historia",
+        "paragraphs": {
+          "$state": "/biography/paragraphs"
+        },
+        "facts": {
+          "$state": "/biography/facts"
+        },
+        "sourceNote": {
+          "$state": "/biography/sourceNote"
+        }
+      },
+      "children": []
+    },
+    "discography": {
+      "type": "Discography",
+      "props": {
+        "anchorId": "discografia",
+        "title": "Discografía",
+        "intro": "Próximamente compartiré mi música contigo",
+        "albums": {
+          "$state": "/discography"
+        },
+        "layout": "grid"
+      },
+      "children": []
+    },
+    "top-songs": {
+      "type": "TopSongs",
+      "props": {
+        "anchorId": "canciones",
+        "variant": "playlist",
+        "title": "Canciones destacadas",
+        "intro": "Mis interpretaciones favoritas",
+        "songs": {
+          "$state": "/topSongs"
+        }
+      },
+      "children": []
+    },
+    "tour-dates": {
+      "type": "TourDates",
+      "props": {
+        "anchorId": "gira",
+        "variant": "glass-rows",
+        "title": "Próximas presentaciones",
+        "events": {
+          "$state": "/tourDates"
+        },
+        "emptyTitle": "Pronto en concierto",
+        "emptyMessage": "Estoy preparando nuevas presentaciones. Regresa pronto para conocer las fechas."
+      },
+      "children": []
+    },
+    "video": {
+      "type": "VideoGallery",
+      "props": {
+        "anchorId": "videos",
+        "title": "Videos",
+        "intro": "Momentos especiales de mi carrera",
+        "videos": {
+          "$state": "/videos"
+        }
+      },
+      "children": []
+    },
+    "press-quotes": {
+      "type": "PressQuotes",
+      "props": {
+        "anchorId": "prensa",
+        "variant": "glass-cards",
+        "title": "En la prensa",
+        "quotes": {
+          "$state": "/pressQuotes"
+        }
+      },
+      "children": []
+    },
+    "divider-2": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "Marisela",
+        "variant": "glow"
+      },
+      "children": []
+    },
+    "newsletter": {
+      "type": "Newsletter",
+      "props": {
+        "anchorId": "boletin",
+        "title": "Mantente al tanto",
+        "body": "Suscríbete para recibir noticias sobre mi música y próximas presentaciones.",
+        "placeholder": "Tu correo electrónico",
+        "buttonLabel": "Suscribirse",
+        "successMessage": "¡Gracias por suscribirte!",
+        "errorMessage": "Hubo un error. Intenta de nuevo.",
+        "privacyNote": "No compartiremos tu información."
+      },
+      "children": []
+    },
+    "social-links": {
+      "type": "SocialLinks",
+      "props": {
+        "anchorId": "redes",
+        "title": "Sígueme",
+        "intro": "Conéctate conmigo en redes sociales",
+        "links": {
+          "$state": "/socialLinks"
+        }
+      },
+      "children": []
+    },
+    "contact": {
+      "type": "ContactBooking",
+      "props": {
+        "anchorId": "contacto",
+        "title": "Contacto",
+        "body": "Para contrataciones y colaboraciones, ponte en contacto."
+      },
+      "children": []
+    },
+    "merch": {
+      "type": "FeatureSection",
+      "props": {
+        "anchorId": "tienda",
+        "featureType": "merch",
+        "title": "Tienda",
+        "body": "Próximamente: productos exclusivos y recuerdos especiales."
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Footer",
+      "props": {
+        "brand": "Marisela Beltrán",
+        "tagline": {
+          "$state": "/tagline"
+        },
+        "links": [
+          {
+            "label": "Inicio",
+            "href": "#inicio"
+          },
+          {
+            "label": "Biografía",
+            "href": "#biografia"
+          },
+          {
+            "label": "Música",
+            "href": "#discografia"
+          },
+          {
+            "label": "Gira",
+            "href": "#gira"
+          },
+          {
+            "label": "Videos",
+            "href": "#videos"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          },
+          {
+            "label": "Contacto",
+            "href": "#contacto"
+          }
+        ],
+        "socials": {
+          "$state": "/socialLinks"
+        },
+        "copyright": "© 2026 Marisela Beltrán. Todos los derechos reservados.",
+        "sources": {
+          "$state": "/credits/sources"
+        },
+        "credits": [
+          "Texto basado en Noroeste — Marisela Beltrán, la sinaloense que comienza a triunfar en la música."
+        ]
+      },
+      "children": []
+    },
+    "page": {
+      "type": "Page",
+      "props": {
+        "title": "Marisela Beltrán — Ganadora de Todos Quieren Fama",
+        "description": "Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música.",
+        "lang": "es"
+      },
+      "children": [
+        "nav",
+        "hero",
+        "divider-1",
+        "biography",
+        "discography",
+        "top-songs",
+        "tour-dates",
+        "video",
+        "press-quotes",
+        "divider-2",
+        "newsletter",
+        "social-links",
+        "contact",
+        "merch",
+        "footer"
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "artist-site-factory",
+  "version": "1.0.0",
+  "description": "Automated multi-agent pipeline that turns a list of inspirational artist websites into six unique, runnable Next.js sites for Marisela.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "generate-websites": "tsx src/index.ts",
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "reset": "tsx src/index.ts --reset",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "@json-render/core": "0.21.1",
+    "@json-render/react": "0.21.1",
+    "chalk": "^5.3.0",
+    "cheerio": "^1.2.0",
+    "chhapify": "1.0.0",
+    "dotenv": "^16.4.0",
+    "execa": "^9.0.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.0.0",
+    "p-limit": "^6.0.0",
+    "playwright": "^1.64.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}

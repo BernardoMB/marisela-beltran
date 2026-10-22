@@ -1,0 +1,57 @@
+{
+  "briefId": "01-minimalist",
+  "briefName": "Minimalist",
+  "projectName": "marisela-site-01-minimalist",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-01-minimalist",
+  "inspiration": {
+    "url": "https://www.taylorswift.com/",
+    "slug": "taylorswift-com",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-01-minimalist.spec.json",
+  "specSource": "deterministic",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "discography",
+    "top-songs",
+    "tour-dates",
+    "biography",
+    "video",
+    "press-quotes",
+    "merch",
+    "newsletter",
+    "social-links",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "Discography",
+    "TopSongs",
+    "TourDates",
+    "Biography",
+    "VideoGallery",
+    "PressQuotes",
+    "FeatureSection",
+    "Newsletter",
+    "SocialLinks",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "monochrome",
+    "mode": "light",
+    "baseHue": 170,
+    "background": "#fbfbfb",
+    "foreground": "#151918",
+    "primary": "#151918",
+    "accent": "#43756c",
+    "fonts": {
+      "display": "Jost",
+      "body": "Manrope",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-17T07:06:53Z",
+  "warnings": []
+}

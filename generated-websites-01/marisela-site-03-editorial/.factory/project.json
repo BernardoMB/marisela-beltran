@@ -1,0 +1,58 @@
+{
+  "briefId": "03-editorial",
+  "briefName": "Editorial",
+  "projectName": "marisela-site-03-editorial",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-03-editorial",
+  "inspiration": {
+    "url": "https://www.taylorswift.com/",
+    "slug": "taylorswift-com",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-03-editorial.spec.json",
+  "specSource": "deterministic",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "biography",
+    "press-quotes",
+    "discography",
+    "top-songs",
+    "video",
+    "tour-dates",
+    "merch",
+    "newsletter",
+    "social-links",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "Biography",
+    "SectionDivider",
+    "PressQuotes",
+    "Discography",
+    "TopSongs",
+    "VideoGallery",
+    "TourDates",
+    "FeatureSection",
+    "Newsletter",
+    "SocialLinks",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "ink-and-paper",
+    "mode": "light",
+    "baseHue": 170,
+    "background": "#f5efe3",
+    "foreground": "#0d1917",
+    "primary": "#0d1917",
+    "accent": "#136355",
+    "fonts": {
+      "display": "Playfair Display",
+      "body": "Newsreader",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-17T07:06:53Z",
+  "warnings": []
+}

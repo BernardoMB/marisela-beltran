@@ -1,0 +1,66 @@
+{
+  "$comment": "Artist IDENTITY used to look content up at runtime. This file contains search anchors and claims to verify — never site copy. All published facts are fetched from public sources by the content synthesizer and every claim below is only used if a fetched source corroborates it. A claim's optional `display` block (alias / tagline / stat) is shown on the sites ONLY when the claim is verified.",
+  "$comment2": "IDENTITY, 2026-10-18: this is Marisela Beltrán, an independent singer from Mazatlán, Sinaloa — NOT 'Marisela' (Esqueda), the famous 1980s singer known as 'La Dama de Hierro' (Wikidata Q2890550), who is a different person. She has no Wikidata/Wikipedia/MusicBrainz entry or streaming catalog found under this exact name, so every anchor below is intentionally null/empty — leave them that way; filling anchors.wikidataId or searchName with just 'Marisela' would silently pull the other singer's biography and photos (searchWikidata() now only accepts an exact name match for this reason). Known, sourced so far: runner-up/winner of TV Azteca's 'Todos quieren fama' (reported Feb 2021), La Voz México 2019 contestant (team Lupillo Rivera, eliminated in the Knockouts), performs regional mexicano/banda and balada pop, based out of Mazatlán and Mexico City. Source: https://www.noroeste.com.mx/entretenimiento/espectaculos/marisela-beltran-la-sinaloense-que-comienza-a-triunfar-en-la-musica-IE633390 (March 2021 — her only substantial press coverage found; check for anything more recent before a real run). Add her real links (Instagram/YouTube/Spotify/TikTok, any released singles) to extraSources or the anchors below as you find them.",
+  "slug": "marisela-beltran",
+  "searchName": "Marisela Beltrán",
+  "displayNameOverride": "Marisela Beltrán",
+  "requestedDisplayName": "Marisela Beltrán",
+  "anchors": {
+    "wikidataId": null,
+    "musicbrainzId": null,
+    "spotifyArtistId": null,
+    "deezerArtistId": null,
+    "officialSite": null,
+    "wikipediaTitles": {
+      "es": null,
+      "en": null
+    }
+  },
+  "extraSources": [
+    {
+      "url": "https://www.noroeste.com.mx/entretenimiento/espectaculos/marisela-beltran-la-sinaloense-que-comienza-a-triunfar-en-la-musica-IE633390",
+      "label": "Noroeste — Marisela Beltrán, la sinaloense que comienza a triunfar en la música"
+    }
+  ],
+  "$comment3": "knownSocialLinks: the @Mariselabeltranmusica handle the Noroeste article (2021) gives for Instagram, turned into its profile URL — not independently confirmed still active/hers. Verify before a real run, and add any other real links you have (YouTube, TikTok, a current Instagram/Facebook) here.",
+  "knownSocialLinks": [
+    "https://www.instagram.com/mariselabeltranmusica/"
+  ],
+  "ticketSearch": {
+    "ticketmasterKeyword": "Marisela Beltrán",
+    "countryCodes": [
+      "MX",
+      "US"
+    ]
+  },
+  "claimsToVerify": [
+    {
+      "id": "hometown-mazatlan",
+      "claim": "From Mazatlán, Sinaloa",
+      "patterns": [
+        "mazatlán",
+        "mazatleca",
+        "mazatlan"
+      ]
+    },
+    {
+      "id": "todos-quieren-fama-winner",
+      "claim": "Winner, \"Todos quieren fama\" (TV Azteca)",
+      "patterns": [
+        "todos quieren fama"
+      ],
+      "display": {
+        "alias": "Ganadora de Todos Quieren Fama"
+      }
+    },
+    {
+      "id": "la-voz-mexico-2019",
+      "claim": "Contestant, La Voz México (2019, team Lupillo Rivera)",
+      "patterns": [
+        "la voz méxico",
+        "la voz mexico",
+        "lupillo rivera"
+      ]
+    }
+  ]
+}

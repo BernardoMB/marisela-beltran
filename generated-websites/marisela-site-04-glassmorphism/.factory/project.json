@@ -1,0 +1,60 @@
+{
+  "briefId": "04-glassmorphism",
+  "briefName": "Glassmorphism",
+  "projectName": "marisela-site-04-glassmorphism",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-04-glassmorphism",
+  "inspiration": {
+    "url": "https://www.yuritaflowers.mx/",
+    "slug": "yuritaflowers-mx",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-04-glassmorphism.spec.json",
+  "specSource": "llm",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "biography",
+    "discography",
+    "top-songs",
+    "tour-dates",
+    "video",
+    "press-quotes",
+    "newsletter",
+    "social-links",
+    "contact",
+    "merch",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "SectionDivider",
+    "Biography",
+    "Discography",
+    "TopSongs",
+    "TourDates",
+    "VideoGallery",
+    "PressQuotes",
+    "Newsletter",
+    "SocialLinks",
+    "ContactBooking",
+    "FeatureSection",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "aurora-glass",
+    "mode": "dark",
+    "baseHue": 48,
+    "background": "#241f0a",
+    "foreground": "#faf9f5",
+    "primary": "#a2f881",
+    "accent": "#77f8df",
+    "fonts": {
+      "display": "Sora",
+      "body": "Plus Jakarta Sans",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-20T16:18:00Z",
+  "warnings": []
+}

@@ -1,0 +1,104 @@
+/* ---------------------------------------------------------------------------
+ * Skin base (templates/shared/styles/skin-base.css)
+ * Neutral defaults for the classes the shared section components use. Every brief's styles.css
+ * (appended after this file) overrides them to give the shared sections its own look.
+ * ------------------------------------------------------------------------- */
+@layer components {
+  .skin-section {
+    padding-block: var(--section-space);
+  }
+  .skin-container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 3rem);
+  }
+  .skin-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    margin-bottom: 0.75rem;
+  }
+  .skin-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    line-height: 1.05;
+  }
+  .skin-lead {
+    color: var(--muted-foreground);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+  .skin-muted {
+    color: var(--muted-foreground);
+  }
+  .skin-card {
+    background: var(--surface);
+    color: var(--surface-foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .skin-media {
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .skin-btn {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .skin-btn:hover {
+    opacity: 0.9;
+  }
+  .skin-btn-ghost {
+    border: 1px solid currentColor;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease;
+  }
+  .skin-btn-ghost:hover {
+    background: var(--muted);
+  }
+  .skin-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .skin-link:hover {
+    color: var(--accent);
+  }
+  .skin-chip {
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  .skin-chip:hover {
+    border-color: var(--foreground);
+  }
+  .divider-hairline {
+    border: 0;
+    border-top: 1px solid var(--border);
+  }
+  .divider-glow {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gradient-from), var(--gradient-via), var(--gradient-to), transparent);
+  }
+  .divider-marquee-track {
+    animation: skin-marquee 30s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .divider-marquee-track {
+      animation: none;
+    }
+  }
+}
+
+@keyframes skin-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

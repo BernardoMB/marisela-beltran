@@ -1,0 +1,13 @@
+{
+  "project": "marisela-site-03-editorial",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-03-editorial",
+  "installed": true,
+  "built": true,
+  "buildAttempts": 1,
+  "fixesApplied": [],
+  "smokeTest": "passed",
+  "runFile": "generated-websites/marisela-site-03-editorial/RUN.md",
+  "runCommand": "cd generated-websites/marisela-site-03-editorial && npm run dev",
+  "buildLog": "artifacts/build-logs/marisela-site-03-editorial.log",
+  "durationMs": 25066
+}

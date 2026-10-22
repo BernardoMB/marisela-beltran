@@ -1,0 +1,22 @@
+{
+  "project": "marisela-site-04-glassmorphism",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-04-glassmorphism",
+  "issues": [
+    {
+      "source": "mechanical",
+      "category": "image-placement",
+      "severity": "warning",
+      "file": "components/LiteYouTube.tsx",
+      "message": "<img> without an alt attribute.",
+      "autoFixable": false
+    }
+  ],
+  "fixedCount": 0,
+  "facelift": {
+    "review": "skipped",
+    "cleanup": "skipped",
+    "detail": "AI review disabled in config (tools.facelift.aiReview)"
+  },
+  "reportFile": "artifacts/validation-reports/marisela-site-04-glassmorphism.md",
+  "passed": true
+}

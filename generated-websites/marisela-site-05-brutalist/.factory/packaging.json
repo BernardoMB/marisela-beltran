@@ -1,0 +1,13 @@
+{
+  "project": "marisela-site-05-brutalist",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-05-brutalist",
+  "installed": true,
+  "built": true,
+  "buildAttempts": 1,
+  "fixesApplied": [],
+  "smokeTest": "passed",
+  "runFile": "generated-websites/marisela-site-05-brutalist/RUN.md",
+  "runCommand": "cd generated-websites/marisela-site-05-brutalist && npm run dev",
+  "buildLog": "artifacts/build-logs/marisela-site-05-brutalist.log",
+  "durationMs": 31585
+}

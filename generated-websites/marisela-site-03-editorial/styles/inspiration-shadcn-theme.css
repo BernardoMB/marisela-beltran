@@ -1,0 +1,21 @@
+/*
+ * Original shadcn/ui theme extracted by chhapify from https://liladowns.mx/.
+ * Reference only (not imported): app/globals.css contains the brief-transformed version of these variables.
+ */
+/* shadcn/ui Theme — extracted from https://liladowns.mx/ */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --primary: 39 85% 95%;
+    --primary-foreground: 0 0% 0%;
+    --accent: 39 85% 95%;
+    --accent-foreground: 0 0% 0%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 100%;
+    --border: 0 0% 29%;
+    --radius: 20px;
+  }
+}

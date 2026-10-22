@@ -1,0 +1,282 @@
+{
+  "root": "page",
+  "elements": {
+    "nav": {
+      "type": "NavBar",
+      "props": {
+        "brand": "Marisela",
+        "links": [
+          {
+            "label": "Discografía",
+            "href": "#discografia"
+          },
+          {
+            "label": "Canciones",
+            "href": "#canciones"
+          },
+          {
+            "label": "Gira",
+            "href": "#gira"
+          },
+          {
+            "label": "Biografía",
+            "href": "#biografia"
+          },
+          {
+            "label": "Videos",
+            "href": "#videos"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          }
+        ],
+        "cta": {
+          "label": "Escuchar",
+          "href": "https://open.spotify.com/artist/73c2MjCAFNyKYIs7nBlqG2"
+        },
+        "socials": {
+          "$state": "/socialLinks"
+        }
+      },
+      "children": []
+    },
+    "hero": {
+      "type": "Hero",
+      "props": {
+        "anchorId": "inicio",
+        "image": {
+          "$state": "/images/hero"
+        },
+        "stats": {
+          "$state": "/stats/items"
+        },
+        "variant": "split",
+        "title": "Marisela",
+        "eyebrow": "La Dama de Hierro",
+        "subtitle": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "tagline": "La Dama de Hierro — Desde 1984",
+        "primaryCta": {
+          "label": "Escuchar ahora",
+          "href": "#canciones"
+        },
+        "secondaryCta": {
+          "label": "Ver fechas",
+          "href": "#gira"
+        },
+        "showScrollIndicator": true
+      },
+      "children": []
+    },
+    "discography": {
+      "type": "Discography",
+      "props": {
+        "anchorId": "discografia",
+        "albums": {
+          "$state": "/discography"
+        },
+        "title": "Discografía",
+        "eyebrow": "02",
+        "intro": "Una trayectoria en álbumes.",
+        "layout": "grid",
+        "showTypes": true
+      },
+      "children": []
+    },
+    "top-songs": {
+      "type": "TopSongs",
+      "props": {
+        "anchorId": "canciones",
+        "songs": {
+          "$state": "/topSongs"
+        },
+        "variant": "numbered",
+        "title": "Canciones esenciales",
+        "eyebrow": "03",
+        "limit": 10,
+        "showStats": true
+      },
+      "children": []
+    },
+    "tour-dates": {
+      "type": "TourDates",
+      "props": {
+        "anchorId": "gira",
+        "events": {
+          "$state": "/tourDates"
+        },
+        "ticketsUrl": {
+          "$state": "/tour/ticketsUrl"
+        },
+        "variant": "table",
+        "title": "En vivo",
+        "eyebrow": "04",
+        "emptyTitle": "Sin fechas anunciadas",
+        "emptyMessage": "Las próximas presentaciones se anunciarán pronto. Suscríbete para enterarte primero.",
+        "ctaLabel": "Boletos"
+      },
+      "children": []
+    },
+    "biography": {
+      "type": "Biography",
+      "props": {
+        "anchorId": "biografia",
+        "paragraphs": {
+          "$state": "/biography/paragraphs"
+        },
+        "facts": {
+          "$state": "/biography/facts"
+        },
+        "image": {
+          "$state": "/images/portrait"
+        },
+        "sourceNote": {
+          "$state": "/biography/sourceNote"
+        },
+        "title": "Biografía",
+        "eyebrow": "05",
+        "lead": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "maxParagraphs": 3
+      },
+      "children": []
+    },
+    "video": {
+      "type": "VideoGallery",
+      "props": {
+        "anchorId": "videos",
+        "videos": {
+          "$state": "/videos"
+        },
+        "title": "Videos",
+        "eyebrow": "07",
+        "limit": 6
+      },
+      "children": []
+    },
+    "press-quotes": {
+      "type": "PressQuotes",
+      "props": {
+        "anchorId": "prensa",
+        "quotes": {
+          "$state": "/pressQuotes"
+        },
+        "variant": "columns",
+        "title": "Lo que se ha dicho",
+        "eyebrow": "09",
+        "limit": 6
+      },
+      "children": []
+    },
+    "merch": {
+      "type": "FeatureSection",
+      "props": {
+        "anchorId": "tienda",
+        "featureType": "merch",
+        "title": "Tienda",
+        "eyebrow": "—",
+        "body": "Artículos oficiales y novedades, directamente desde los canales de la artista.",
+        "items": [],
+        "cta": {
+          "label": "Visitar",
+          "href": "https://www.marisela.com.mx"
+        }
+      },
+      "children": []
+    },
+    "newsletter": {
+      "type": "Newsletter",
+      "props": {
+        "anchorId": "boletin",
+        "title": "Boletín",
+        "eyebrow": "10",
+        "body": "Noticias, lanzamientos y fechas. Nada más.",
+        "placeholder": "tu@correo.com",
+        "buttonLabel": "Suscribirme",
+        "successMessage": "Gracias. Estás en la lista.",
+        "errorMessage": "Escribe un correo válido.",
+        "privacyNote": "Sin spam. Puedes darte de baja cuando quieras."
+      },
+      "children": []
+    },
+    "social-links": {
+      "type": "SocialLinks",
+      "props": {
+        "anchorId": "redes",
+        "links": {
+          "$state": "/socialLinks"
+        },
+        "title": "Redes",
+        "eyebrow": "12"
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Footer",
+      "props": {
+        "brand": "Marisela",
+        "tagline": "La Dama de Hierro — Desde 1984",
+        "links": [
+          {
+            "label": "Discografía",
+            "href": "#discografia"
+          },
+          {
+            "label": "Canciones",
+            "href": "#canciones"
+          },
+          {
+            "label": "Gira",
+            "href": "#gira"
+          },
+          {
+            "label": "Biografía",
+            "href": "#biografia"
+          },
+          {
+            "label": "Videos",
+            "href": "#videos"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          }
+        ],
+        "socials": {
+          "$state": "/socialLinks"
+        },
+        "sources": {
+          "$state": "/credits/sources"
+        },
+        "copyright": "© 2026 Marisela",
+        "credits": [
+          "Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0).",
+          "Foto: STARZBYM (CC0), Wikimedia Commons",
+          "Portadas de álbumes © sus respectivos titulares."
+        ]
+      },
+      "children": []
+    },
+    "page": {
+      "type": "Page",
+      "props": {
+        "title": "Marisela — La Dama de Hierro — Desde 1984",
+        "description": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "lang": "es"
+      },
+      "children": [
+        "nav",
+        "hero",
+        "discography",
+        "top-songs",
+        "tour-dates",
+        "biography",
+        "video",
+        "press-quotes",
+        "merch",
+        "newsletter",
+        "social-links",
+        "footer"
+      ]
+    }
+  }
+}

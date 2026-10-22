@@ -1,0 +1,13 @@
+{
+  "briefId": "01-minimalist",
+  "components": ["NavBar", "Hero", "StatsBand", "Biography", "Discography", "TopSongs", "TourDates", "VideoGallery", "PhotoGallery", "MusicPlayer", "PressQuotes", "Newsletter", "SocialLinks", "ContactBooking", "FeatureSection", "SectionDivider", "Footer"],
+  "variants": {
+    "Hero": ["split", "centered"],
+    "Discography": ["grid", "list"],
+    "TopSongs": ["numbered"],
+    "TourDates": ["table"],
+    "PressQuotes": ["columns"],
+    "SectionDivider": ["hairline"]
+  },
+  "notes": "Swiss grid, hairlines, numbered sections, ultra-thin Jost, grayscale imagery. Hero 'split' needs a photo (falls back to 'centered')."
+}

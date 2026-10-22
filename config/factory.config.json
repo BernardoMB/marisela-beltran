@@ -1,0 +1,125 @@
+{
+  "$comment": "Central configuration for artist-site-factory. Every value here can be changed without touching code. See README.md → Configuration.",
+  "variations": 6,
+  "siteLanguage": "es",
+  "locale": "es-MX",
+  "llm": {
+    "$comment": "provider: auto = Anthropic API if ANTHROPIC_API_KEY is set, else the local Claude Code CLI (claude -p) if installed, else deterministic generation. api | cli | off force a choice. The --no-ai flag forces off.",
+    "provider": "auto",
+    "cliTimeoutMs": 900000
+  },
+  "paths": {
+    "urlsFile": "config/urls.txt",
+    "outputDir": "generated-websites",
+    "artifactsDir": "artifacts",
+    "vendorDir": "vendor",
+    "templatesDir": "templates",
+    "promptsDir": "prompts",
+    "logFile": "factory.log",
+    "stateFile": ".orchestrator-state.json"
+  },
+  "concurrency": {
+    "urls": 2,
+    "projects": 1,
+    "reviews": 1,
+    "builds": 1
+  },
+  "acquisition": {
+    "navigationTimeoutMs": 45000,
+    "settleMs": 2500,
+    "maxAssets": 60,
+    "maxAssetBytes": 3000000,
+    "crawlDepth": 0,
+    "useFaceliftCrawler": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36 artist-site-factory/1.0"
+  },
+  "tools": {
+    "chhapify": {
+      "enabled": true,
+      "args": [
+        "--full"
+      ],
+      "timeoutMs": 180000
+    },
+    "clooney": {
+      "enabled": true,
+      "repoUrls": [
+        "https://github.com/saksham-shr/Clooney-Agent.git",
+        "https://github.com/s4sachin/agent-clooney.git"
+      ],
+      "pinnedRefs": {
+        "s4sachin/agent-clooney": "1536fdac2272960febe67a5ce7ca39a467380ceb"
+      },
+      "breakpoints": [
+        "mobile",
+        "desktop"
+      ],
+      "installTimeoutMs": 900000,
+      "timeoutMs": 600000
+    },
+    "jsonRender": {
+      "useLLM": "auto",
+      "model": "claude-sonnet-4-5",
+      "effort": "low",
+      "maxTokens": 8192,
+      "maxRepairAttempts": 0
+    },
+    "contentFetch": {
+      "timeoutMs": 30000,
+      "useBrowser": true,
+      "useLLM": "off",
+      "llmModel": "claude-opus-5-5",
+      "maxTopSongs": 12,
+      "maxPressQuotes": 6,
+      "maxVideos": 6,
+      "downloadImages": true
+    },
+    "facelift": {
+      "enabled": true,
+      "version": "0.1.2",
+      "aiReview": "off",
+      "aiCleanup": "off",
+      "model": "sonnet",
+      "effort": "medium",
+      "timeoutMs": 600000
+    }
+  },
+  "generation": {
+    "inspirationSeed": "marisela",
+    "dependencies": {
+      "next": "15.5.28",
+      "react": "19.1.0",
+      "react-dom": "19.1.0",
+      "framer-motion": "^14.3.0",
+      "lucide-react": "^1.58.0",
+      "clsx": "^2.1.1",
+      "tailwind-merge": "^3.7.0",
+      "class-variance-authority": "^0.7.1"
+    },
+    "devDependencies": {
+      "typescript": "5.9.3",
+      "@types/node": "^20",
+      "@types/react": "^19",
+      "@types/react-dom": "^19",
+      "tailwindcss": "4.3.3",
+      "@tailwindcss/postcss": "4.3.3"
+    }
+  },
+  "packaging": {
+    "install": true,
+    "installArgs": [
+      "install",
+      "--prefer-offline",
+      "--no-audit",
+      "--no-fund",
+      "--loglevel=error"
+    ],
+    "build": true,
+    "maxFixAttempts": 3,
+    "installTimeoutMs": 1200000,
+    "buildTimeoutMs": 900000,
+    "smokeTest": true,
+    "smokeTestTimeoutMs": 120000,
+    "smokeTestBasePort": 3411
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "root": "page",
+  "elements": {
+    "nav": {
+      "type": "NavBar",
+      "props": {
+        "brand": "Marisela",
+        "links": [
+          {
+            "label": "Discografía",
+            "href": "#discografia"
+          },
+          {
+            "label": "Canciones",
+            "href": "#canciones"
+          },
+          {
+            "label": "Gira",
+            "href": "#gira"
+          },
+          {
+            "label": "Biografía",
+            "href": "#biografia"
+          },
+          {
+            "label": "Videos",
+            "href": "#videos"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          }
+        ],
+        "cta": {
+          "label": "¡Dale play!",
+          "href": "https://open.spotify.com/artist/73c2MjCAFNyKYIs7nBlqG2"
+        },
+        "socials": {
+          "$state": "/socialLinks"
+        }
+      },
+      "children": []
+    },
+    "hero": {
+      "type": "Hero",
+      "props": {
+        "anchorId": "inicio",
+        "image": {
+          "$state": "/images/hero"
+        },
+        "stats": {
+          "$state": "/stats/items"
+        },
+        "variant": "stacked",
+        "title": "Marisela",
+        "eyebrow": "La Dama de Hierro",
+        "subtitle": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "tagline": "La Dama de Hierro — Desde 1984",
+        "primaryCta": {
+          "label": "¡Escúchala ya!",
+          "href": "#canciones"
+        },
+        "secondaryCta": {
+          "label": "Boletos",
+          "href": "#gira"
+        },
+        "showScrollIndicator": true
+      },
+      "children": []
+    },
+    "divider-1": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "La Dama de Hierro",
+        "variant": "marquee"
+      },
+      "children": []
+    },
+    "top-songs": {
+      "type": "TopSongs",
+      "props": {
+        "anchorId": "canciones",
+        "songs": {
+          "$state": "/topSongs"
+        },
+        "variant": "cards",
+        "title": "¡Los éxitos!",
+        "eyebrow": "Top canciones",
+        "intro": "Las que todo México canta de memoria.",
+        "limit": 10,
+        "showStats": true
+      },
+      "children": []
+    },
+    "tour-dates": {
+      "type": "TourDates",
+      "props": {
+        "anchorId": "gira",
+        "events": {
+          "$state": "/tourDates"
+        },
+        "ticketsUrl": {
+          "$state": "/tour/ticketsUrl"
+        },
+        "variant": "tickets",
+        "title": "¡En vivo!",
+        "eyebrow": "La gira",
+        "emptyTitle": "¡Muy pronto en tu ciudad!",
+        "emptyMessage": "Las nuevas fechas están por anunciarse. Únete a la familia para no perderte nada.",
+        "ctaLabel": "Boletos"
+      },
+      "children": []
+    },
+    "divider-2": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "La Dama de Hierro",
+        "variant": "marquee"
+      },
+      "children": []
+    },
+    "video": {
+      "type": "VideoGallery",
+      "props": {
+        "anchorId": "videos",
+        "videos": {
+          "$state": "/videos"
+        },
+        "title": "Mírala",
+        "eyebrow": "Videos",
+        "limit": 6
+      },
+      "children": []
+    },
+    "discography": {
+      "type": "Discography",
+      "props": {
+        "anchorId": "discografia",
+        "albums": {
+          "$state": "/discography"
+        },
+        "title": "La discografía",
+        "eyebrow": "Álbumes",
+        "intro": "Décadas de clásicos, uno tras otro.",
+        "layout": "carousel",
+        "showTypes": true
+      },
+      "children": []
+    },
+    "press-quotes": {
+      "type": "PressQuotes",
+      "props": {
+        "anchorId": "prensa",
+        "quotes": {
+          "$state": "/pressQuotes"
+        },
+        "variant": "stickers",
+        "title": "Lo que dicen",
+        "eyebrow": "Prensa",
+        "limit": 6
+      },
+      "children": []
+    },
+    "divider-3": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "La Dama de Hierro",
+        "variant": "marquee"
+      },
+      "children": []
+    },
+    "biography": {
+      "type": "Biography",
+      "props": {
+        "anchorId": "biografia",
+        "paragraphs": {
+          "$state": "/biography/paragraphs"
+        },
+        "facts": {
+          "$state": "/biography/facts"
+        },
+        "image": {
+          "$state": "/images/portrait"
+        },
+        "sourceNote": {
+          "$state": "/biography/sourceNote"
+        },
+        "title": "La historia",
+        "eyebrow": "Biografía",
+        "lead": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "maxParagraphs": 3
+      },
+      "children": []
+    },
+    "merch": {
+      "type": "FeatureSection",
+      "props": {
+        "anchorId": "tienda",
+        "featureType": "merch",
+        "title": "Tienda",
+        "eyebrow": "Extra",
+        "body": "Artículos oficiales y novedades, directamente desde los canales de la artista.",
+        "items": [],
+        "cta": {
+          "label": "Ver más",
+          "href": "https://www.marisela.com.mx"
+        }
+      },
+      "children": []
+    },
+    "newsletter": {
+      "type": "Newsletter",
+      "props": {
+        "anchorId": "boletin",
+        "title": "Únete a la familia",
+        "eyebrow": "Boletín",
+        "body": "Primero tú: fechas, lanzamientos y sorpresas.",
+        "placeholder": "tu correo",
+        "buttonLabel": "¡Me apunto!",
+        "successMessage": "¡Listo! Ya eres parte de la familia.",
+        "errorMessage": "Ese correo no se ve bien. ¿Lo revisas?",
+        "privacyNote": "Cero spam. Palabra."
+      },
+      "children": []
+    },
+    "social-links": {
+      "type": "SocialLinks",
+      "props": {
+        "anchorId": "redes",
+        "links": {
+          "$state": "/socialLinks"
+        },
+        "title": "Síguela",
+        "eyebrow": "Redes"
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Footer",
+      "props": {
+        "brand": "Marisela",
+        "tagline": "La Dama de Hierro — Desde 1984",
+        "links": [
+          {
+            "label": "Discografía",
+            "href": "#discografia"
+          },
+          {
+            "label": "Canciones",
+            "href": "#canciones"
+          },
+          {
+            "label": "Gira",
+            "href": "#gira"
+          },
+          {
+            "label": "Biografía",
+            "href": "#biografia"
+          },
+          {
+            "label": "Videos",
+            "href": "#videos"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          }
+        ],
+        "socials": {
+          "$state": "/socialLinks"
+        },
+        "sources": {
+          "$state": "/credits/sources"
+        },
+        "copyright": "© 2026 Marisela",
+        "credits": [
+          "Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0).",
+          "Foto: STARZBYM (CC0), Wikimedia Commons",
+          "Portadas de álbumes © sus respectivos titulares."
+        ]
+      },
+      "children": []
+    },
+    "page": {
+      "type": "Page",
+      "props": {
+        "title": "Marisela — La Dama de Hierro — Desde 1984",
+        "description": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "lang": "es"
+      },
+      "children": [
+        "nav",
+        "hero",
+        "divider-1",
+        "top-songs",
+        "tour-dates",
+        "divider-2",
+        "video",
+        "discography",
+        "press-quotes",
+        "divider-3",
+        "biography",
+        "merch",
+        "newsletter",
+        "social-links",
+        "footer"
+      ]
+    }
+  }
+}

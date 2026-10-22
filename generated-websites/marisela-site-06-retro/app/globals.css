@@ -1,0 +1,338 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/*
+ * Theme for brief "Retro / Vintage" (warm-vintage).
+ * Derived from design tokens extracted by chhapify from https://www.aidacuevas.com/
+ * (base hue 200°, base color #314e5d).
+ * Variable names follow shadcn/ui conventions, so components/ui/* work unchanged.
+ */
+:root {
+  --background: #f5e2c7;
+  --foreground: #321b11;
+  --surface: #f9efdc;
+  --surface-foreground: #321b11;
+  --muted: #e6cfb3;
+  --muted-foreground: #664b3d;
+  --primary: #9e4b1a;
+  --primary-foreground: #fcf6e9;
+  --secondary: #ecab13;
+  --secondary-foreground: #321b11;
+  --accent: #2a2a6f;
+  --accent-foreground: #fcf6e9;
+  --border: #603f2e;
+  --ring: #2a2a6f;
+  --input: #855c47;
+  --card: #f9efdc;
+  --card-foreground: #321b11;
+  --popover: #f9efdc;
+  --popover-foreground: #321b11;
+  --destructive: #b42318;
+  --destructive-foreground: #fcf6e9;
+  --gradient-from: #9e4b1a;
+  --gradient-via: #ecab13;
+  --gradient-to: #2a2a6f;
+  --glow: rgb(158 75 26 / 0.35);
+  --overlay: rgb(37 21 14 / 0.45);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-lg: 9999px;
+  --shadow-sm: 2px 2px 0 0 #321b11;
+  --shadow-md: 4px 4px 0 0 #321b11;
+  --shadow-lg: 8px 8px 0 0 #321b11;
+  --shadow-color: 50 27 17;
+  --container-max: 1200px;
+  --section-space: clamp(4rem, 9vw, 9rem);
+  --grain-opacity: 0.16;
+  --glass-bg: #f9efdc;
+  --glass-border: #603f2e;
+  --glass-blur: 0px;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), Georgia, serif;
+  }
+  ::selection {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+  img, video, iframe {
+    max-width: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Brief styles: templates/briefs/06-retro/styles.css
+ * ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------
+ * Skin base (templates/shared/styles/skin-base.css)
+ * Neutral defaults for the classes the shared section components use. Every brief's styles.css
+ * (appended after this file) overrides them to give the shared sections its own look.
+ * ------------------------------------------------------------------------- */
+@layer components {
+  .skin-section {
+    padding-block: var(--section-space);
+  }
+  .skin-container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 3rem);
+  }
+  .skin-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    margin-bottom: 0.75rem;
+  }
+  .skin-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    line-height: 1.05;
+  }
+  .skin-lead {
+    color: var(--muted-foreground);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+  .skin-muted {
+    color: var(--muted-foreground);
+  }
+  .skin-card {
+    background: var(--surface);
+    color: var(--surface-foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .skin-media {
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .skin-btn {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .skin-btn:hover {
+    opacity: 0.9;
+  }
+  .skin-btn-ghost {
+    border: 1px solid currentColor;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease;
+  }
+  .skin-btn-ghost:hover {
+    background: var(--muted);
+  }
+  .skin-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .skin-link:hover {
+    color: var(--accent);
+  }
+  .skin-chip {
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  .skin-chip:hover {
+    border-color: var(--foreground);
+  }
+  .divider-hairline {
+    border: 0;
+    border-top: 1px solid var(--border);
+  }
+  .divider-glow {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gradient-from), var(--gradient-via), var(--gradient-to), transparent);
+  }
+  .divider-marquee-track {
+    animation: skin-marquee 30s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .divider-marquee-track {
+      animation: none;
+    }
+  }
+}
+
+@keyframes skin-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Retro / Vintage — manila paper, grain, Shrikhand, 70s stripes, vinyl. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+@layer components {
+  .skin-section {
+    padding-block: clamp(4rem, 9vw, 7.5rem);
+  }
+  .skin-eyebrow {
+    font-family: var(--font-mono), "Courier New", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  .skin-eyebrow::before {
+    content: "✦ ";
+  }
+  .skin-title {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: clamp(2.5rem, 6vw, 4.75rem);
+    line-height: 1.02;
+    color: var(--foreground);
+    text-shadow: 3px 3px 0 var(--secondary);
+  }
+  .skin-lead {
+    font-style: italic;
+    color: var(--muted-foreground);
+  }
+  .skin-card {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+  }
+  .skin-media {
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+  }
+  .skin-btn {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border: 2px solid var(--border);
+    border-radius: 9999px;
+    box-shadow: var(--shadow-md);
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .skin-btn:hover {
+    transform: translate(-2px, -2px) rotate(-1deg);
+    box-shadow: var(--shadow-lg);
+    opacity: 1;
+  }
+  .skin-btn-ghost {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 9999px;
+    box-shadow: var(--shadow-sm);
+  }
+  .skin-chip {
+    border: 2px solid var(--border);
+    background: var(--surface);
+    font-family: var(--font-mono), monospace;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .skin-chip:hover {
+    background: var(--secondary);
+  }
+  .retro-display {
+    font-family: var(--font-display), Georgia, serif;
+    text-shadow: 4px 4px 0 var(--primary);
+  }
+  .retro-mono {
+    font-family: var(--font-mono), "Courier New", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .retro-stripes {
+    background: linear-gradient(to bottom, var(--primary) 0 33.3%, var(--secondary) 33.3% 66.6%, var(--accent) 66.6% 100%);
+  }
+  .retro-sunburst {
+    background: repeating-conic-gradient(from 0deg at 50% 100%, color-mix(in oklab, var(--secondary) 75%, var(--background)) 0deg 9deg, color-mix(in oklab, var(--primary) 30%, var(--background)) 9deg 18deg);
+  }
+  .retro-vinyl {
+    border-radius: 9999px;
+    background:
+      radial-gradient(circle, var(--secondary) 0 15%, var(--foreground) 15.5% 17%, transparent 17.5%),
+      repeating-radial-gradient(circle, var(--foreground) 0 2px, color-mix(in oklab, var(--foreground) 85%, var(--background)) 2px 4px);
+    box-shadow: var(--shadow-md);
+  }
+  .retro-spin {
+    animation: retro-spin 6s linear infinite;
+  }
+  .retro-ticket {
+    position: relative;
+    background: var(--surface);
+    border: 2px dashed var(--border);
+    border-radius: var(--radius);
+  }
+  .retro-clipping {
+    background: var(--surface);
+    clip-path: polygon(0 3%, 6% 0, 14% 2%, 24% 0, 35% 3%, 47% 0, 58% 2%, 70% 0, 82% 3%, 92% 0, 100% 2%, 100% 97%, 93% 100%, 83% 98%, 71% 100%, 60% 97%, 48% 100%, 36% 98%, 24% 100%, 12% 97%, 0 100%);
+  }
+  .retro-bulbs {
+    background-image: radial-gradient(circle, var(--secondary) 0 4px, transparent 5px);
+    background-size: 22px 22px;
+  }
+  .c-stats .stat-value {
+    font-family: var(--font-display), Georgia, serif;
+    color: var(--primary);
+    text-shadow: 2px 2px 0 var(--secondary);
+  }
+  .divider-ornament {
+    color: var(--primary);
+    font-family: var(--font-mono), monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+  }
+}
+@keyframes retro-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .retro-spin {
+    animation: none;
+  }
+}

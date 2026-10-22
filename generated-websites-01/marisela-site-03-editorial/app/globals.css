@@ -1,0 +1,325 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/*
+ * Theme for brief "Editorial" (ink-and-paper).
+ * Derived from design tokens extracted by chhapify from https://www.taylorswift.com/
+ * (base hue 170°, base color #3f6e66).
+ * Variable names follow shadcn/ui conventions, so components/ui/* work unchanged.
+ */
+:root {
+  --background: #f5efe3;
+  --foreground: #0d1917;
+  --surface: #efe8da;
+  --surface-foreground: #0d1917;
+  --muted: #e6dfd1;
+  --muted-foreground: #5e584a;
+  --primary: #0d1917;
+  --primary-foreground: #f5efe3;
+  --secondary: #c8e4e0;
+  --secondary-foreground: #0d1917;
+  --accent: #136355;
+  --accent-foreground: #f5efe3;
+  --border: #c2c0b6;
+  --ring: #136355;
+  --input: #afafa6;
+  --card: #efe8da;
+  --card-foreground: #0d1917;
+  --popover: #efe8da;
+  --popover-foreground: #0d1917;
+  --destructive: #9f1239;
+  --destructive-foreground: #ffffff;
+  --gradient-from: #f5efe3;
+  --gradient-via: #efe8da;
+  --gradient-to: #e5ddcd;
+  --glow: rgb(19 99 85 / 0.12);
+  --overlay: rgb(13 25 23 / 0.45);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-color: 13 25 23;
+  --container-max: 1360px;
+  --section-space: clamp(4rem, 9vw, 9rem);
+  --grain-opacity: 0;
+  --glass-bg: #efe8da;
+  --glass-border: #c2c0b6;
+  --glass-blur: 0px;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  }
+  ::selection {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+  img, video, iframe {
+    max-width: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Brief styles: templates/briefs/03-editorial/styles.css
+ * ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------
+ * Skin base (templates/shared/styles/skin-base.css)
+ * Neutral defaults for the classes the shared section components use. Every brief's styles.css
+ * (appended after this file) overrides them to give the shared sections its own look.
+ * ------------------------------------------------------------------------- */
+@layer components {
+  .skin-section {
+    padding-block: var(--section-space);
+  }
+  .skin-container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 3rem);
+  }
+  .skin-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    margin-bottom: 0.75rem;
+  }
+  .skin-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    line-height: 1.05;
+  }
+  .skin-lead {
+    color: var(--muted-foreground);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+  .skin-muted {
+    color: var(--muted-foreground);
+  }
+  .skin-card {
+    background: var(--surface);
+    color: var(--surface-foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .skin-media {
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .skin-btn {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .skin-btn:hover {
+    opacity: 0.9;
+  }
+  .skin-btn-ghost {
+    border: 1px solid currentColor;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease;
+  }
+  .skin-btn-ghost:hover {
+    background: var(--muted);
+  }
+  .skin-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .skin-link:hover {
+    color: var(--accent);
+  }
+  .skin-chip {
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  .skin-chip:hover {
+    border-color: var(--foreground);
+  }
+  .divider-hairline {
+    border: 0;
+    border-top: 1px solid var(--border);
+  }
+  .divider-glow {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gradient-from), var(--gradient-via), var(--gradient-to), transparent);
+  }
+  .divider-marquee-track {
+    animation: skin-marquee 30s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .divider-marquee-track {
+      animation: none;
+    }
+  }
+}
+
+@keyframes skin-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Editorial — magazine: paper, ink, rules, serif display, captions. */
+@layer components {
+  .skin-section {
+    padding-block: clamp(4rem, 8vw, 7.5rem);
+  }
+  .skin-heading {
+    border-top: 1px solid var(--foreground);
+    padding-top: 1.25rem;
+  }
+  .skin-eyebrow {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.12em;
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  .skin-title {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(2.25rem, 5vw, 4.25rem);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+  }
+  .skin-lead {
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.55;
+    color: var(--foreground);
+    opacity: 0.85;
+  }
+  .skin-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0;
+  }
+  .skin-media {
+    border-radius: 0;
+  }
+  .skin-btn {
+    background: transparent;
+    color: var(--foreground);
+    border-radius: 0;
+    border-bottom: 2px solid var(--accent);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding-inline: 0 !important;
+  }
+  .skin-btn:hover {
+    color: var(--accent);
+    opacity: 1;
+  }
+  .skin-btn-ghost {
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    padding-inline: 0 !important;
+  }
+  .skin-chip {
+    border-radius: 0;
+    border: 1px solid var(--foreground);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.08em;
+  }
+  .skin-chip:hover {
+    background: var(--foreground);
+    color: var(--background);
+  }
+  .skin-link {
+    color: var(--accent);
+  }
+  .ed-smallcaps {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+  }
+  .ed-dropcap::first-letter {
+    float: left;
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 700;
+    font-size: 4.6em;
+    line-height: 0.82;
+    padding: 0.06em 0.1em 0 0;
+    color: var(--accent);
+  }
+  .ed-columns {
+    column-gap: 3rem;
+    column-rule: 1px solid var(--border);
+  }
+  .ed-caption {
+    font-style: italic;
+    font-size: 0.8125rem;
+    color: var(--muted-foreground);
+  }
+  .ed-leader {
+    flex: 1;
+    border-bottom: 1px dotted color-mix(in oklab, var(--foreground) 45%, transparent);
+    transform: translateY(-0.35em);
+  }
+  .c-stats .stat-value {
+    font-style: italic;
+  }
+  .c-stats .stat-cell {
+    border: 0;
+    border-left: 1px solid var(--border);
+    background: transparent;
+  }
+  .divider-chapter {
+    color: var(--foreground);
+    font-variant: small-caps;
+  }
+  .divider-chapter > span:first-child,
+  .divider-chapter > span:last-child {
+    border-top: 3px double var(--foreground);
+    background: transparent;
+    height: 0;
+    opacity: 0.6;
+  }
+}

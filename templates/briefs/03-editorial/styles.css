@@ -1,0 +1,125 @@
+/* Editorial — magazine: paper, ink, rules, serif display, captions. */
+@layer components {
+  .skin-section {
+    padding-block: clamp(4rem, 8vw, 7.5rem);
+  }
+  .skin-heading {
+    border-top: 1px solid var(--foreground);
+    padding-top: 1.25rem;
+  }
+  .skin-eyebrow {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.12em;
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  .skin-title {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(2.25rem, 5vw, 4.25rem);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+  }
+  .skin-lead {
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.55;
+    color: var(--foreground);
+    opacity: 0.85;
+  }
+  .skin-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0;
+  }
+  .skin-media {
+    border-radius: 0;
+  }
+  .skin-btn {
+    background: transparent;
+    color: var(--foreground);
+    border-radius: 0;
+    border-bottom: 2px solid var(--accent);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding-inline: 0 !important;
+  }
+  .skin-btn:hover {
+    color: var(--accent);
+    opacity: 1;
+  }
+  .skin-btn-ghost {
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    padding-inline: 0 !important;
+  }
+  .skin-chip {
+    border-radius: 0;
+    border: 1px solid var(--foreground);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.08em;
+  }
+  .skin-chip:hover {
+    background: var(--foreground);
+    color: var(--background);
+  }
+  .skin-link {
+    color: var(--accent);
+  }
+  .ed-smallcaps {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+  }
+  .ed-dropcap::first-letter {
+    float: left;
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 700;
+    font-size: 4.6em;
+    line-height: 0.82;
+    padding: 0.06em 0.1em 0 0;
+    color: var(--accent);
+  }
+  .ed-columns {
+    column-gap: 3rem;
+    column-rule: 1px solid var(--border);
+  }
+  .ed-caption {
+    font-style: italic;
+    font-size: 0.8125rem;
+    color: var(--muted-foreground);
+  }
+  .ed-leader {
+    flex: 1;
+    border-bottom: 1px dotted color-mix(in oklab, var(--foreground) 45%, transparent);
+    transform: translateY(-0.35em);
+  }
+  .c-stats .stat-value {
+    font-style: italic;
+  }
+  .c-stats .stat-cell {
+    border: 0;
+    border-left: 1px solid var(--border);
+    background: transparent;
+  }
+  .divider-chapter {
+    color: var(--foreground);
+    font-variant: small-caps;
+  }
+  .divider-chapter > span:first-child,
+  .divider-chapter > span:last-child {
+    border-top: 3px double var(--foreground);
+    background: transparent;
+    height: 0;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "project": "marisela-site-02-bold",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-02-bold",
+  "installed": true,
+  "built": true,
+  "buildAttempts": 1,
+  "fixesApplied": [],
+  "smokeTest": "passed",
+  "runFile": "generated-websites/marisela-site-02-bold/RUN.md",
+  "runCommand": "cd generated-websites/marisela-site-02-bold && npm run dev",
+  "buildLog": "artifacts/build-logs/marisela-site-02-bold.log",
+  "durationMs": 40320
+}

@@ -1,0 +1,13 @@
+{
+  "project": "marisela-site-06-retro",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-06-retro",
+  "installed": true,
+  "built": true,
+  "buildAttempts": 1,
+  "fixesApplied": [],
+  "smokeTest": "passed",
+  "runFile": "generated-websites/marisela-site-06-retro/RUN.md",
+  "runCommand": "cd generated-websites/marisela-site-06-retro && npm run dev",
+  "buildLog": "artifacts/build-logs/marisela-site-06-retro.log",
+  "durationMs": 54330
+}

@@ -1,0 +1,41 @@
+# Dependencies
+**/node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated sites are tracked; node_modules remains ignored at every depth.
+artifacts/*
+!artifacts/design-tokens/
+!artifacts/feature-manifests/
+!artifacts/marisela-content/
+!artifacts/validation-reports/
+artifacts/design-tokens/*
+artifacts/feature-manifests/*
+artifacts/marisela-content/*
+artifacts/validation-reports/*
+!artifacts/**/.gitkeep
+
+# Pipeline state (checkpointing / resumability)
+.orchestrator-state.json
+STEP*_COMPLETED
+STEP*_RUNNING
+STEP*_FAILED
+factory.log
+
+# Third-party tools cloned or installed at runtime (recreated by the factory)
+vendor/clooney-agent/
+vendor/facelift-venv/
+
+# Local scratch
+.sandbox/
+.claude/settings.local.json
+*.log
+.DS_Store
+Thumbs.db

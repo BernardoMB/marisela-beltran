@@ -1,0 +1,309 @@
+{
+  "root": "page",
+  "elements": {
+    "nav": {
+      "type": "NavBar",
+      "props": {
+        "brand": "Marisela",
+        "links": [
+          {
+            "label": "Discografía",
+            "href": "#discografia"
+          },
+          {
+            "label": "Canciones",
+            "href": "#canciones"
+          },
+          {
+            "label": "Gira",
+            "href": "#gira"
+          },
+          {
+            "label": "Biografía",
+            "href": "#biografia"
+          },
+          {
+            "label": "Videos",
+            "href": "#videos"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          }
+        ],
+        "cta": {
+          "label": "¡Pon el disco!",
+          "href": "https://open.spotify.com/artist/73c2MjCAFNyKYIs7nBlqG2"
+        },
+        "socials": {
+          "$state": "/socialLinks"
+        }
+      },
+      "children": []
+    },
+    "hero": {
+      "type": "Hero",
+      "props": {
+        "anchorId": "inicio",
+        "image": {
+          "$state": "/images/hero"
+        },
+        "stats": {
+          "$state": "/stats/items"
+        },
+        "variant": "record-sleeve",
+        "title": "Marisela",
+        "eyebrow": "Desde 1984 · La Dama de Hierro",
+        "subtitle": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "tagline": "La Dama de Hierro — Desde 1984",
+        "primaryCta": {
+          "label": "¡Pon el disco!",
+          "href": "#canciones"
+        },
+        "secondaryCta": {
+          "label": "Ver funciones",
+          "href": "#gira"
+        },
+        "showScrollIndicator": true
+      },
+      "children": []
+    },
+    "divider-1": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "La Dama de Hierro",
+        "variant": "ornament"
+      },
+      "children": []
+    },
+    "discography": {
+      "type": "Discography",
+      "props": {
+        "anchorId": "discografia",
+        "albums": {
+          "$state": "/discography"
+        },
+        "title": "Lado A: los discos",
+        "eyebrow": "Colección",
+        "intro": "Saca los acetatos del baúl.",
+        "layout": "carousel",
+        "showTypes": true
+      },
+      "children": []
+    },
+    "top-songs": {
+      "type": "TopSongs",
+      "props": {
+        "anchorId": "canciones",
+        "songs": {
+          "$state": "/topSongs"
+        },
+        "variant": "cassette",
+        "title": "Los grandes éxitos",
+        "eyebrow": "Lado B",
+        "limit": 10,
+        "showStats": true
+      },
+      "children": []
+    },
+    "biography": {
+      "type": "Biography",
+      "props": {
+        "anchorId": "biografia",
+        "paragraphs": {
+          "$state": "/biography/paragraphs"
+        },
+        "facts": {
+          "$state": "/biography/facts"
+        },
+        "image": {
+          "$state": "/images/portrait"
+        },
+        "sourceNote": {
+          "$state": "/biography/sourceNote"
+        },
+        "title": "Su historia",
+        "eyebrow": "Había una vez",
+        "lead": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "maxParagraphs": 3
+      },
+      "children": []
+    },
+    "divider-2": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "La Dama de Hierro",
+        "variant": "ornament"
+      },
+      "children": []
+    },
+    "video": {
+      "type": "VideoGallery",
+      "props": {
+        "anchorId": "videos",
+        "videos": {
+          "$state": "/videos"
+        },
+        "title": "Videoteca",
+        "eyebrow": "En la tele",
+        "limit": 6
+      },
+      "children": []
+    },
+    "tour-dates": {
+      "type": "TourDates",
+      "props": {
+        "anchorId": "gira",
+        "events": {
+          "$state": "/tourDates"
+        },
+        "ticketsUrl": {
+          "$state": "/tour/ticketsUrl"
+        },
+        "variant": "tickets",
+        "title": "¡En concierto!",
+        "eyebrow": "Funciones",
+        "emptyTitle": "Próximamente en esta sala",
+        "emptyMessage": "Las nuevas funciones se anunciarán muy pronto. Inscríbete al club y sé de los primeros en saberlo.",
+        "ctaLabel": "Boletos"
+      },
+      "children": []
+    },
+    "press-quotes": {
+      "type": "PressQuotes",
+      "props": {
+        "anchorId": "prensa",
+        "quotes": {
+          "$state": "/pressQuotes"
+        },
+        "variant": "clippings",
+        "title": "Lo que dijo la prensa",
+        "eyebrow": "Recortes",
+        "limit": 6
+      },
+      "children": []
+    },
+    "divider-3": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "La Dama de Hierro",
+        "variant": "ornament"
+      },
+      "children": []
+    },
+    "merch": {
+      "type": "FeatureSection",
+      "props": {
+        "anchorId": "tienda",
+        "featureType": "merch",
+        "title": "Tienda",
+        "eyebrow": "Extra",
+        "body": "Artículos oficiales y novedades, directamente desde los canales de la artista.",
+        "items": [],
+        "cta": {
+          "label": "Ver",
+          "href": "https://www.marisela.com.mx"
+        }
+      },
+      "children": []
+    },
+    "newsletter": {
+      "type": "Newsletter",
+      "props": {
+        "anchorId": "boletin",
+        "title": "Club de fans",
+        "eyebrow": "Correspondencia",
+        "body": "Inscríbete y recibe noticias como en los buenos tiempos.",
+        "placeholder": "Tu correo",
+        "buttonLabel": "¡Inscríbeme!",
+        "successMessage": "¡Bienvenido al club!",
+        "errorMessage": "Uy, ese correo no parece válido.",
+        "privacyNote": "Prometemos no llenar tu buzón."
+      },
+      "children": []
+    },
+    "social-links": {
+      "type": "SocialLinks",
+      "props": {
+        "anchorId": "redes",
+        "links": {
+          "$state": "/socialLinks"
+        },
+        "title": "Síguela",
+        "eyebrow": "Redes"
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Footer",
+      "props": {
+        "brand": "Marisela",
+        "tagline": "La Dama de Hierro — Desde 1984",
+        "links": [
+          {
+            "label": "Discografía",
+            "href": "#discografia"
+          },
+          {
+            "label": "Canciones",
+            "href": "#canciones"
+          },
+          {
+            "label": "Gira",
+            "href": "#gira"
+          },
+          {
+            "label": "Biografía",
+            "href": "#biografia"
+          },
+          {
+            "label": "Videos",
+            "href": "#videos"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          }
+        ],
+        "socials": {
+          "$state": "/socialLinks"
+        },
+        "sources": {
+          "$state": "/credits/sources"
+        },
+        "copyright": "© 2026 Marisela",
+        "credits": [
+          "Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0).",
+          "Foto: STARZBYM (CC0), Wikimedia Commons",
+          "Portadas de álbumes © sus respectivos titulares."
+        ]
+      },
+      "children": []
+    },
+    "page": {
+      "type": "Page",
+      "props": {
+        "title": "Marisela — La Dama de Hierro — Desde 1984",
+        "description": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+        "lang": "es"
+      },
+      "children": [
+        "nav",
+        "hero",
+        "divider-1",
+        "discography",
+        "top-songs",
+        "biography",
+        "divider-2",
+        "video",
+        "tour-dates",
+        "press-quotes",
+        "divider-3",
+        "merch",
+        "newsletter",
+        "social-links",
+        "footer"
+      ]
+    }
+  }
+}

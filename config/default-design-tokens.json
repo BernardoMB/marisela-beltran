@@ -1,0 +1,34 @@
+{
+  "$comment": "Fallback design tokens used when chhapify cannot extract a design system from any inspirational URL. Deliberately achromatic: each design brief then applies its own fallback hue (config/design-briefs.json → palette.fallbackHue), so the six sites stay distinct.",
+  "schemaVersion": 1,
+  "slug": "default",
+  "sourceUrl": null,
+  "extractor": "default",
+  "extractedAt": "1970-01-01T00:00:00Z",
+  "colors": {
+    "primary": null,
+    "secondary": null,
+    "accent": null,
+    "backgrounds": ["#ffffff", "#f5f5f4"],
+    "text": ["#111111", "#525252"],
+    "neutrals": ["#fafafa", "#e5e5e5", "#a3a3a3", "#525252", "#171717"],
+    "palette": ["#ffffff", "#111111", "#f5f5f4", "#e5e5e5", "#a3a3a3", "#525252"]
+  },
+  "typography": {
+    "headingFamily": null,
+    "bodyFamily": null,
+    "families": [],
+    "scalePx": [12, 14, 16, 18, 20, 24, 30, 36, 48, 60, 72]
+  },
+  "spacing": {
+    "basePx": 4,
+    "scalePx": [4, 8, 12, 16, 24, 32, 48, 64, 96, 128]
+  },
+  "radiiPx": [0, 4, 8, 16],
+  "shadows": [],
+  "breakpointsPx": [640, 768, 1024, 1280, 1536],
+  "shadcn": {},
+  "files": {},
+  "score": null,
+  "warnings": ["Default token set — chhapify extraction was unavailable."]
+}

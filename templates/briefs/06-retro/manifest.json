@@ -1,0 +1,13 @@
+{
+  "briefId": "06-retro",
+  "components": ["NavBar", "Hero", "StatsBand", "Biography", "Discography", "TopSongs", "TourDates", "VideoGallery", "PhotoGallery", "MusicPlayer", "PressQuotes", "Newsletter", "SocialLinks", "ContactBooking", "FeatureSection", "SectionDivider", "Footer"],
+  "variants": {
+    "Hero": ["record-sleeve", "sunburst"],
+    "Discography": ["carousel", "grid"],
+    "TopSongs": ["cassette"],
+    "TourDates": ["tickets"],
+    "PressQuotes": ["clippings"],
+    "SectionDivider": ["ornament"]
+  },
+  "notes": "Manila paper + grain, Shrikhand with offset shadow, sunburst/stripes, vinyl, cassette, tickets, polaroids, clippings."
+}

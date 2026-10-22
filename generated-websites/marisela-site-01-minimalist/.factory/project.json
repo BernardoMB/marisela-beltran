@@ -1,0 +1,60 @@
+{
+  "briefId": "01-minimalist",
+  "briefName": "Minimalist",
+  "projectName": "marisela-site-01-minimalist",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-01-minimalist",
+  "inspiration": {
+    "url": "https://www.patycantu.com/",
+    "slug": "patycantu-com",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-01-minimalist.spec.json",
+  "specSource": "llm",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "biography",
+    "discography",
+    "top-songs",
+    "tour-dates",
+    "video",
+    "press-quotes",
+    "newsletter",
+    "social-links",
+    "contact",
+    "merch",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "SectionDivider",
+    "Biography",
+    "Discography",
+    "TopSongs",
+    "TourDates",
+    "VideoGallery",
+    "PressQuotes",
+    "Newsletter",
+    "SocialLinks",
+    "ContactBooking",
+    "FeatureSection",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "monochrome",
+    "mode": "light",
+    "baseHue": 23,
+    "background": "#fbfbfb",
+    "foreground": "#191715",
+    "primary": "#191715",
+    "accent": "#86583c",
+    "fonts": {
+      "display": "Jost",
+      "body": "Manrope",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-20T16:12:31Z",
+  "warnings": []
+}

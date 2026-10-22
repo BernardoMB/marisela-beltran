@@ -1,0 +1,330 @@
+{
+  "root": "page",
+  "elements": {
+    "nav": {
+      "type": "NavBar",
+      "props": {
+        "brand": "Marisela",
+        "links": [
+          {
+            "label": "Perfil",
+            "href": "#biografia"
+          },
+          {
+            "label": "Archivo",
+            "href": "#discografia"
+          },
+          {
+            "label": "Repertorio",
+            "href": "#canciones"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          },
+          {
+            "label": "Agenda",
+            "href": "#gira"
+          },
+          {
+            "label": "Tienda",
+            "href": "#tienda"
+          }
+        ],
+        "cta": {
+          "label": "Boletín",
+          "href": "#boletin"
+        },
+        "socials": {
+          "$state": "/socialLinks"
+        }
+      },
+      "children": []
+    },
+    "hero": {
+      "type": "Hero",
+      "props": {
+        "anchorId": "inicio",
+        "variant": "cover",
+        "title": "Marisela",
+        "eyebrow": "Número especial · Edición de colección",
+        "subtitle": {
+          "$state": "/shortBio"
+        },
+        "tagline": {
+          "$state": "/tagline"
+        },
+        "primaryCta": {
+          "label": "Leer el perfil",
+          "href": "#biografia"
+        },
+        "secondaryCta": {
+          "label": "Entrar al archivo",
+          "href": "#discografia"
+        },
+        "image": {
+          "$state": "/images/hero"
+        },
+        "stats": {
+          "$state": "/stats/items"
+        },
+        "showScrollIndicator": true
+      },
+      "children": []
+    },
+    "biography": {
+      "type": "Biography",
+      "props": {
+        "anchorId": "biografia",
+        "eyebrow": "Capítulo I · Perfil",
+        "title": "La mujer que convirtió el desamor en acero",
+        "paragraphs": {
+          "$state": "/biography/paragraphs"
+        },
+        "facts": {
+          "$state": "/biography/facts"
+        },
+        "image": {
+          "$state": "/images/portrait"
+        },
+        "sourceNote": {
+          "$state": "/biography/sourceNote"
+        }
+      },
+      "children": []
+    },
+    "divider-1": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "Capítulo II",
+        "variant": "chapter-rule"
+      },
+      "children": []
+    },
+    "discography": {
+      "type": "Discography",
+      "props": {
+        "anchorId": "discografia",
+        "title": "El archivo, año por año",
+        "eyebrow": "Capítulo II · Archivo discográfico",
+        "intro": "Una cronología de portadas, estudios y recopilaciones: la hoja de servicio de una carrera que empezó en 1984 y nunca pidió permiso.",
+        "albums": {
+          "$state": "/discography"
+        },
+        "layout": "timeline",
+        "showTypes": true
+      },
+      "children": []
+    },
+    "top-songs": {
+      "type": "TopSongs",
+      "props": {
+        "anchorId": "canciones",
+        "variant": "repertoire",
+        "title": "Repertorio esencial",
+        "eyebrow": "Dossier · Repertorio",
+        "intro": "Doce títulos para entender el canon: escuche los adelantos mientras lee.",
+        "songs": {
+          "$state": "/topSongs"
+        },
+        "showStats": true
+      },
+      "children": []
+    },
+    "divider-2": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "Capítulo III",
+        "variant": "chapter-rule"
+      },
+      "children": []
+    },
+    "press-quotes": {
+      "type": "PressQuotes",
+      "props": {
+        "anchorId": "prensa",
+        "variant": "pull-quotes",
+        "title": "Lo que se ha escrito de ella",
+        "eyebrow": "Capítulo III · Crítica y prensa",
+        "quotes": {
+          "$state": "/pressQuotes"
+        }
+      },
+      "children": []
+    },
+    "video": {
+      "type": "VideoGallery",
+      "props": {
+        "anchorId": "videos",
+        "title": "Hemeroteca en movimiento",
+        "eyebrow": "Galería · Vídeo",
+        "intro": "Noches de auditorio y apariciones televisivas, recuperadas para esta edición.",
+        "videos": {
+          "$state": "/videos"
+        }
+      },
+      "children": []
+    },
+    "tour-dates": {
+      "type": "TourDates",
+      "props": {
+        "anchorId": "gira",
+        "variant": "agenda",
+        "title": "Agenda",
+        "eyebrow": "Capítulo IV · Agenda",
+        "intro": "Fechas confirmadas en escenarios de México y Estados Unidos.",
+        "events": {
+          "$state": "/tourDates"
+        },
+        "ticketsUrl": {
+          "$state": "/tour/ticketsUrl"
+        },
+        "emptyTitle": "Nota del editor",
+        "emptyMessage": "Al cierre de esta edición no hay fechas confirmadas en la agenda. Consulte la taquilla oficial o suscríbase al boletín: anunciaremos el calendario en el próximo número.",
+        "ctaLabel": "Consultar taquilla oficial"
+      },
+      "children": []
+    },
+    "divider-3": {
+      "type": "SectionDivider",
+      "props": {
+        "label": "Contraportada",
+        "variant": "chapter-rule"
+      },
+      "children": []
+    },
+    "merch": {
+      "type": "FeatureSection",
+      "props": {
+        "anchorId": "tienda",
+        "featureType": "merch",
+        "eyebrow": "Anuncio · Tienda oficial",
+        "title": "Ediciones y objetos de colección",
+        "body": "Discos, impresos y piezas firmadas, disponibles en la tienda del sitio oficial. Envíos a México y Estados Unidos.",
+        "cta": {
+          "label": "Visitar el sitio oficial",
+          "href": "https://www.marisela.com.mx",
+          "external": true
+        }
+      },
+      "children": []
+    },
+    "newsletter": {
+      "type": "Newsletter",
+      "props": {
+        "anchorId": "boletin",
+        "eyebrow": "Cupón de suscripción",
+        "title": "Reciba el próximo número",
+        "body": "Recorte este cupón —en sentido figurado— y déjenos su correo: fechas, reediciones y material de archivo, directo a su buzón.",
+        "placeholder": "Su correo electrónico",
+        "buttonLabel": "Suscribirme",
+        "successMessage": "Gracias. Su nombre ya está en la lista de suscriptores.",
+        "errorMessage": "Revise el correo escrito: no pudimos registrar la suscripción.",
+        "privacyNote": "Sólo avisos del boletín. Puede darse de baja cuando quiera."
+      },
+      "children": []
+    },
+    "social-links": {
+      "type": "SocialLinks",
+      "props": {
+        "anchorId": "redes",
+        "eyebrow": "Directorio",
+        "title": "Dónde escucharla y seguirla",
+        "intro": "Plataformas de audio y cuentas oficiales verificadas por la redacción.",
+        "links": {
+          "$state": "/socialLinks"
+        }
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Footer",
+      "props": {
+        "brand": "Marisela",
+        "tagline": {
+          "$state": "/tagline"
+        },
+        "links": [
+          {
+            "label": "Inicio",
+            "href": "#inicio"
+          },
+          {
+            "label": "Perfil",
+            "href": "#biografia"
+          },
+          {
+            "label": "Archivo",
+            "href": "#discografia"
+          },
+          {
+            "label": "Repertorio",
+            "href": "#canciones"
+          },
+          {
+            "label": "Prensa",
+            "href": "#prensa"
+          },
+          {
+            "label": "Agenda",
+            "href": "#gira"
+          },
+          {
+            "label": "Vídeo",
+            "href": "#videos"
+          },
+          {
+            "label": "Tienda",
+            "href": "#tienda"
+          },
+          {
+            "label": "Boletín",
+            "href": "#boletin"
+          },
+          {
+            "label": "Redes",
+            "href": "#redes"
+          }
+        ],
+        "socials": {
+          "$state": "/socialLinks"
+        },
+        "copyright": "© Marisela. Todos los derechos reservados.",
+        "credits": [
+          "Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0).",
+          "Foto: STARZBYM (CC0), Wikimedia Commons",
+          "Portadas de álbumes © sus respectivos titulares."
+        ],
+        "sources": {
+          "$state": "/credits/sources"
+        }
+      },
+      "children": []
+    },
+    "page": {
+      "type": "Page",
+      "props": {
+        "title": "Marisela — La Dama de Hierro — Desde 1984",
+        "description": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense.",
+        "lang": "es"
+      },
+      "children": [
+        "nav",
+        "hero",
+        "biography",
+        "divider-1",
+        "discography",
+        "top-songs",
+        "divider-2",
+        "press-quotes",
+        "video",
+        "tour-dates",
+        "divider-3",
+        "merch",
+        "newsletter",
+        "social-links",
+        "footer"
+      ]
+    }
+  }
+}

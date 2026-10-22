@@ -1,0 +1,151 @@
+{
+  "$comment": "Maps feature types (detected on inspirational sites by the heuristic analyzer and Clooney-Agent) to json-render catalog components. Every type in the computed UNION is rendered on every generated site. Types without a dedicated component render through `fallbackComponent`.",
+  "version": 1,
+  "fallbackComponent": "FeatureSection",
+  "baseline": ["navigation", "hero", "discography", "tour-dates", "biography", "social-links", "footer"],
+  "featureTypes": {
+    "navigation": {
+      "component": "NavBar",
+      "label": "Navigation bar",
+      "alwaysInclude": true,
+      "position": "start",
+      "contentPaths": ["/name", "/socialLinks"],
+      "keywords": ["nav", "navbar", "navigation", "menu", "header", "hamburger", "topbar", "navegación", "menú"]
+    },
+    "hero": {
+      "component": "Hero",
+      "label": "Hero",
+      "alwaysInclude": true,
+      "contentPaths": ["/name", "/tagline", "/images/hero", "/stats/items"],
+      "keywords": ["hero", "banner", "masthead", "jumbotron", "splash", "cover", "portada", "landing", "above the fold", "headline"]
+    },
+    "stats": {
+      "component": "StatsBand",
+      "label": "Stats / milestones",
+      "alwaysInclude": false,
+      "contentPaths": ["/stats/items"],
+      "keywords": ["stats", "statistics", "counter", "numbers", "milestones", "cifras", "estadísticas", "listeners", "oyentes", "achievements", "logros"]
+    },
+    "biography": {
+      "component": "Biography",
+      "label": "Biography",
+      "alwaysInclude": true,
+      "contentPaths": ["/biography"],
+      "keywords": ["bio", "biography", "about", "story", "biografía", "acerca", "historia", "sobre", "trayectoria"]
+    },
+    "discography": {
+      "component": "Discography",
+      "label": "Discography",
+      "alwaysInclude": true,
+      "contentPaths": ["/discography"],
+      "keywords": ["discography", "albums", "album", "releases", "records", "discografía", "álbumes", "lanzamientos", "música", "music"]
+    },
+    "top-songs": {
+      "component": "TopSongs",
+      "label": "Top songs",
+      "alwaysInclude": true,
+      "contentPaths": ["/topSongs"],
+      "keywords": ["tracklist", "top songs", "popular", "songs", "tracks", "canciones", "éxitos", "hits", "playlist", "top tracks"]
+    },
+    "tour-dates": {
+      "component": "TourDates",
+      "label": "Tour dates",
+      "alwaysInclude": true,
+      "contentPaths": ["/tourDates", "/tour"],
+      "keywords": ["tour", "dates", "events", "shows", "concerts", "live", "tickets", "gira", "fechas", "conciertos", "boletos", "eventos", "bandsintown", "songkick", "seated"]
+    },
+    "video": {
+      "component": "VideoGallery",
+      "label": "Videos",
+      "alwaysInclude": false,
+      "contentPaths": ["/videos"],
+      "keywords": ["video", "videos", "youtube", "vimeo", "watch", "clip", "videoclip", "music video"]
+    },
+    "photo-gallery": {
+      "component": "PhotoGallery",
+      "label": "Photo gallery",
+      "alwaysInclude": false,
+      "contentPaths": ["/images/gallery"],
+      "keywords": ["gallery", "photos", "images", "galería", "fotos", "imágenes", "lightbox", "photo grid"]
+    },
+    "music-player": {
+      "component": "MusicPlayer",
+      "label": "Embedded music player",
+      "alwaysInclude": false,
+      "contentPaths": ["/spotifyArtistId", "/socialLinks"],
+      "keywords": ["player", "spotify", "listen", "stream", "audio", "escuchar", "reproductor", "soundcloud", "apple music", "embed", "now playing"]
+    },
+    "press-quotes": {
+      "component": "PressQuotes",
+      "label": "Press quotes",
+      "alwaysInclude": true,
+      "contentPaths": ["/pressQuotes"],
+      "keywords": ["press", "quotes", "quote", "testimonials", "reviews", "prensa", "críticas", "reseñas", "blockquote", "acclaim"]
+    },
+    "newsletter": {
+      "component": "Newsletter",
+      "label": "Newsletter signup",
+      "alwaysInclude": true,
+      "contentPaths": [],
+      "keywords": ["newsletter", "subscribe", "sign up", "signup", "mailing list", "email list", "join", "suscríbete", "boletín", "suscribirse", "regístrate"]
+    },
+    "social-links": {
+      "component": "SocialLinks",
+      "label": "Social links",
+      "alwaysInclude": true,
+      "contentPaths": ["/socialLinks"],
+      "keywords": ["social", "instagram", "facebook", "tiktok", "twitter", "x.com", "follow", "síguenos", "redes", "connect"]
+    },
+    "contact": {
+      "component": "ContactBooking",
+      "label": "Contact & booking",
+      "alwaysInclude": false,
+      "contentPaths": ["/contact"],
+      "keywords": ["contact", "booking", "management", "inquiries", "contacto", "contrataciones", "representación", "mailto"]
+    },
+    "merch": {
+      "component": "FeatureSection",
+      "label": "Merch / store",
+      "alwaysInclude": false,
+      "contentPaths": ["/officialSite"],
+      "keywords": ["merch", "shop", "store", "tienda", "merchandise", "cart", "carrito", "shopify", "producto"]
+    },
+    "fan-club": {
+      "component": "FeatureSection",
+      "label": "Fan club / community",
+      "alwaysInclude": false,
+      "contentPaths": ["/socialLinks"],
+      "keywords": ["fan club", "fanclub", "club de fans", "membership", "community", "comunidad", "members"]
+    },
+    "countdown": {
+      "component": "FeatureSection",
+      "label": "Release / show countdown",
+      "alwaysInclude": false,
+      "contentPaths": ["/tourDates"],
+      "keywords": ["countdown", "pre-save", "presave", "coming soon", "cuenta regresiva", "próximamente", "out now", "new single"]
+    },
+    "news": {
+      "component": "FeatureSection",
+      "label": "News",
+      "alwaysInclude": false,
+      "contentPaths": ["/news"],
+      "keywords": ["news", "blog", "updates", "noticias", "novedades", "latest", "announcements", "comunicados"]
+    },
+    "lyrics": {
+      "component": "FeatureSection",
+      "label": "Lyrics",
+      "alwaysInclude": false,
+      "contentPaths": ["/topSongs"],
+      "keywords": ["lyrics", "letras", "letra"]
+    },
+    "footer": {
+      "component": "Footer",
+      "label": "Footer",
+      "alwaysInclude": true,
+      "position": "end",
+      "contentPaths": ["/credits", "/socialLinks"],
+      "keywords": ["footer", "copyright", "©", "pie de página", "legal", "privacy"]
+    }
+  },
+  "ignoredKeywords": ["cookie", "consent", "gdpr", "captcha", "login", "sign in", "account", "cart drawer", "skip to content", "accessibility widget"]
+}

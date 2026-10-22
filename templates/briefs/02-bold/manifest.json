@@ -1,0 +1,13 @@
+{
+  "briefId": "02-bold",
+  "components": ["NavBar", "Hero", "StatsBand", "Biography", "Discography", "TopSongs", "TourDates", "VideoGallery", "PhotoGallery", "MusicPlayer", "PressQuotes", "Newsletter", "SocialLinks", "ContactBooking", "FeatureSection", "SectionDivider", "Footer"],
+  "variants": {
+    "Hero": ["stacked", "poster"],
+    "Discography": ["carousel", "grid"],
+    "TopSongs": ["cards"],
+    "TourDates": ["tickets"],
+    "PressQuotes": ["stickers"],
+    "SectionDivider": ["marquee"]
+  },
+  "notes": "Dark canvas, gradient Anton type, overlaps, stickers, marquee bands, pill buttons."
+}

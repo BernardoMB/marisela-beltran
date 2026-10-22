@@ -1,0 +1,13 @@
+{
+  "project": "marisela-site-01-minimalist",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-01-minimalist",
+  "installed": true,
+  "built": true,
+  "buildAttempts": 1,
+  "fixesApplied": [],
+  "smokeTest": "passed",
+  "runFile": "generated-websites/marisela-site-01-minimalist/RUN.md",
+  "runCommand": "cd generated-websites/marisela-site-01-minimalist && npm run dev",
+  "buildLog": "artifacts/build-logs/marisela-site-01-minimalist.log",
+  "durationMs": 35028
+}

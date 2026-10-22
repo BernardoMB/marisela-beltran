@@ -1,0 +1,21 @@
+/*
+ * Original shadcn/ui theme extracted by chhapify from https://www.patycantu.com/.
+ * Reference only (not imported): app/globals.css contains the brief-transformed version of these variables.
+ */
+/* shadcn/ui Theme — extracted from https://www.patycantu.com/ */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 0%;
+    --primary: 23 41% 61%;
+    --primary-foreground: 0 0% 0%;
+    --accent: 23 41% 61%;
+    --accent-foreground: 0 0% 0%;
+    --muted: 0 0% 23%;
+    --muted-foreground: 0 0% 100%;
+    --border: 0 0% 23%;
+    --radius: 3px;
+  }
+}

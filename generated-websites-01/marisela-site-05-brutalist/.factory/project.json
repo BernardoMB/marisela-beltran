@@ -1,0 +1,58 @@
+{
+  "briefId": "05-brutalist",
+  "briefName": "Brutalist",
+  "projectName": "marisela-site-05-brutalist",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-05-brutalist",
+  "inspiration": {
+    "url": "https://www.taylorswift.com/",
+    "slug": "taylorswift-com",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-05-brutalist.spec.json",
+  "specSource": "deterministic",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "tour-dates",
+    "discography",
+    "top-songs",
+    "biography",
+    "video",
+    "press-quotes",
+    "merch",
+    "social-links",
+    "newsletter",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "SectionDivider",
+    "TourDates",
+    "Discography",
+    "TopSongs",
+    "Biography",
+    "VideoGallery",
+    "PressQuotes",
+    "FeatureSection",
+    "SocialLinks",
+    "Newsletter",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "high-contrast",
+    "mode": "light",
+    "baseHue": 170,
+    "background": "#ffffff",
+    "foreground": "#000000",
+    "primary": "#000000",
+    "accent": "#00ffd4",
+    "fonts": {
+      "display": "Space Mono",
+      "body": "IBM Plex Mono",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-17T07:06:53Z",
+  "warnings": []
+}

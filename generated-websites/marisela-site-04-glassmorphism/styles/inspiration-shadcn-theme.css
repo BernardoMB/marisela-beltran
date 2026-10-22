@@ -1,0 +1,23 @@
+/*
+ * Original shadcn/ui theme extracted by chhapify from https://www.yuritaflowers.mx/.
+ * Reference only (not imported): app/globals.css contains the brief-transformed version of these variables.
+ */
+/* shadcn/ui Theme — extracted from https://www.yuritaflowers.mx/ */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 0%;
+    --primary: 48 94% 86%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 44 27% 41%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 44 27% 41%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 61%;
+    --muted-foreground: 0 0% 100%;
+    --border: 0 0% 61%;
+    --radius: 3px;
+  }
+}

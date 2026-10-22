@@ -1,0 +1,62 @@
+{
+  "briefId": "02-bold",
+  "briefName": "Bold & Colorful",
+  "projectName": "marisela-site-02-bold",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-02-bold",
+  "inspiration": {
+    "url": "https://www.angelaaguilaroficial.com/",
+    "slug": "angelaaguilaroficial-com",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-02-bold.spec.json",
+  "specSource": "deterministic",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "top-songs",
+    "tour-dates",
+    "video",
+    "discography",
+    "press-quotes",
+    "biography",
+    "merch",
+    "newsletter",
+    "social-links",
+    "contact",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "SectionDivider",
+    "TopSongs",
+    "TourDates",
+    "VideoGallery",
+    "Discography",
+    "PressQuotes",
+    "Biography",
+    "FeatureSection",
+    "Newsletter",
+    "SocialLinks",
+    "ContactBooking",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "vibrant",
+    "mode": "dark",
+    "baseHue": 346,
+    "background": "#1c080d",
+    "foreground": "#f9f5f6",
+    "primary": "#fa3866",
+    "accent": "#ffd13d",
+    "fonts": {
+      "display": "Anton",
+      "body": "Archivo",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-20T16:13:50Z",
+  "warnings": [
+    "LLM page composition failed (the LLM never produced a compilable json-render spec) — deterministic composer used"
+  ]
+}

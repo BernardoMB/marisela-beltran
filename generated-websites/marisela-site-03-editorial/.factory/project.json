@@ -1,0 +1,62 @@
+{
+  "briefId": "03-editorial",
+  "briefName": "Editorial",
+  "projectName": "marisela-site-03-editorial",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-03-editorial",
+  "inspiration": {
+    "url": "https://liladowns.mx/",
+    "slug": "liladowns-mx",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-03-editorial.spec.json",
+  "specSource": "deterministic",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "biography",
+    "press-quotes",
+    "discography",
+    "top-songs",
+    "video",
+    "tour-dates",
+    "merch",
+    "newsletter",
+    "contact",
+    "social-links",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "Biography",
+    "SectionDivider",
+    "PressQuotes",
+    "Discography",
+    "TopSongs",
+    "VideoGallery",
+    "TourDates",
+    "FeatureSection",
+    "Newsletter",
+    "ContactBooking",
+    "SocialLinks",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "ink-and-paper",
+    "mode": "light",
+    "baseHue": 355,
+    "background": "#f5efe3",
+    "foreground": "#190d0e",
+    "primary": "#190d0e",
+    "accent": "#9f1e29",
+    "fonts": {
+      "display": "Playfair Display",
+      "body": "Newsreader",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-20T16:14:55Z",
+  "warnings": [
+    "LLM page composition failed (the LLM never produced a compilable json-render spec) — deterministic composer used"
+  ]
+}

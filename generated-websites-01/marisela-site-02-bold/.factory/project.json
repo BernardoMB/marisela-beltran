@@ -1,0 +1,58 @@
+{
+  "briefId": "02-bold",
+  "briefName": "Bold & Colorful",
+  "projectName": "marisela-site-02-bold",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-02-bold",
+  "inspiration": {
+    "url": "https://www.shakira.com/",
+    "slug": "shakira-com",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-02-bold.spec.json",
+  "specSource": "deterministic",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "top-songs",
+    "tour-dates",
+    "video",
+    "discography",
+    "press-quotes",
+    "biography",
+    "merch",
+    "newsletter",
+    "social-links",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "SectionDivider",
+    "TopSongs",
+    "TourDates",
+    "VideoGallery",
+    "Discography",
+    "PressQuotes",
+    "Biography",
+    "FeatureSection",
+    "Newsletter",
+    "SocialLinks",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "vibrant",
+    "mode": "dark",
+    "baseHue": 206,
+    "background": "#08131c",
+    "foreground": "#f5f8f9",
+    "primary": "#38a6fa",
+    "accent": "#b47aff",
+    "fonts": {
+      "display": "Anton",
+      "body": "Archivo",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-17T07:06:53Z",
+  "warnings": []
+}

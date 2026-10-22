@@ -1,0 +1,60 @@
+{
+  "briefId": "05-brutalist",
+  "briefName": "Brutalist",
+  "projectName": "marisela-site-05-brutalist",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-05-brutalist",
+  "inspiration": {
+    "url": "https://www.mariajoseoficial.com/",
+    "slug": "mariajoseoficial-com",
+    "extractor": "chhapify"
+  },
+  "specFile": "artifacts/ui-specs/marisela-site-05-brutalist.spec.json",
+  "specSource": "llm",
+  "featureTypes": [
+    "navigation",
+    "hero",
+    "biography",
+    "discography",
+    "top-songs",
+    "tour-dates",
+    "video",
+    "press-quotes",
+    "newsletter",
+    "social-links",
+    "contact",
+    "merch",
+    "footer"
+  ],
+  "components": [
+    "NavBar",
+    "Hero",
+    "SectionDivider",
+    "Biography",
+    "Discography",
+    "TopSongs",
+    "TourDates",
+    "VideoGallery",
+    "PressQuotes",
+    "Newsletter",
+    "SocialLinks",
+    "ContactBooking",
+    "FeatureSection",
+    "Footer"
+  ],
+  "theme": {
+    "strategy": "high-contrast",
+    "mode": "light",
+    "baseHue": 41,
+    "background": "#ffffff",
+    "foreground": "#000000",
+    "primary": "#000000",
+    "accent": "#ffae00",
+    "fonts": {
+      "display": "Space Mono",
+      "body": "IBM Plex Mono",
+      "mono": null
+    }
+  },
+  "generatedAt": "2026-10-20T16:19:28Z",
+  "warnings": []
+}
