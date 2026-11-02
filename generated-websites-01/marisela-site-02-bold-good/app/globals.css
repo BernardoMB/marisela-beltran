@@ -1,0 +1,364 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/*
+ * Theme for brief "Bold & Colorful" (vibrant).
+ * Derived from design tokens extracted by chhapify from https://www.shakira.com/
+ * (base hue 206°, base color #27455c).
+ * Variable names follow shadcn/ui conventions, so components/ui/* work unchanged.
+ */
+:root {
+  --background: #08131c;
+  --foreground: #f5f8f9;
+  --surface: #11202c;
+  --surface-foreground: #f5f8f9;
+  --muted: #1c2d3b;
+  --muted-foreground: #afbeca;
+  --primary: #38a6fa;
+  --primary-foreground: #061118;
+  --secondary: #fa3838;
+  --secondary-foreground: #061118;
+  --accent: #b47aff;
+  --accent-foreground: #061118;
+  --border: #284053;
+  --ring: #b47aff;
+  --input: #325067;
+  --card: #11202c;
+  --card-foreground: #f5f8f9;
+  --popover: #11202c;
+  --popover-foreground: #f5f8f9;
+  --destructive: #ff4d4f;
+  --destructive-foreground: #061118;
+  --gradient-from: #38a6fa;
+  --gradient-via: #fa3838;
+  --gradient-to: #b47aff;
+  --glow: #38a6fa;
+  --overlay: rgb(8 19 28 / 0.55);
+  --radius: 28px;
+  --radius-sm: 14px;
+  --radius-lg: 44px;
+  --shadow-sm: 0 0 18px -6px rgb(56 166 250 / 0.55);
+  --shadow-md: 0 12px 40px -12px rgb(56 166 250 / 0.6);
+  --shadow-lg: 0 24px 80px -20px rgb(56 166 250 / 0.7);
+  --shadow-color: 56 166 250;
+  --container-max: 1440px;
+  --section-space: clamp(4rem, 9vw, 9rem);
+  --grain-opacity: 0;
+  --glass-bg: #11202c;
+  --glass-border: #284053;
+  --glass-blur: 0px;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), Impact, Haettenschweiler, sans-serif;
+  }
+  ::selection {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+  img, video, iframe {
+    max-width: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Brief styles: templates/briefs/02-bold/styles.css
+ * ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------
+ * Skin base (templates/shared/styles/skin-base.css)
+ * Neutral defaults for the classes the shared section components use. Every brief's styles.css
+ * (appended after this file) overrides them to give the shared sections its own look.
+ * ------------------------------------------------------------------------- */
+@layer components {
+  .skin-section {
+    padding-block: var(--section-space);
+  }
+  .skin-container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 3rem);
+  }
+  .skin-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    margin-bottom: 0.75rem;
+  }
+  .skin-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    line-height: 1.05;
+  }
+  .skin-lead {
+    color: var(--muted-foreground);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+  .skin-muted {
+    color: var(--muted-foreground);
+  }
+  .skin-card {
+    background: var(--surface);
+    color: var(--surface-foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .skin-media {
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .skin-btn {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .skin-btn:hover {
+    opacity: 0.9;
+  }
+  .skin-btn-ghost {
+    border: 1px solid currentColor;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease;
+  }
+  .skin-btn-ghost:hover {
+    background: var(--muted);
+  }
+  .skin-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .skin-link:hover {
+    color: var(--accent);
+  }
+  .skin-chip {
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  .skin-chip:hover {
+    border-color: var(--foreground);
+  }
+  .divider-hairline {
+    border: 0;
+    border-top: 1px solid var(--border);
+  }
+  .divider-glow {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gradient-from), var(--gradient-via), var(--gradient-to), transparent);
+  }
+  .divider-marquee-track {
+    animation: skin-marquee 30s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .divider-marquee-track {
+      animation: none;
+    }
+  }
+}
+
+@keyframes skin-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Bold & Colorful — dark canvas, gradients, oversized condensed type, overlaps. */
+@layer components {
+  .skin-section {
+    position: relative;
+    padding-block: clamp(4rem, 9vw, 8rem);
+  }
+  .skin-eyebrow {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  .skin-title {
+    font-family: var(--font-display), Impact, sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 9vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: 0.005em;
+  }
+  .skin-lead {
+    color: var(--muted-foreground);
+    font-size: 1.125rem;
+  }
+  .skin-card {
+    background: var(--surface);
+    border: 1px solid color-mix(in oklab, var(--primary) 30%, transparent);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+  }
+  .skin-media {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+  }
+  .skin-btn {
+    background: linear-gradient(100deg, var(--gradient-from), var(--gradient-via), var(--gradient-to));
+    color: var(--primary-foreground);
+    border-radius: 9999px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .skin-btn:hover {
+    transform: scale(1.05) rotate(-1deg);
+    opacity: 1;
+  }
+  .skin-btn-ghost {
+    border: 2px solid var(--foreground);
+    border-radius: 9999px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .skin-chip {
+    border: 2px solid color-mix(in oklab, var(--foreground) 25%, transparent);
+    font-weight: 700;
+  }
+  .skin-chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .skin-link:hover {
+    color: var(--accent);
+  }
+  .bold-gradient-text {
+    background: linear-gradient(95deg, var(--gradient-from), var(--gradient-via) 55%, var(--gradient-to));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bold-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(90px);
+    opacity: 0.45;
+    pointer-events: none;
+  }
+  .bold-sticker {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background: var(--accent);
+    color: var(--accent-foreground);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+  }
+  .bold-ticket {
+    position: relative;
+    background: var(--surface);
+    border-radius: var(--radius);
+  }
+  .bold-ticket::before,
+  .bold-ticket::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    background: var(--background);
+    transform: translateY(-50%);
+  }
+  .bold-ticket::before {
+    left: -14px;
+  }
+  .bold-ticket::after {
+    right: -14px;
+  }
+  .c-stats .stat-value {
+    font-family: var(--font-display), Impact, sans-serif;
+    background: linear-gradient(95deg, var(--gradient-from), var(--gradient-to));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(3rem, 7vw, 6rem);
+  }
+  .c-stats .stat-cell {
+    border: 0;
+    background: color-mix(in oklab, var(--surface) 70%, transparent);
+  }
+  .divider-marquee {
+    background: var(--accent);
+    color: var(--accent-foreground);
+    font-family: var(--font-display), Impact, sans-serif;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    text-transform: uppercase;
+    padding-block: 0.6rem;
+    transform: rotate(-1.5deg);
+    margin-block: 1rem;
+  }
+  .divider-marquee-track {
+    animation-duration: 22s;
+  }
+}
+
+@keyframes bold-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -30px) scale(1.12);
+  }
+}
+.bold-drift {
+  animation: bold-drift 14s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bold-drift {
+    animation: none;
+  }
+}
+
+html,
+body {
+  overflow-x: clip;
+}

@@ -1,0 +1,470 @@
+{
+  "project": "marisela-site-02-bold",
+  "dir": "C:\\Users\\Bernardo\\Documents\\marisela-beltran\\generated-websites\\marisela-site-02-bold",
+  "issues": [
+    {
+      "source": "mechanical",
+      "category": "image-reuse",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "location": "biography.image",
+      "message": "The hero photo (/images/gallery/01-marisela-07.jpg) was reused as the biography portrait.",
+      "suggestion": "Show the biography without a second copy of the hero photo.",
+      "autoFixable": true,
+      "fixed": true
+    },
+    {
+      "source": "mechanical",
+      "category": "image-reuse",
+      "severity": "info",
+      "file": "lib/content.ts",
+      "location": "images.gallery",
+      "message": "Only one freely licensed photo exists, so the gallery repeats the hero photo.",
+      "suggestion": "Add more licensed photos to public/images/gallery and lib/content.ts.",
+      "autoFixable": false
+    },
+    {
+      "source": "mechanical",
+      "category": "awkward-phrasing",
+      "severity": "error",
+      "file": "lib/content.ts",
+      "location": "/biography/paragraphs/1",
+      "message": "Leftover placeholder text: \"Su primera producción de la mano de Marco Antonio Solís, \"El Buki\", quien le gra\"",
+      "suggestion": "Replace with real copy.",
+      "autoFixable": false,
+      "fixed": false
+    },
+    {
+      "source": "mechanical",
+      "category": "awkward-phrasing",
+      "severity": "error",
+      "file": "lib/content.ts",
+      "location": "/biography/paragraphs/5",
+      "message": "Leftover placeholder text: \"En su vida personal, se casa con el gran trompetista Juan Manuel Hernández con q\"",
+      "suggestion": "Replace with real copy.",
+      "autoFixable": false,
+      "fixed": false
+    },
+    {
+      "source": "mechanical",
+      "category": "awkward-phrasing",
+      "severity": "error",
+      "file": "lib/ui-spec.json",
+      "location": "/elements/top-songs/props/intro",
+      "message": "Leftover placeholder text: \"Las que todo México canta de memoria.\"",
+      "suggestion": "Replace with real copy.",
+      "autoFixable": false,
+      "fixed": false
+    },
+    {
+      "source": "mechanical",
+      "category": "repetition",
+      "severity": "info",
+      "file": "lib/ui-spec.json",
+      "location": "Hero.subtitle (hero) ↔ Biography.lead (biography)",
+      "message": "Sentence appears twice: \"marisela esqueda, conocida simplemente como marisela; es una cantante, actriz y empresaria…\"",
+      "autoFixable": false
+    },
+    {
+      "source": "mechanical",
+      "category": "repetition",
+      "severity": "info",
+      "file": "lib/ui-spec.json",
+      "location": "Hero.subtitle (hero) ↔ Page.description (page)",
+      "message": "Sentence appears twice: \"marisela esqueda, conocida simplemente como marisela; es una cantante, actriz y empresaria…\"",
+      "autoFixable": false
+    },
+    {
+      "source": "mechanical",
+      "category": "image-placement",
+      "severity": "warning",
+      "file": "components/LiteYouTube.tsx",
+      "message": "<img> without an alt attribute.",
+      "autoFixable": false
+    },
+    {
+      "category": "image-reuse",
+      "severity": "warning",
+      "file": "/images/gallery/01-marisela-07.jpg",
+      "message": "`lib/content.ts:545`, `:554`, `:563` — one photo does all three jobs. `/images/gallery/01-marisela-07.jpg` is the `hero` image, the `portrait` image, and the only `gallery` entry. On the rendered page it appears twice: the Hero frame (`app/page.tsx:27`) and the Biography portrait (`app/page.tsx:104`). It is the only artist photo in `public/images/gallery/`. Source a second photo for the Biography block, or drop the Biography image.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "image-reuse",
+      "severity": "warning",
+      "file": "album-marisela-1989.jpg",
+      "message": "`lib/content.ts:134` and `:212` — the same album artwork appears twice in the discography carousel. `album-marisela-1989.jpg` and `album-exitos-con-banda-2002.jpg` are different files but visually identical artwork (the \"Éxitos con Banda\" sleeve), so the carousel shows the same cover under two different labels. Replace the 1989 *Marisela* cover with its real artwork (see §2).",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "image-reuse",
+      "severity": "warning",
+      "file": "01-marisela-07.jpg",
+      "message": "`public/images/CREDITS.md:3-4` — the credit line for `01-marisela-07.jpg` is listed twice, verbatim. Delete the duplicate line.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "image-placement",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:134-151` — wrong cover on the album card labelled \"Marisela\" (1989). The file is pulled from the Apple Music release *Marisela: Éxitos con banda* (`sourceUrl` ends `marisela-exitos-con-banda/254001609`); the artwork legibly reads \"Éxitos con Banda — Marisela\" while the card caption prints \"MARISELA / 1989\". Swap in the real 1989 *Marisela* sleeve, or relabel the entry.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "image-placement",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:303-321` — card title doesn't match the artwork text. The entry titled \"15 grandes éxitos\" (2019) uses artwork that reads \"15 Grandes Éxitos Vol. 1\". Add \"Vol. 1\" to the title so caption and sleeve agree.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "image-placement",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:547`, `:556`, `:566` — alt text is an English sentence wrapped in curly quotes on a Spanish-language page (`<html lang=\"es\">`): `\"“Marisela, renowned Mexican-American singer, celebrated worldwide as La Dama de Hierro.”\"`. It is also byte-identical across hero, portrait and gallery, so a screen reader hears the same description twice. Rewrite in Spanish, drop the enclosing quote marks, and differentiate the two placements.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "image-placement",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:118-132, 268-282, 305-318, 330-343, 355-365` — 5 of 16 albums ship generated gradient placeholders instead of covers, and their alt text is only the bare album title while the 11 real covers use \"Portada del álbum «…»\". Source the missing art or make the alt text consistent.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:18` — \"desde que llego por primera vez\" → *llegó*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:19` — \"un record que aun a la fecha\" → *récord* / *aún*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:19` — \"no sólo en México sino en todo Hispanoamérica\" → *toda Hispanoamérica*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:20` — \"el dueto mas importante\" → *más*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:20` — missing comma in the song list: `“El Chico Aquel” “Si no te hubieras ido”` → add a comma between the two titles.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:21` — \"superándose a si misma\" → *sí misma*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:22` — \"la década de los 80´s\" uses U+00B4 (acute accent) as an apostrophe and anglicises the decade → *los años 80*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:23` — \"un tema de navidad\" → *Navidad*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:40`, `:56`, `:57` — birthplace \"Los Angeles\" → *Los Ángeles* (rendered in a visible fact chip in the Biography block).",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:372`, `:432`, `:443`, `:465`, `:487` — album name \"Quedate A Mi Lado\" → *Quédate a mi lado*; shown under four of the ten song cards.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:464` — song title \"A Cambio de Que\" → *A cambio de qué*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:476` — \"Las Numero 1 De Marisela\" → *Las número 1 de Marisela*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:515` — video title \"A cambio de que\" → *qué*.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:641` — a stray zero-width space (U+200B) sits after \"20 éxitos inmortales.\" in press quote 5, left over from stripping a Wikipedia footnote marker. Delete it.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "typo",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:641` — inside that same quote, \"tres categorías … ganadora de dos de ellos\" (gender disagreement) → *ellas*. It is quoted verbatim, so either fix silently or mark it.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "repetition",
+      "severity": "warning",
+      "file": "app/page.tsx",
+      "message": "Same sentence as Hero subtitle and Biography lead. `app/page.tsx:34` and `app/page.tsx:105` both print \"Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \\\"La dama de hierro\\\".\" — the second instance is set as a huge display lead directly above the biography it repeats. Replace the Biography lead with a distinct pull-line.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "repetition",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "Press quote 1 repeats a Biography sentence verbatim. `lib/content.ts:616-620` is the closing sentence of biography paragraph 1 (`lib/content.ts:18`), and both are visible without expanding anything. Same problem for quote 2 (`lib/content.ts:622-626` = paragraph 4, `lib/content.ts:21`) once \"Leer más\" is pressed. Drop both, or replace them with genuine third-party quotes — they are also sourced from the artist's own bio page, not press.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "repetition",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "Press quotes 4 and 6 overlap. `lib/content.ts:634-638` and `:646-650` are two Wikipedia (en) sentences that both open \"Her debut album, Sin Él…\". Keep one.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "repetition",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "Source note printed twice on the page. \"Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0).\" appears as the Biography source note (`lib/content.ts:62` → `components/Biography.tsx:51`) and again in the footer credits (`app/page.tsx:142`). Keep the footer copy only.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "repetition",
+      "severity": "warning",
+      "file": "app/page.tsx",
+      "message": "Tagline printed twice. \"La Dama de Hierro — Desde 1984\" at `app/page.tsx:35` (hero) and `app/page.tsx:137` (footer).",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "repetition",
+      "severity": "warning",
+      "file": "public/images/placeholders/cover-album-20-kilates-2014.svg",
+      "message": "Placeholder covers print their own title under the card's title overlay. The five generated SVGs bake the album name into the artwork (e.g. `public/images/placeholders/cover-album-20-kilates-2014.svg`), and `components/Discography.tsx:17` overlays the same name again — the title reads twice per card, and on `cover-album-20-exitos-inmortales-volumen-2.svg` the third baked line sits on the 990 px baseline of a 1000 px canvas, so it is clipped and hidden behind the overlay. Remove the title text fr",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "repetition",
+      "severity": "warning",
+      "file": "app/page.tsx",
+      "message": "\"La Dama de Hierro\" marquee runs three times. `app/page.tsx:40`, `:65`, `:93` each render the same label 16× through `SectionDivider variant=\"marquee\"`. Decorative and `aria-hidden`, but consider varying the label per divider.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "awkward-phrasing",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:12` (and `:16`) — \"Marisela Esqueda, conocida simplemente como Marisela; es una cantante…\" — the semicolon belongs where a comma goes, and the sentence is the first thing on the page (hero subtitle), the biography lead, and the `<meta description>`. Fix once in `shortBio` and it fixes all three.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "awkward-phrasing",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:18` — run-on: \"…nace en 1966, en Estados Unidos, sin embargo, Marisela la cantante nace y se hace en México…\" is three independent clauses spliced with commas. Break into two sentences.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "awkward-phrasing",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:22` — \"A través de la toda la década\" — word order error, read as \"de toda la década\".",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "awkward-phrasing",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:19` — \"Su primera producción de la mano de Marco Antonio Solís, \\\"El Buki\\\", quien le graba el disco \\\"Sin él\\\" la hizo debutar…\" — the subject never resolves cleanly; recast as \"Su primera producción, el disco «Sin él», grabado por Marco Antonio Solís «El Buki», la hizo debutar…\".",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "awkward-phrasing",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:515-540` — the six video titles are unedited YouTube strings (\"A cambio de que - Marisela - Auditorio Nacional\", \"SG Producciones presenta: Marisela regresa al Auditorio Nacional (Oficial)\"). Shorten to the song/performance name.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "awkward-phrasing",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:12` and `lib/content.ts:9` — straight ASCII quotes around `\"La dama de hierro\"` in the hero/lead sentence, versus curly quotes everywhere else in the bio, and lower-cased \"dama de hierro\" two lines below the capitalised \"La Dama de Hierro\" eyebrow. Normalise to «…» or curly quotes and one capitalisation.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "awkward-phrasing",
+      "severity": "warning",
+      "file": "app/layout.tsx",
+      "message": "`app/layout.tsx:27` — the page title resolves to \"Marisela — La Dama de Hierro — Desde 1984\", two em-dashes in one title. Use \"Marisela — La Dama de Hierro\" or a colon for the second break.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "RUN.md",
+      "message": "`README.md:13` points at a file that does not exist. \"See `RUN.md` for details\" — there is no `RUN.md` in the project root. Create it or drop the sentence.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "components/Discography.tsx",
+      "message": "`components/Discography.tsx:19` — orphan separator when an album has no year. \"20 éxitos inmortales, volumen 2\" (`lib/content.ts:355`, no `year` field) renders as \" · Recopilación\" with a leading space and a dangling middot. Guard the separator on `album.year`.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:374` vs `:386` — the top-songs ranking contradicts its own numbers. Rank 1 shows 310.8 M streams, rank 2 shows 314.2 M. Re-sort by streams or stop displaying both.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "components/TopSongs.tsx",
+      "message": "`components/TopSongs.tsx:39` — mixed units inside one list. Cards 1-5 show \"album · 310.8 M reproducciones\"; cards 6-10 fall back to \"album · 4:01\" because those songs have no `streams` value. Pick one secondary metric for the whole list.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:396`, `:372`, `:443` — songs are credited to compilation albums that contradict the discography on the same page. \"Sin él\" is listed under *Fue Tan Poco Tu Cariño*, \"Tu dama de hierro\" and \"Completamente tuya\" under *Quedate A Mi Lado*, while the carousel directly below lists *Sin él* (1984), *Completamente tuya* (1985) and *Tu dama de hierro* (1999). Map each song to its original album.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:641` vs `:285` — contradictory dates for the same release. Press quote 5 says *El marco de mis recuerdos* came in 2011; the discography entry dates it 2012-04-12.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "app/page.tsx",
+      "message": "`app/page.tsx:109-116` — the \"Tienda\" (store) section has no products. `items={[]}`, so it renders a heading, one generic line and a \"Ver más\" button pointing at the site homepage. Either populate it or remove the section.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "Two of six press quotes are in English on a Spanish page (`lib/content.ts:634`, `:646`), sitting beside four Spanish ones in the same grid. Translate or replace.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "lib/content.ts",
+      "message": "`lib/content.ts:66`, `:619`, `:625`, `:692`, `:735` and `README.md:33` — six links use `http://marisela.com.mx/...` while the rest of the site links to `https://www.marisela.com.mx`. Switch to `https://` and the `www` host.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "StatsBand.tsx",
+      "message": "`lib/content.ts:675-687` — three of the five collected stats are never displayed. `components/Hero.tsx:74` renders only `stats.items.slice(0, 2)`, so Spotify monthly listeners, the Billboard top-10 claim and Deezer followers are fetched but shown nowhere; `StatsBand.tsx` is not mounted. Surface them or trim the data.",
+      "autoFixable": false,
+      "source": "facelift"
+    },
+    {
+      "category": "broken",
+      "severity": "warning",
+      "file": "app/page.tsx",
+      "message": "`app/page.tsx:79` passes `socials` to `NavBar`, which never renders it (`components/NavBar.tsx:100` destructures only `brand, links, cta`). Dead prop — either render the icons or remove the prop.",
+      "autoFixable": false,
+      "source": "facelift"
+    }
+  ],
+  "fixedCount": 1,
+  "facelift": {
+    "review": "ran",
+    "cleanup": "skipped",
+    "reportFile": "generated-websites/marisela-site-02-bold/.factory/facelift-validation.md"
+  },
+  "reportFile": "artifacts/validation-reports/marisela-site-02-bold.md",
+  "passed": false
+}
