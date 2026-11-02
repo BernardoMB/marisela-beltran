@@ -1,0 +1,23 @@
+/*
+ * Original shadcn/ui theme extracted by chhapify from https://www.shakira.com/.
+ * Reference only (not imported): app/globals.css contains the brief-transformed version of these variables.
+ */
+/* shadcn/ui Theme — extracted from https://www.shakira.com/ */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 231 23% 6%;
+    --foreground: 0 0% 0%;
+    --primary: 206 40% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 231 23% 6%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 206 40% 26%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 100%;
+    --border: 0 0% 41%;
+    --radius: 1px;
+  }
+}
