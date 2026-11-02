@@ -1,0 +1,440 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#contenido"
+  - banner [ref=e3]:
+    - navigation "Marisela" [ref=e4]:
+      - link "Marisela" [ref=e5] [cursor=pointer]:
+        - /url: "#inicio"
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Discografía" [ref=e8] [cursor=pointer]:
+            - /url: "#discografia"
+        - listitem [ref=e9]:
+          - link "Canciones" [ref=e10] [cursor=pointer]:
+            - /url: "#canciones"
+        - listitem [ref=e11]:
+          - link "Gira" [ref=e12] [cursor=pointer]:
+            - /url: "#gira"
+        - listitem [ref=e13]:
+          - link "Biografía" [ref=e14] [cursor=pointer]:
+            - /url: "#biografia"
+        - listitem [ref=e15]:
+          - link "Videos" [ref=e16] [cursor=pointer]:
+            - /url: "#videos"
+        - listitem [ref=e17]:
+          - link "Prensa" [ref=e18] [cursor=pointer]:
+            - /url: "#prensa"
+      - generic [ref=e19]:
+        - switch "Modo oscuro" [checked] [ref=e20]
+        - link "Escuchar" [ref=e28] [cursor=pointer]:
+          - /url: https://open.spotify.com/artist/73c2MjCAFNyKYIs7nBlqG2
+  - main [ref=e29]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: La Dama de Hierro
+        - heading "Marisela" [level=1] [ref=e39]
+        - paragraph [ref=e40]: La Dama de Hierro — Desde 1984
+        - paragraph [ref=e41]: Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como "La dama de hierro".
+        - generic [ref=e43]:
+          - link "Escuchar" [ref=e44] [cursor=pointer]:
+            - /url: "#canciones"
+          - link "Próximos conciertos" [ref=e45] [cursor=pointer]:
+            - /url: "#gira"
+      - generic [ref=e46]:
+        - img "“Marisela, renowned Mexican-American singer, celebrated worldwide as La Dama de Hierro.”" [ref=e49]
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: "6"
+          - paragraph [ref=e52]: Álbumes de estudio
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: "42"
+          - paragraph [ref=e55]: Años de trayectoria
+        - generic [ref=e56]:
+          - paragraph [ref=e57]: 5.8M
+          - paragraph [ref=e58]: Oyentes mensuales en Spotify
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - paragraph [ref=e62]: Favoritas
+        - heading "Lo más escuchado" [level=2] [ref=e63]
+      - generic [ref=e64]:
+        - paragraph [ref=e66]: Escuchar fragmento
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - generic [ref=e70]: "1"
+            - 'button "Escuchar fragmento: Tu dama de hierro" [ref=e71]'
+            - generic [ref=e74]:
+              - generic [ref=e75]: Tu dama de hierro
+              - generic [ref=e76]: Quedate A Mi Lado
+            - generic [ref=e77]: 310.8 M
+          - listitem [ref=e78]:
+            - generic [ref=e79]: "2"
+            - 'button "Escuchar fragmento: La Pareja Ideal" [ref=e80]'
+            - generic [ref=e83]:
+              - generic [ref=e84]: La Pareja Ideal
+              - generic [ref=e85]: Me Gusta Estar Contigo
+            - generic [ref=e86]: 314.2 M
+          - listitem [ref=e87]:
+            - generic [ref=e88]: "3"
+            - 'button "Escuchar fragmento: Sin él" [ref=e89]'
+            - generic [ref=e92]:
+              - generic [ref=e93]: Sin él
+              - generic [ref=e94]: Fue Tan Poco Tu Cariño
+            - generic [ref=e95]: 241.9 M
+          - listitem [ref=e96]:
+            - generic [ref=e97]: "4"
+            - 'button "Escuchar fragmento: Sola Con Mi Soledad" [ref=e98]'
+            - generic [ref=e101]:
+              - generic [ref=e102]: Sola Con Mi Soledad
+              - generic [ref=e103]: Siénteme Ámame Quiéreme
+            - generic [ref=e104]: 208 M
+          - listitem [ref=e105]:
+            - generic [ref=e106]: "5"
+            - 'button "Escuchar fragmento: Enamorada y Herida" [ref=e107]'
+            - generic [ref=e110]:
+              - generic [ref=e111]: Enamorada y Herida
+              - generic [ref=e112]: Siénteme Ámame Quiéreme
+            - generic [ref=e113]: 142.8 M
+          - listitem [ref=e114]:
+            - generic [ref=e115]: "6"
+            - 'button "Escuchar fragmento: No Puedo Olvidarlo" [ref=e116]'
+            - generic [ref=e119]:
+              - generic [ref=e120]: No Puedo Olvidarlo
+              - generic [ref=e121]: Quedate A Mi Lado
+            - generic [ref=e122]: 4:01
+          - listitem [ref=e123]:
+            - generic [ref=e124]: "7"
+            - 'button "Escuchar fragmento: Completamente tuya" [ref=e125]'
+            - generic [ref=e128]:
+              - generic [ref=e129]: Completamente tuya
+              - generic [ref=e130]: Quedate A Mi Lado
+            - generic [ref=e131]: 3:50
+          - listitem [ref=e132]:
+            - generic [ref=e133]: "8"
+            - 'button "Escuchar fragmento: Mi Problema" [ref=e134]'
+            - generic [ref=e137]:
+              - generic [ref=e138]: Mi Problema
+              - generic [ref=e139]: Amor de Los Dos
+            - generic [ref=e140]: 3:01
+          - listitem [ref=e141]:
+            - generic [ref=e142]: "9"
+            - 'button "Escuchar fragmento: A Cambio de Que" [ref=e143]'
+            - generic [ref=e146]:
+              - generic [ref=e147]: A Cambio de Que
+              - generic [ref=e148]: Quedate A Mi Lado
+            - generic [ref=e149]: 3:32
+          - listitem [ref=e150]:
+            - generic [ref=e151]: "10"
+            - 'button "Escuchar fragmento: Y Voy a Ser Feliz" [ref=e152]'
+            - generic [ref=e155]:
+              - generic [ref=e156]: Y Voy a Ser Feliz
+              - generic [ref=e157]: Las Numero 1 De Marisela
+            - generic [ref=e158]: 3:53
+    - generic [ref=e160]:
+      - generic [ref=e161]:
+        - paragraph [ref=e162]: En vivo
+        - heading "Próximos conciertos" [level=2] [ref=e163]
+      - generic [ref=e164]:
+        - paragraph [ref=e168]: Nuevas fechas muy pronto
+        - paragraph [ref=e169]: Estamos preparando los próximos encuentros. Déjanos tu correo y te avisamos.
+        - link "Boletos" [ref=e170] [cursor=pointer]:
+          - /url: https://www.ticketmaster.com.mx/search?q=marisela
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - paragraph [ref=e176]: Discografía
+        - heading "Universo musical" [level=2] [ref=e177]
+      - list [ref=e178]:
+        - listitem [ref=e179]:
+          - link "Sin él (1984)" [ref=e180] [cursor=pointer]:
+            - /url: https://music.apple.com/mx/album/sin-%C3%A9l/6803551765
+            - generic [ref=e181]:
+              - img "Portada del álbum «Sin él» (1984)" [ref=e183]
+              - generic [ref=e184]:
+                - paragraph [ref=e185]: Sin él
+                - paragraph [ref=e186]: "1984"
+        - listitem [ref=e187]:
+          - link "Completamente tuya (1985)" [ref=e188] [cursor=pointer]:
+            - /url: https://music.apple.com/mx/album/completamente-tuya/6803552905
+            - generic [ref=e189]:
+              - img "Portada del álbum «Completamente tuya» (1985)" [ref=e191]
+              - generic [ref=e192]:
+                - paragraph [ref=e193]: Completamente tuya
+                - paragraph [ref=e194]: "1985"
+        - listitem [ref=e195]:
+          - generic [ref=e196]:
+            - img "15 éxitos, vol. 1" [ref=e198]
+            - generic [ref=e199]:
+              - paragraph [ref=e200]: 15 éxitos, vol. 1
+              - paragraph [ref=e201]: 1989 · Recopilación
+        - listitem [ref=e202]:
+          - link "Marisela (1989)" [ref=e203] [cursor=pointer]:
+            - /url: https://music.apple.com/mx/album/marisela-exitos-con-banda/254001609
+            - generic [ref=e204]:
+              - img "Portada del álbum «Marisela» (1989)" [ref=e206]
+              - generic [ref=e207]:
+                - paragraph [ref=e208]: Marisela
+                - paragraph [ref=e209]: "1989"
+        - listitem [ref=e210]:
+          - link "20 éxitos inmortales (1993)" [ref=e211] [cursor=pointer]:
+            - /url: https://music.apple.com/mx/album/20-%C3%A9xitos-inmortales/6803565214
+            - generic [ref=e212]:
+              - img "Portada del álbum «20 éxitos inmortales» (1993)" [ref=e214]
+              - generic [ref=e215]:
+                - paragraph [ref=e216]: 20 éxitos inmortales
+                - paragraph [ref=e217]: 1993 · Recopilación
+        - listitem [ref=e218]:
+          - link "Borrón y cuenta nueva (1996)" [ref=e219] [cursor=pointer]:
+            - /url: https://music.apple.com/mx/album/borron-y-cuenta-nueva/254661958
+            - generic [ref=e220]:
+              - img "Portada del álbum «Borrón y cuenta nueva» (1996)" [ref=e222]
+              - generic [ref=e223]:
+                - paragraph [ref=e224]: Borrón y cuenta nueva
+                - paragraph [ref=e225]: "1996"
+        - listitem [ref=e226]:
+          - link "Tu dama de hierro (1999)" [ref=e227] [cursor=pointer]:
+            - /url: https://music.apple.com/mx/album/tu-dama-de-hierro-en-v%C3%ADvo/299668475
+            - generic [ref=e228]:
+              - img "Portada del álbum «Tu dama de hierro» (1999)" [ref=e230]
+              - generic [ref=e231]:
+                - paragraph [ref=e232]: Tu dama de hierro
+                - paragraph [ref=e233]: 1999 · En vivo
+        - listitem [ref=e234]:
+          - link "Éxitos con banda (2002)" [ref=e235] [cursor=pointer]:
+            - /url: https://www.deezer.com/album/1216034
+            - generic [ref=e236]:
+              - img "Portada del álbum «Éxitos con banda» (2002)" [ref=e238]
+              - generic [ref=e239]:
+                - paragraph [ref=e240]: Éxitos con banda
+                - paragraph [ref=e241]: 2002 · Recopilación
+      - button "Ver todo (16)" [ref=e243]
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - paragraph [ref=e247]: Mira
+        - heading "Videos" [level=2] [ref=e248]
+      - generic [ref=e249]:
+        - generic [ref=e250]:
+          - 'button "Ver video: A cambio de que - Marisela - Auditorio Nacional" [ref=e252] [cursor=pointer]'
+          - paragraph [ref=e257]: A cambio de que - Marisela - Auditorio Nacional
+        - generic [ref=e258]:
+          - 'button "Ver video: La Pareja Ideal - Marisela - Tercia de Damas" [ref=e260] [cursor=pointer]'
+          - paragraph [ref=e265]: La Pareja Ideal - Marisela - Tercia de Damas
+        - generic [ref=e266]:
+          - 'button "Ver video: Marisela - Enamorada y Herida - Grandes de los 80s - Auditorio Nacional" [ref=e268] [cursor=pointer]'
+          - paragraph [ref=e273]: Marisela - Enamorada y Herida - Grandes de los 80s - Auditorio Nacional
+        - generic [ref=e274]:
+          - 'button "Ver video: SG Producciones presenta: Marisela regresa al Auditorio Nacional (Oficial)" [ref=e276] [cursor=pointer]'
+          - paragraph [ref=e281]: "SG Producciones presenta: Marisela regresa al Auditorio Nacional (Oficial)"
+        - generic [ref=e282]:
+          - 'button "Ver video: Amor de los Dos - Marisela, Coque Muñiz y Marilyn Odessa" [ref=e284] [cursor=pointer]'
+          - paragraph [ref=e289]: Amor de los Dos - Marisela, Coque Muñiz y Marilyn Odessa
+        - generic [ref=e290]:
+          - 'button "Ver video: Historia de un Amor - Marisela y Coque Muñiz" [ref=e292] [cursor=pointer]'
+          - paragraph [ref=e297]: Historia de un Amor - Marisela y Coque Muñiz
+    - generic [ref=e299]:
+      - generic [ref=e300]:
+        - img "“Marisela, renowned Mexican-American singer, celebrated worldwide as La Dama de Hierro.”" [ref=e303]
+        - list [ref=e304]:
+          - listitem [ref=e305]:
+            - generic [ref=e306]: Nombre artístico ·
+            - text: Marisela
+          - listitem [ref=e307]:
+            - generic [ref=e308]: Nombre de nacimiento ·
+            - text: Marisela Esqueda Hernández
+          - listitem [ref=e309]:
+            - generic [ref=e310]: Nacimiento ·
+            - text: 24 de abril de 1966
+          - listitem [ref=e311]:
+            - generic [ref=e312]: Lugar de nacimiento ·
+            - text: Los Angeles
+          - listitem [ref=e313]:
+            - generic [ref=e314]: Debut ·
+            - text: Sin él (1984)
+          - listitem [ref=e315]:
+            - generic [ref=e316]: Apodo ·
+            - text: La Dama de Hierro
+          - listitem [ref=e317]:
+            - generic [ref=e318]: Años de actividad ·
+            - text: 1984–presente
+      - generic [ref=e319]:
+        - paragraph [ref=e320]: Biografía
+        - heading "Su historia" [level=2] [ref=e321]
+        - paragraph [ref=e322]: Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como "La dama de hierro".
+        - generic [ref=e323]:
+          - paragraph [ref=e324]: Marisela, la única e indiscutible Dama de Hierro, nace en 1966, en Estados Unidos, sin embargo, Marisela la cantante nace y se hace en México, país que le dio la fama desde que llego por primera vez en 1984. Con una voz única y auténtica ha logrado permanecer en el gusto del público a través de los años, siendo sin duda alguna una consentida de la euforia popular a través de varias generaciones.
+          - paragraph [ref=e325]: Su primera producción de la mano de Marco Antonio Solís, "El Buki", quien le graba el disco "Sin él" la hizo debutar en el programa de Siempre en Domingo, de la mano de su padrino, Raúl Velasco. De este trabajo se desprenden diez sencillos que se colocaron todos sin excepción en el primer lugar de popularidad no sólo en México sino en todo Hispanoamérica. Esto se vuelve un record que aun a la fecha es prácticamente imposible de igualar.
+          - paragraph [ref=e326]: "Algunos de los temas que la gente aún no olvida son: “Ya no te vayas”, “El Chico Aquel” “Si no te hubieras ido”, el emblemático tema que dio nombre al disco y es un himno de la música en español, “Sin él”, y el dueto mas importante de la década, “La Pareja Ideal” en donde unieron sus voces, Marisela y su entonces novio y compositor del disco, “El Buki”."
+        - button "Leer más" [ref=e327]
+        - paragraph [ref=e328]: "Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0)."
+    - generic [ref=e330]:
+      - generic [ref=e331]:
+        - paragraph [ref=e332]: Prensa
+        - heading "Voces" [level=2] [ref=e333]
+      - generic [ref=e334]:
+        - figure [ref=e336]:
+          - blockquote [ref=e340]: Con una voz única y auténtica ha logrado permanecer en el gusto del público a través de los años, siendo sin duda alguna una consentida de la euforia popular a través de varias generaciones.
+          - link "Sitio oficial — Biografía" [ref=e343] [cursor=pointer]:
+            - /url: http://marisela.com.mx/biografia
+        - figure [ref=e345]:
+          - blockquote [ref=e349]: Todos temas que siguen vigentes y de los que incluso algunos artistas hoy en día siguen sacando versiones de estos temas que conociera el mundo en la voz inconfundible de la eterna “Dama de Hierro”.
+          - link "Sitio oficial — Biografía" [ref=e352] [cursor=pointer]:
+            - /url: http://marisela.com.mx/biografia
+        - figure [ref=e354]:
+          - blockquote [ref=e358]: Es la única cantante en español en colocar todos los temas de un disco en el top 10 de la revista Billboard, en este caso el álbum debut de Marisela Sin él (1984).
+          - link "Wikipedia (es)" [ref=e361] [cursor=pointer]:
+            - /url: https://es.wikipedia.org/wiki/Marisela_(cantante)
+        - figure [ref=e363]:
+          - blockquote [ref=e367]: Her debut album, Sin Él, entered at No. 16 on the first Billboard Latin Albums Chart.
+          - link "Wikipedia (en)" [ref=e370] [cursor=pointer]:
+            - /url: https://en.wikipedia.org/wiki/Marisela
+        - figure [ref=e372]:
+          - blockquote [ref=e376]: En el año 2010 fue nominada en tres categorías a los Premios Billboard de la Música Latina, siendo ganadora de dos de ellos por su disco recopilación 20 éxitos inmortales. En 2011, regresa a la música con El marco de mis recuerdos.
+          - link "Wikipedia (es)" [ref=e379] [cursor=pointer]:
+            - /url: https://es.wikipedia.org/wiki/Marisela_(cantante)
+        - figure [ref=e381]:
+          - blockquote [ref=e385]: Her debut album, Sin Él (1984), was produced by Marco Antonio Solís and included the title track as its lead single.
+          - link "Wikipedia (en)" [ref=e388] [cursor=pointer]:
+            - /url: https://en.wikipedia.org/wiki/Marisela
+    - generic [ref=e390]:
+      - generic [ref=e391]:
+        - paragraph [ref=e392]: Extra
+        - heading "Tienda" [level=2] [ref=e393]
+        - paragraph [ref=e394]: Artículos oficiales y novedades, directamente desde los canales de la artista.
+      - paragraph [ref=e395]:
+        - link "Explorar" [ref=e396] [cursor=pointer]:
+          - /url: https://www.marisela.com.mx
+    - generic [ref=e401]:
+      - generic [ref=e402]:
+        - paragraph [ref=e403]: Redes
+        - heading "Conecta" [level=2] [ref=e404]
+      - list [ref=e405]:
+        - listitem [ref=e406]:
+          - link "Spotify" [ref=e408] [cursor=pointer]:
+            - /url: https://open.spotify.com/artist/73c2MjCAFNyKYIs7nBlqG2
+        - listitem [ref=e412]:
+          - link "Apple Music" [ref=e414] [cursor=pointer]:
+            - /url: https://music.apple.com/mx/artist/marisela/295749
+        - listitem [ref=e418]:
+          - link "Deezer" [ref=e420] [cursor=pointer]:
+            - /url: https://www.deezer.com/artist/8856
+        - listitem [ref=e424]:
+          - link "Instagram @mariselaofficial" [ref=e426] [cursor=pointer]:
+            - /url: https://www.instagram.com/mariselaofficial/
+            - generic [ref=e429]: Instagram
+            - generic [ref=e430]: "@mariselaofficial"
+        - listitem [ref=e431]:
+          - link "Facebook" [ref=e433] [cursor=pointer]:
+            - /url: https://www.facebook.com/MariselaLaCantante/
+        - listitem [ref=e437]:
+          - link "X @tudama_marisela" [ref=e439] [cursor=pointer]:
+            - /url: https://twitter.com/tudama_marisela
+            - generic [ref=e442]: X
+            - generic [ref=e443]: "@tudama_marisela"
+        - listitem [ref=e444]:
+          - link "Web" [ref=e446] [cursor=pointer]:
+            - /url: https://www.marisela.com.mx
+    - generic [ref=e452]:
+      - paragraph [ref=e455]: Boletín
+      - heading "Mantente cerca" [level=2] [ref=e456]
+      - paragraph [ref=e457]: Recibe noticias, lanzamientos y fechas antes que nadie.
+      - generic [ref=e458]:
+        - generic [ref=e459]:
+          - generic [ref=e460]: Correo electrónico
+          - textbox "Correo electrónico" [ref=e461]:
+            - /placeholder: tu@correo.com
+        - button "Unirme" [ref=e462]
+      - paragraph [ref=e463]: Solo lo importante. Nunca spam.
+  - contentinfo [ref=e464]:
+    - generic [ref=e465]:
+      - generic [ref=e466]:
+        - generic [ref=e467]:
+          - paragraph [ref=e468]: Marisela
+          - paragraph [ref=e469]: La Dama de Hierro — Desde 1984
+        - list [ref=e470]:
+          - listitem [ref=e471]:
+            - link "Discografía" [ref=e472] [cursor=pointer]:
+              - /url: "#discografia"
+          - listitem [ref=e473]:
+            - link "Canciones" [ref=e474] [cursor=pointer]:
+              - /url: "#canciones"
+          - listitem [ref=e475]:
+            - link "Gira" [ref=e476] [cursor=pointer]:
+              - /url: "#gira"
+          - listitem [ref=e477]:
+            - link "Biografía" [ref=e478] [cursor=pointer]:
+              - /url: "#biografia"
+          - listitem [ref=e479]:
+            - link "Videos" [ref=e480] [cursor=pointer]:
+              - /url: "#videos"
+          - listitem [ref=e481]:
+            - link "Prensa" [ref=e482] [cursor=pointer]:
+              - /url: "#prensa"
+        - list [ref=e483]:
+          - listitem [ref=e484]:
+            - link "Spotify" [ref=e485] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/73c2MjCAFNyKYIs7nBlqG2
+          - listitem [ref=e488]:
+            - link "Apple Music" [ref=e489] [cursor=pointer]:
+              - /url: https://music.apple.com/mx/artist/marisela/295749
+          - listitem [ref=e492]:
+            - link "Deezer" [ref=e493] [cursor=pointer]:
+              - /url: https://www.deezer.com/artist/8856
+          - listitem [ref=e496]:
+            - link "Instagram" [ref=e497] [cursor=pointer]:
+              - /url: https://www.instagram.com/mariselaofficial/
+          - listitem [ref=e500]:
+            - link "Facebook" [ref=e501] [cursor=pointer]:
+              - /url: https://www.facebook.com/MariselaLaCantante/
+          - listitem [ref=e504]:
+            - link "X" [ref=e505] [cursor=pointer]:
+              - /url: https://twitter.com/tudama_marisela
+          - listitem [ref=e508]:
+            - link "Web" [ref=e509] [cursor=pointer]:
+              - /url: https://www.marisela.com.mx
+      - generic [ref=e513]:
+        - paragraph [ref=e514]: © 2026 Marisela. Todos los derechos reservados.
+        - paragraph [ref=e515]: "Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0)."
+        - paragraph [ref=e516]: "Foto: STARZBYM (CC0), Wikimedia Commons"
+        - paragraph [ref=e517]: Portadas de álbumes © sus respectivos titulares.
+        - paragraph [ref=e518]:
+          - text: "Fuentes:"
+          - link "Wikidata" [ref=e520] [cursor=pointer]:
+            - /url: https://www.wikidata.org/wiki/Q2890550
+          - generic [ref=e521]:
+            - text: ·
+            - link "Wikipedia (es)" [ref=e522] [cursor=pointer]:
+              - /url: https://es.wikipedia.org/wiki/Marisela_(cantante)
+          - generic [ref=e523]:
+            - text: ·
+            - link "Wikipedia (en)" [ref=e524] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/Marisela
+          - generic [ref=e525]:
+            - text: ·
+            - link "MusicBrainz" [ref=e526] [cursor=pointer]:
+              - /url: https://musicbrainz.org/artist/bf319713-88a0-4a06-ab6f-2ead83e923bb
+          - generic [ref=e527]:
+            - text: ·
+            - link "Deezer" [ref=e528] [cursor=pointer]:
+              - /url: https://www.deezer.com/artist/8856
+          - generic [ref=e529]:
+            - text: ·
+            - link "Apple Music / iTunes" [ref=e530] [cursor=pointer]:
+              - /url: https://music.apple.com/mx/artist/marisela/295749
+          - generic [ref=e531]:
+            - text: ·
+            - link "Sitio oficial" [ref=e532] [cursor=pointer]:
+              - /url: https://www.marisela.com.mx
+          - generic [ref=e533]:
+            - text: ·
+            - link "Sitio oficial — Biografía" [ref=e534] [cursor=pointer]:
+              - /url: http://marisela.com.mx/biografia
+          - generic [ref=e535]:
+            - text: ·
+            - link "YouTube" [ref=e536] [cursor=pointer]:
+              - /url: https://www.youtube.com
+          - generic [ref=e537]:
+            - text: ·
+            - link "Wikimedia Commons" [ref=e538] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org
+          - generic [ref=e539]:
+            - text: ·
+            - link "Spotify" [ref=e540] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/73c2MjCAFNyKYIs7nBlqG2
+  - alert [ref=e543]

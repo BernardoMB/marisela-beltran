@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - button "Menú" [ref=e4] [cursor=pointer]
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /
+        - img "Angela Aguilar" [ref=e10]
+      - paragraph [ref=e12] [cursor=pointer]: EN/ES
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "Bio" [ref=e15] [cursor=pointer]:
+            - /url: /bio.html
+          - link "Tour" [ref=e16] [cursor=pointer]:
+            - /url: /tour.html
+          - link "Música" [ref=e17] [cursor=pointer]:
+            - /url: /musica.html
+          - link "Videos" [ref=e18] [cursor=pointer]:
+            - /url: /videos.html
+          - link "Noticias" [ref=e19] [cursor=pointer]:
+            - /url: /noticias.html
+          - link "Merch" [ref=e20] [cursor=pointer]:
+            - /url: /merch.html
+          - link "Contacto" [ref=e21] [cursor=pointer]:
+            - /url: /contacto.html
+        - list [ref=e23]
+  - main [ref=e24]

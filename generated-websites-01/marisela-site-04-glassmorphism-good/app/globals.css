@@ -52,6 +52,42 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
+/* Dark theme (components/ThemeToggle.tsx): near-black grounds, white and light-gray foreground. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --surface: rgb(255 255 255 / 0.06);
+  --surface-foreground: #ffffff;
+  --muted: rgb(255 255 255 / 0.06);
+  --muted-foreground: #a3a3a3;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --secondary: rgb(255 255 255 / 0.1);
+  --secondary-foreground: #ffffff;
+  --accent: #d4d4d4;
+  --accent-foreground: #000000;
+  --border: rgb(255 255 255 / 0.14);
+  --ring: #ffffff;
+  --input: rgb(255 255 255 / 0.2);
+  --card: rgb(255 255 255 / 0.06);
+  --card-foreground: #ffffff;
+  --popover: #141414;
+  --popover-foreground: #ffffff;
+  --destructive: #ffffff;
+  --destructive-foreground: #000000;
+  --gradient-from: #262626;
+  --gradient-via: #3a3a3a;
+  --gradient-to: #1c1c1c;
+  --glow: rgb(255 255 255 / 0.18);
+  --overlay: rgb(0 0 0 / 0.6);
+  --shadow-sm: 0 2px 12px rgb(0 0 0 / 0.3);
+  --shadow-md: 0 8px 32px rgb(0 0 0 / 0.45);
+  --shadow-lg: 0 24px 64px rgb(0 0 0 / 0.55);
+  --glass-bg: rgb(255 255 255 / 0.05);
+  --glass-border: rgb(255 255 255 / 0.12);
+}
+
 @layer base {
   html {
     color-scheme: light;
@@ -65,6 +101,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display), "Segoe UI", Arial, sans-serif;

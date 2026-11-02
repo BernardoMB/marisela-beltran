@@ -4,6 +4,9 @@ import { artistContent } from "@/lib/content";
 import { t } from "@/lib/i18n";
 import "./globals.css";
 
+// Runs before first paint so a saved dark theme never flashes light (see components/ThemeToggle.tsx).
+const themeScript = `try{if(localStorage.getItem("theme")==="dark"){document.documentElement.dataset.theme="dark";var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content","#0a0a0a")}}catch(e){}`;
+
 const displayFont = Sora({
   subsets: ["latin", "latin-ext"],
   weight: ["300","400","600","700"],
@@ -44,7 +47,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang={artistContent.lang} className={`${displayFont.variable} ${bodyFont.variable}`}>
+    <html lang={artistContent.lang} className={`${displayFont.variable} ${bodyFont.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="min-h-dvh antialiased">
         <a
           href="#contenido"

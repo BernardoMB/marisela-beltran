@@ -6,6 +6,7 @@ import { useState } from "react";
 import type { NavBarProps } from "@/lib/types";
 import { t } from "@/lib/i18n";
 import { linkAttrs } from "@/lib/utils";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function NavBar({ brand, links, cta }: NavBarProps) {
   const [open, setOpen] = useState(false);
@@ -25,6 +26,7 @@ export default function NavBar({ brand, links, cta }: NavBarProps) {
           ))}
         </ul>
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           {cta ? (
             <a {...linkAttrs(cta.href)} className="skin-btn hidden h-10 items-center px-5 text-sm font-semibold sm:inline-flex">
               {cta.label}
