@@ -29,6 +29,8 @@ export interface ScaffoldOptions {
   logger: Logger;
 }
 
+const PRESTART_SCRIPT = `node -e "process.exit(require('fs').existsSync('.next/BUILD_ID') ? 0 : 1)" || next build`;
+
 export function renderPackageJson(projectName: string, ctx: FactoryContext): string {
   return `${JSON.stringify(
     {
@@ -36,7 +38,8 @@ export function renderPackageJson(projectName: string, ctx: FactoryContext): str
       version: "1.0.0",
       private: true,
       type: "module",
-      scripts: { dev: "next dev", build: "next build", start: "next start" },
+      // `prestart` builds when .next/ holds no production build (fresh checkout, or `next dev` replaced it).
+      scripts: { dev: "next dev", build: "next build", prestart: PRESTART_SCRIPT, start: "next start" },
       dependencies: ctx.config.generation.dependencies,
       devDependencies: ctx.config.generation.devDependencies,
       engines: { node: ">=20" },
