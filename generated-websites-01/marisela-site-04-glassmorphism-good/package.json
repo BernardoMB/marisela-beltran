@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "prestart": "node -e \"process.exit(require('fs').existsSync('.next/BUILD_ID') ? 0 : 1)\" || next build",
+    "prestart": "node scripts/ensure-build.cjs",
     "start": "next start"
   },
   "dependencies": {
