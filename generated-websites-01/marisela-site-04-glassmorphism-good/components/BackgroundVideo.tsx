@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { preconnect, preload } from "react-dom";
 import { cn, youtubeThumbnail } from "@/lib/utils";
@@ -85,6 +86,11 @@ export interface BackgroundVideoProps {
   youtubeId: string;
   /** Width / height of the source video (16:9 unless the upload differs). */
   aspectRatio?: number;
+  /**
+   * Parallax: how fast the video moves relative to the page while the hero scrolls out of view
+   * (0.5 = half speed, as on mariajoseoficial.com; 0 = scrolls with the page).
+   */
+  parallax?: number;
   className?: string;
 }
 
@@ -104,9 +110,18 @@ export interface BackgroundVideoProps {
  * The video's thumbnail (sized like the player, so the two line up) shows until the first frame
  * plays — for good if autoplay is blocked — then the video opens over it with a soft iris and
  * crossfade (.bg-video-reveal in app/globals.css).
+ *
+ * Parallax: while the hero scrolls out, poster and video are pushed down by (1 - parallax) of the
+ * scroll distance, so they move at `parallax` × page speed. At 0.5 the visible part of the hero stays
+ * covered, because the shift never exceeds half the scroll and the player is at least hero-tall.
  */
-export function BackgroundVideo({ youtubeId, aspectRatio = 16 / 9, className }: BackgroundVideoProps) {
+export function BackgroundVideo({ youtubeId, aspectRatio = 16 / 9, parallax = 0.5, className }: BackgroundVideoProps) {
+  const layerRef = useRef<HTMLDivElement>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
+  const reduceMotion = useReducedMotion();
+  // 0 → 1 as the hero goes from filling the viewport to fully scrolled past.
+  const { scrollYProgress } = useScroll({ target: layerRef, offset: ["start start", "end start"] });
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ["0%", `${(1 - parallax) * 100}%`]);
   const [playing, setPlaying] = useState(false);
 
   preconnect(EMBED_HOST);
@@ -163,21 +178,23 @@ export function BackgroundVideo({ youtubeId, aspectRatio = 16 / 9, className }: 
   const centered = "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2";
 
   return (
-    <div className={cn("pointer-events-none absolute inset-0 overflow-hidden bg-black [container-type:size]", className)} aria-hidden>
-      <div className={cn(centered, "bg-cover bg-center")} style={{ ...coverBox, backgroundImage: `url(${youtubeThumbnail(youtubeId, "maxres")})` }} />
-      <div className="bg-video-reveal absolute inset-0" data-revealed={playing || undefined}>
-        <iframe
-          ref={iframeRef}
-          src={embedSrc(youtubeId)}
-          title="Background video"
-          tabIndex={-1}
-          allow="autoplay; encrypted-media; picture-in-picture"
-          referrerPolicy="strict-origin-when-cross-origin"
-          style={coverBox}
-          // max-w-none: the base layer caps iframes at max-width: 100%, which would undo the cover width.
-          className={cn(centered, "block max-w-none border-0")}
-        />
-      </div>
+    <div ref={layerRef} className={cn("pointer-events-none absolute inset-0 overflow-hidden bg-black [container-type:size]", className)} aria-hidden>
+      <motion.div className="absolute inset-0 will-change-transform" style={{ y: reduceMotion ? 0 : parallaxY }}>
+        <div className={cn(centered, "bg-cover bg-center")} style={{ ...coverBox, backgroundImage: `url(${youtubeThumbnail(youtubeId, "maxres")})` }} />
+        <div className="bg-video-reveal absolute inset-0" data-revealed={playing || undefined}>
+          <iframe
+            ref={iframeRef}
+            src={embedSrc(youtubeId)}
+            title="Background video"
+            tabIndex={-1}
+            allow="autoplay; encrypted-media; picture-in-picture"
+            referrerPolicy="strict-origin-when-cross-origin"
+            style={coverBox}
+            // max-w-none: the base layer caps iframes at max-width: 100%, which would undo the cover width.
+            className={cn(centered, "block max-w-none border-0")}
+          />
+        </div>
+      </motion.div>
     </div>
   );
 }
