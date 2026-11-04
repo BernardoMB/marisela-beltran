@@ -552,13 +552,13 @@ export const artistContent: ArtistContent = {
       //"sourceUrl": "https://commons.wikimedia.org/wiki/File:MARISELA_07.jpg"
     },
     "portrait": {
-      "src": "/images/gallery/01-marisela-07.jpg",
+      "src": "/images/gallery/01-marisela-08.jpg",
       "alt": "“Marisela, Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama.",
       "width": 1920,
       "height": 1280,
       "credit": "STARZBYM",
       "license": "CC0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MARISELA_07.jpg"
+      //"sourceUrl": "https://commons.wikimedia.org/wiki/File:MARISELA_07.jpg"
     },
     "gallery": [
       {
