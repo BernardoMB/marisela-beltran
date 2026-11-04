@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
+/* Short screens (landscape phones): the video hero tightens its spacing so its content fits in one viewport. */
+@custom-variant short (@media (max-height: 500px));
+
 /*
  * Theme for brief "Glassmorphism" (aurora-glass).
  * Derived from design tokens extracted by chhapify from https://www.shakira.com/
@@ -52,8 +55,10 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
-/* Dark theme (components/ThemeToggle.tsx): near-black grounds, white and light-gray foreground. */
-:root[data-theme="dark"] {
+/* Dark theme (components/ThemeToggle.tsx): near-black grounds, white and light-gray foreground.
+   Also applies to any element with data-theme="dark" (the video hero keeps it in both themes). */
+:root[data-theme="dark"],
+[data-theme="dark"] {
   color-scheme: dark;
   --background: #0a0a0a;
   --foreground: #ffffff;
@@ -127,6 +132,35 @@
       transition-duration: 0.01ms !important;
     }
   }
+}
+
+/* Exactly one viewport tall; dvh follows the visible area as mobile browser bars show and hide. */
+.hero-viewport {
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Background video reveal (components/BackgroundVideo.tsx): a soft-edged iris that opens from the
+   center while the video fades in over the poster. --iris is registered so the mask can animate;
+   browsers without @property still get the crossfade. */
+@property --iris {
+  /* <length-percentage>, not <percentage>: the minifier writes the initial value as a bare 0. */
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+.bg-video-reveal {
+  --iris: 0%;
+  opacity: 0;
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 calc(var(--iris) - 35%), transparent var(--iris));
+  mask-image: radial-gradient(circle at 50% 50%, #000 calc(var(--iris) - 35%), transparent var(--iris));
+  transition:
+    --iris 1.6s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.9s ease-out;
+}
+.bg-video-reveal[data-revealed] {
+  --iris: 140%;
+  opacity: 1;
 }
 
 /* ---------------------------------------------------------------------------

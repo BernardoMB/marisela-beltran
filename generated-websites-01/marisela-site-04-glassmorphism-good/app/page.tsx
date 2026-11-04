@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <NavBar
-        brand={"Marisela"}
+        brand={"Marisela Beltrán"}
         links={[{"label":"Discografía","href":"#discografia"},{"label":"Canciones","href":"#canciones"},{"label":"Gira","href":"#gira"},{"label":"Biografía","href":"#biografia"},{"label":"Videos","href":"#videos"},{"label":"Prensa","href":"#prensa"}]}
         cta={{"label":"Escuchar","href":"https://open.spotify.com/artist/73c2MjCAFNyKYIs7nBlqG2"}}
         socials={artistContent.socialLinks}
@@ -28,10 +28,12 @@ export default function Home() {
           image={artistContent.images.hero}
           stats={artistContent.stats.items}
           variant={"floating-card"}
-          title={"Marisela"}
-          eyebrow={"La Dama de Hierro"}
-          subtitle={"Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\"."}
-          tagline={"La Dama de Hierro — Desde 1984"}
+          backgroundVideoId={"g7KobMpmDgU"}
+          title={"Marisela Beltán"}
+          eyebrow={"Ganadora de Todos Quieren Fama"}
+          //subtitle={"Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos quieren fama."}
+          subtitle={"Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama."}
+          tagline={"— Desde 1999"}
           primaryCta={{"label":"Escuchar","href":"#canciones"}}
           secondaryCta={{"label":"Próximos conciertos","href":"#gira"}}
           showScrollIndicator
@@ -79,7 +81,7 @@ export default function Home() {
           sourceNote={artistContent.biography.sourceNote}
           title={"Su historia"}
           eyebrow={"Biografía"}
-          lead={"Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\"."}
+          lead={"Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos quieren fama."}
           maxParagraphs={3}
         />
         <PressQuotes
@@ -118,13 +120,13 @@ export default function Home() {
         />
       </main>
       <Footer
-        brand={"Marisela"}
-        tagline={"La Dama de Hierro — Desde 1984"}
+        brand={"Marisela Beltrán"}
+        tagline={"— Desde 1999"}
         links={[{"label":"Discografía","href":"#discografia"},{"label":"Canciones","href":"#canciones"},{"label":"Gira","href":"#gira"},{"label":"Biografía","href":"#biografia"},{"label":"Videos","href":"#videos"},{"label":"Prensa","href":"#prensa"}]}
         socials={artistContent.socialLinks}
         sources={artistContent.credits.sources}
-        copyright={"© 2026 Marisela"}
-        credits={["Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0).","Foto: STARZBYM (CC0), Wikimedia Commons","Portadas de álbumes © sus respectivos titulares."]}
+        copyright={"© 2026 Marisela Beltrán"}
+        credits={["Texto basado en el sitio oficial y testimonios de la cantante.","Foto, desarrollo y producción visual: Bernardo Mondragón https://bernardomondragon.net","Portadas de álbumes © sus respectivos titulares."]}
       />
     </>
   );

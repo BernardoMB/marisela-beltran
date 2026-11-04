@@ -3,63 +3,63 @@
 import type { ArtistContent } from "@/lib/types";
 
 export const artistContent: ArtistContent = {
-  "name": "Marisela",
-  "legalName": "Marisela Esqueda Hernández",
+  "name": "Marisela Beltrán",
+  "legalName": "Marisela Beltrán Rivas",
   "aliases": [
-    "La Dama de Hierro"
+    "Marisela Beltrán"
   ],
-  "tagline": "La Dama de Hierro — Desde 1984",
-  "shortBio": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+  "tagline": "— Desde 1999",
+  "shortBio": "Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama.",
   "lang": "es",
   "locale": "es-MX",
   "biography": {
-    "summary": "Marisela Esqueda, conocida simplemente como Marisela; es una cantante, actriz y empresaria mexicoestadounidense. También es conocida como \"La dama de hierro\".",
+    "summary": "Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos quieren fama.",
     "paragraphs": [
-      "Marisela, la única e indiscutible Dama de Hierro, nace en 1966, en Estados Unidos, sin embargo, Marisela la cantante nace y se hace en México, país que le dio la fama desde que llego por primera vez en 1984. Con una voz única y auténtica ha logrado permanecer en el gusto del público a través de los años, siendo sin duda alguna una consentida de la euforia popular a través de varias generaciones.",
-      "Su primera producción de la mano de Marco Antonio Solís, \"El Buki\", quien le graba el disco \"Sin él\" la hizo debutar en el programa de Siempre en Domingo, de la mano de su padrino, Raúl Velasco. De este trabajo se desprenden diez sencillos que se colocaron todos sin excepción en el primer lugar de popularidad no sólo en México sino en todo Hispanoamérica. Esto se vuelve un record que aun a la fecha es prácticamente imposible de igualar.",
-      "Algunos de los temas que la gente aún no olvida son: “Ya no te vayas”, “El Chico Aquel” “Si no te hubieras ido”, el emblemático tema que dio nombre al disco y es un himno de la música en español, “Sin él”, y el dueto mas importante de la década, “La Pareja Ideal” en donde unieron sus voces, Marisela y su entonces novio y compositor del disco, “El Buki”.",
-      "Después del gran éxito abrumador, vinieron producciones igual de exitosas o incluso más superándose a si misma, con temas como: “Enamorada y Herida”: “Sola con mi soledad”, “Completamente tuya” y “Mi Problema”. Todos temas que siguen vigentes y de los que incluso algunos artistas hoy en día siguen sacando versiones de estos temas que conociera el mundo en la voz inconfundible de la eterna “Dama de Hierro”.",
-      "A través de la toda la década de los 80´s siguió sacando producciones que incluían temas de oro, siempre con gran éxito entre los que destacan: “Porque tengo ganas”, “Quisiera detener el tiempo”, “¿A cambio de qué?”, o incluso un nombre que marcaría para siempre su carrera musical “Tu Dama de Hierro”. De prácticamente todos los temas, la discográfica lanzó versiones incluso con banda que resultaron igual de exitosas, a pesar de ser la misma voz con diferentes arreglos musicales.",
-      "En su vida personal, se casa con el gran trompetista Juan Manuel Hernández con quien procrea su única hija, Marilyn Odessa, que hereda el talento y lleva también hoy en día varios años en la música, logrando conquistar muchísimos corazones sobre todo en la música regional mexicana. Ambas en 2019 graban por fin un tema de navidad juntas."
+      "Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos quieren fama. La carrera de Marisela no es improvisada, pues tiene años de lucha constante, con el objetivo de que su voz sea escuchada por millones de personas y comienza a lograrlo.",
+      "En el 2019, logró entrar a La Voz México, en la primera edición que realizó TV Azteca, logró llegar a la pantalla luego de hacer castings para tres ediciones diferentes de este reality show, pero fue hasta ese año que logró llegar a la etapa de audiciones en vivo, donde interpretando el tema Paloma negra se ganó un lugar en el equipo de Lupillo Rivera.",
+      "En ese momento la suerte no estuvo de su lado, pues dejó el programa en la segunda etapa, en los Knockouts, donde su interpretación del tema Te dirán, de La Adictiva, no le fue suficiente para avanzar; sin embargo, una nueva oportunidad llegó a su vida, y la historia fue completamente diferente. En noviembre del año pasado, envió un video, en forma de casting, para participar en un nuevo reality de TV Azteca, aún sin saber los detalles. Pasó la primera edición, y no fue llamada a participar.",
+      "Fue cuando iba a comenzar la segunda temporada que recibió la noticia que sería una de las participantes. Marisela obtuvo dos premios, pues este concurso tiene un formato en el que hay un ganador por semana, estos son acreedores de un premio monetario de 50 mil pesos, mientras que en la final se enfrentan los ganadores de cada semana y la ganadora, en este casi Marisela, se llevó un premio adicional de 100 mil pesos.",
+      "La cantante dijo en entrevista que, este premio lo utilizará para su carrera, pues ella es una artista independiente, y no es fácil comenzar desde cero, y sin el respaldo de una disquera. “Además quiero dejar de darle dolores de cabeza a mis papás”, agregó la cantante pues son quienes le han estado ayudando durante está pandemia por coronavirus, en la cual se quedó sin trabajo.",
+      "Dijo que su trabajo principal en la Ciudad de México es dar shows de imitación, donde sus caracterizaciones favoritas son Jenni Rivera y Lupita D’Alessio. Sin embargo, esta plataforma comienza a cristalizar un sueño que siempre a tenido; darse a conocer como cantante profesional. Hace aproximadamente dos años, su intención era abrirse paso en el mundo del regional mexicano, como cantante de norteño banda, pero ahora, con esta experiencia se dio cuenta que sus seguidores prefieren escucharla en otros géneros."
     ],
     "facts": [
       {
         "label": "Nombre artístico",
-        "value": "Marisela"
+        "value": "Marisela Beltrán"
       },
       {
         "label": "Nombre de nacimiento",
-        "value": "Marisela Esqueda Hernández"
+        "value": "Marisela Beltrán Rivas"
       },
       {
         "label": "Nacimiento",
-        "value": "24 de abril de 1966"
+        "value": "20 de septiembre de 1987"
       },
       {
         "label": "Lugar de nacimiento",
-        "value": "Los Angeles"
+        "value": "Mazatlán Sinaloa"
       },
       {
         "label": "Debut",
-        "value": "Sin él (1984)"
+        "value": "Ayudame (2016)"
       },
       {
         "label": "Apodo",
-        "value": "La Dama de Hierro"
+        "value": "Marisela Beltrán"
       },
       {
         "label": "Años de actividad",
-        "value": "1984–presente"
+        "value": "1999–presente"
       }
     ],
-    "birthDate": "1966-04-24",
-    "birthPlace": "Los Angeles",
-    "origin": "Los Angeles",
+    "birthDate": "1997-09-20",
+    "birthPlace": "Mazatlán",
+    "origin": "Sinaloa, México",
     "genres": [],
-    "yearsActive": "1984–presente",
-    "debutYear": 1984,
+    "yearsActive": "1999–presente",
+    "debutYear": 2016,
     "labels": [],
-    "sourceNote": "Texto basado en el sitio oficial y Wikipedia (es) (Wikipedia: CC BY-SA 4.0).",
+    "sourceNote": "Texto basado en el sitio oficial y testimonios de familiares y amigos.",
     "sources": [
       {
         "label": "Sitio oficial — Biografía",
@@ -544,16 +544,16 @@ export const artistContent: ArtistContent = {
   "images": {
     "hero": {
       "src": "/images/gallery/01-marisela-07.jpg",
-      "alt": "“Marisela, renowned Mexican-American singer, celebrated worldwide as La Dama de Hierro.”",
+      "alt": "Marisela Beltran, ",
       "width": 1920,
       "height": 1280,
       "credit": "STARZBYM",
       "license": "CC0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MARISELA_07.jpg"
+      //"sourceUrl": "https://commons.wikimedia.org/wiki/File:MARISELA_07.jpg"
     },
     "portrait": {
       "src": "/images/gallery/01-marisela-07.jpg",
-      "alt": "“Marisela, renowned Mexican-American singer, celebrated worldwide as La Dama de Hierro.”",
+      "alt": "“Marisela, Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama.",
       "width": 1920,
       "height": 1280,
       "credit": "STARZBYM",
@@ -563,7 +563,7 @@ export const artistContent: ArtistContent = {
     "gallery": [
       {
         "src": "/images/gallery/01-marisela-07.jpg",
-        "alt": "“Marisela, renowned Mexican-American singer, celebrated worldwide as La Dama de Hierro.”",
+        "alt": "“Marisela, Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama.",
         "width": 1920,
         "height": 1280,
         "credit": "STARZBYM",
@@ -614,21 +614,21 @@ export const artistContent: ArtistContent = {
   "pressQuotes": [
     {
       "id": "quote-1",
-      "quote": "Con una voz única y auténtica ha logrado permanecer en el gusto del público a través de los años, siendo sin duda alguna una consentida de la euforia popular a través de varias generaciones.",
-      "outlet": "Sitio oficial — Biografía",
-      "url": "http://marisela.com.mx/biografia"
+      "quote": "La carrera de Marisela no es improvisada, pues tiene años de lucha constante, con el objetivo de que su voz sea escuchada por millones de personas y comienza a lograrlo.",
+      "outlet": "Sitio oficial — Noroeste",
+      "url": "http://noroeste.com.mx"
     },
     {
       "id": "quote-2",
-      "quote": "Todos temas que siguen vigentes y de los que incluso algunos artistas hoy en día siguen sacando versiones de estos temas que conociera el mundo en la voz inconfundible de la eterna “Dama de Hierro”.",
-      "outlet": "Sitio oficial — Biografía",
-      "url": "http://marisela.com.mx/biografia"
+      "quote": "Marisela obtuvo dos premios, pues este concurso tiene un formato en el que hay un ganador por semana, estos son acreedores de un premio monetario de 50 mil pesos, mientras que en la final se enfrentan los ganadores de cada semana y la ganadora, en este casi Marisela, se llevó un premio adicional de 100 mil pesos.",
+      "outlet": "Sitio oficial — Noroeste",
+      "url": "http://noroeste.com.mx"
     },
     {
       "id": "quote-3",
-      "quote": "Es la única cantante en español en colocar todos los temas de un disco en el top 10 de la revista Billboard, en este caso el álbum debut de Marisela Sin él (1984).",
-      "outlet": "Wikipedia (es)",
-      "url": "https://es.wikipedia.org/wiki/Marisela_(cantante)"
+      "quote": "Además de ser muy bella, tiene un talento increible. Sus proyectos como cantante pintan para algo muy grande. Le veo mucho futuro.",
+      "outlet": "Bernardo Mondragón",
+      "url": "https://bernardomondragon.net"
     },
     {
       "id": "quote-4",
@@ -752,7 +752,7 @@ export const artistContent: ArtistContent = {
       }
     ],
     "imageCredits": [
-      "Foto: STARZBYM (CC0), Wikimedia Commons",
+      "Foto, desarrollo y producción visual: Bernardo Mondragón https://bernardomondragon.net",
       "Portadas de álbumes © sus respectivos titulares."
     ],
     "generatedAt": "2026-10-17T07:06:53Z"

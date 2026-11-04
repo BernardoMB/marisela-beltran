@@ -21,7 +21,7 @@ export default function Footer({ brand, tagline, links, socials, copyright, cred
               </li>
             ))}
           </ul>
-          <ul className="flex gap-2">
+          <ul className="flex flex-wrap gap-2">
             {socials.map((s) => (
               <li key={s.href}>
                 <a {...linkAttrs(s.href)} className="flex h-11 w-11 items-center justify-center rounded-full bg-foreground/10 transition hover:bg-foreground/20 hover:text-primary" aria-label={platformLabel(s.platform)}>

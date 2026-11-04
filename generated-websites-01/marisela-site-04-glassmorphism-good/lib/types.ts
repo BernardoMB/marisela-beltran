@@ -224,6 +224,8 @@ export interface HeroProps extends SectionBaseProps {
   image?: ImageAsset;
   stats?: Stat[];
   showScrollIndicator?: boolean;
+  /** YouTube video id streamed as a muted, looping full-viewport background. */
+  backgroundVideoId?: string;
 }
 
 export interface StatsBandProps extends SectionBaseProps {

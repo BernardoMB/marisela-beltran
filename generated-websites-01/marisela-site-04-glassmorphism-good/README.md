@@ -43,3 +43,4 @@ Image credits: `public/images/CREDITS.md`. Review all content before publishing 
 - The newsletter form is a front-end mock (no data is sent). Connect it to your email provider in `components/Newsletter.tsx`.
 - Tour dates are shown only when real upcoming dates were found; otherwise a "coming soon" message is displayed.
 - Project id: `marisela-site-04-glassmorphism`.
+- To swap the intro video, change backgroundVideoId in app/page.tsx.
