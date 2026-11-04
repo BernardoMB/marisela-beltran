@@ -23,7 +23,7 @@ const bodyFont = Archivo({
 const hero = artistContent.images.hero;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3001"),
   title: `${artistContent.name} — ${artistContent.tagline}`,
   description: artistContent.shortBio,
   openGraph: {

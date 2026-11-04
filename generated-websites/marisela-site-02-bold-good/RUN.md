@@ -9,8 +9,8 @@ cd generated-websites/marisela-site-02-bold
 npm run dev
 ```
 
-Then open **http://localhost:3000**. Dependencies (`node_modules/`) are already installed.
-To run several sites at once, give each its own port: `npm run dev -- --port 3001`.
+Then open **http://localhost:3001**. Dependencies (`node_modules/`) are already installed.
+This site is pinned to port 3001 (`dev` and `start` scripts in package.json), so it can run alongside a site on 3000.
 
 ## Production
 
