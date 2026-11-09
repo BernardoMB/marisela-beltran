@@ -29,10 +29,10 @@ export default function Home() {
           stats={artistContent.stats.items}
           variant={"floating-card"}
           backgroundVideoId={"g7KobMpmDgU"}
-          title={"Marisela Beltán"}
+          title={"Marisela Beltrán"}
           eyebrow={"Ganadora de Todos Quieren Fama"}
-          //subtitle={"Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos quieren fama."}
-          subtitle={"Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama."}
+          //subtitle={"Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos Quieren Fama."}
+          subtitle={"Cantante mazatleca e imitadora profesional, ganadora del reality show Todos Quieren Fama."}
           tagline={"— Desde 1999"}
           primaryCta={{"label":"Escuchar","href":"#canciones"}}
           secondaryCta={{"label":"Próximos conciertos","href":"#gira"}}
@@ -81,7 +81,7 @@ export default function Home() {
           sourceNote={artistContent.biography.sourceNote}
           title={"Su historia"}
           eyebrow={"Biografía"}
-          lead={"Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos quieren fama."}
+          lead={"Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos Quieren Fama."}
           maxParagraphs={3}
         />
         <PressQuotes

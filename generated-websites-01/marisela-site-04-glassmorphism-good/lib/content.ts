@@ -9,13 +9,13 @@ export const artistContent: ArtistContent = {
     "Marisela Beltrán"
   ],
   "tagline": "— Desde 1999",
-  "shortBio": "Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama.",
+  "shortBio": "Cantante mazatleca e imitadora profesional, ganadora del reality show Todos Quieren Fama.",
   "lang": "es",
   "locale": "es-MX",
   "biography": {
-    "summary": "Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos quieren fama.",
+    "summary": "Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos Quieren Fama.",
     "paragraphs": [
-      "Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos quieren fama. La carrera de Marisela no es improvisada, pues tiene años de lucha constante, con el objetivo de que su voz sea escuchada por millones de personas y comienza a lograrlo.",
+      "Marisela Beltrán es una joven cantante mazatleca que comienza a ver los resultados de su esfuerzo y dedicación para ganarse un lugar en la música; el 27 de febrero ganó el reality show de TV Azteca, Todos Quieren Fama. La carrera de Marisela no es improvisada, pues tiene años de lucha constante, con el objetivo de que su voz sea escuchada por millones de personas y comienza a lograrlo.",
       "En el 2019, logró entrar a La Voz México, en la primera edición que realizó TV Azteca, logró llegar a la pantalla luego de hacer castings para tres ediciones diferentes de este reality show, pero fue hasta ese año que logró llegar a la etapa de audiciones en vivo, donde interpretando el tema Paloma negra se ganó un lugar en el equipo de Lupillo Rivera.",
       "En ese momento la suerte no estuvo de su lado, pues dejó el programa en la segunda etapa, en los Knockouts, donde su interpretación del tema Te dirán, de La Adictiva, no le fue suficiente para avanzar; sin embargo, una nueva oportunidad llegó a su vida, y la historia fue completamente diferente. En noviembre del año pasado, envió un video, en forma de casting, para participar en un nuevo reality de TV Azteca, aún sin saber los detalles. Pasó la primera edición, y no fue llamada a participar.",
       "Fue cuando iba a comenzar la segunda temporada que recibió la noticia que sería una de las participantes. Marisela obtuvo dos premios, pues este concurso tiene un formato en el que hay un ganador por semana, estos son acreedores de un premio monetario de 50 mil pesos, mientras que en la final se enfrentan los ganadores de cada semana y la ganadora, en este casi Marisela, se llevó un premio adicional de 100 mil pesos.",
@@ -81,7 +81,7 @@ export const artistContent: ArtistContent = {
       "releaseDate": "1984-03-30",
       "type": "album",
       "cover": {
-        "src": "/images/covers/album-sin-el-1984.jpg",
+        "src": "/images/covers/album-sin-el-1984.jpeg",
         "alt": "Portada del álbum «Sin él» (1984)",
         "width": 1000,
         "height": 1000,
@@ -196,7 +196,7 @@ export const artistContent: ArtistContent = {
       "releaseDate": "1999-04-27",
       "type": "live",
       "cover": {
-        "src": "/images/covers/album-tu-dama-de-hierro-1999.jpg",
+        "src": "/images/covers/album-tu-dama-de-hierro-1999.jpeg",
         "alt": "Portada del álbum «Tu dama de hierro» (1999)",
         "width": 894,
         "height": 900,
@@ -511,34 +511,34 @@ export const artistContent: ArtistContent = {
   },
   "videos": [
     {
-      "id": "video-eHql_RT7mGg",
-      "title": "A cambio de que - Marisela - Auditorio Nacional",
-      "youtubeId": "eHql_RT7mGg"
+      "id": "video-CkBpvMu3D_c",
+      "title": "Marisela Beltrán Final segunda temporada de Todos quieren Fama",
+      "youtubeId": "CkBpvMu3D_c"
     },
     {
-      "id": "video-D0YPZXvyYV4",
-      "title": "La Pareja Ideal - Marisela - Tercia de Damas",
-      "youtubeId": "D0YPZXvyYV4"
+      "id": "video-YNFW0fXi0SM",
+      "title": "La voz mexico 2019. Paloma negra. Marisela beltran",
+      "youtubeId": "YNFW0fXi0SM"
     },
     {
-      "id": "video-OMNyfgvj6wU",
-      "title": "Marisela - Enamorada y Herida - Grandes de los 80s - Auditorio Nacional",
-      "youtubeId": "OMNyfgvj6wU"
+      "id": "video-XTXipNRK9Vs",
+      "title": "No llega el olvido Jenni Rivera (Cover por Marisela Beltrán La voz México equipo lupillo",
+      "youtubeId": "XTXipNRK9Vs"
     },
     {
-      "id": "video-ibuU53KleMU",
-      "title": "SG Producciones presenta: Marisela regresa al Auditorio Nacional (Oficial)",
-      "youtubeId": "ibuU53KleMU"
+      "id": "video-dp4PvJpITGQ",
+      "title": "Marisela Beltrán nos compartió un poco de su tributo a Jenni Rivera",
+      "youtubeId": "dp4PvJpITGQ"
     },
     {
-      "id": "video-iEXOG4vKXq8",
-      "title": "Amor de los Dos - Marisela, Coque Muñiz y Marilyn Odessa",
-      "youtubeId": "iEXOG4vKXq8"
+      "id": "video-0iYSAwPjf6o",
+      "title": "Marisela logró que los observadores se pusieran de píe. | Todos Quieren Fama",
+      "youtubeId": "0iYSAwPjf6o"
     },
     {
-      "id": "video-Vzwszu_-wIQ",
-      "title": "Historia de un Amor - Marisela y Coque Muñiz",
-      "youtubeId": "Vzwszu_-wIQ"
+      "id": "video-muUZihQqAZE",
+      "title": "Marisela Beltrán - Ayúdame",
+      "youtubeId": "muUZihQqAZE"
     }
   ],
   "images": {
@@ -553,7 +553,7 @@ export const artistContent: ArtistContent = {
     },
     "portrait": {
       "src": "/images/gallery/01-marisela-08.jpg",
-      "alt": "“Marisela, Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama.",
+      "alt": "“Marisela, Cantante mazatleca e imitadora profesional, ganadora del reality show Todos Quieren Fama.",
       "width": 1920,
       "height": 1280,
       "credit": "STARZBYM",
@@ -563,7 +563,7 @@ export const artistContent: ArtistContent = {
     "gallery": [
       {
         "src": "/images/gallery/01-marisela-07.jpg",
-        "alt": "“Marisela, Cantante mazatleca e imitadora profesional, ganadora del reality show Todos quieren fama.",
+        "alt": "“Marisela, Cantante mazatleca e imitadora profesional, ganadora del reality show Todos Quieren Fama.",
         "width": 1920,
         "height": 1280,
         "credit": "STARZBYM",
