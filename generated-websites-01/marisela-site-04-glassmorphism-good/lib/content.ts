@@ -4,7 +4,7 @@ import type { ArtistContent } from "@/lib/types";
 
 export const artistContent: ArtistContent = {
   "name": "Marisela Beltrán",
-  "legalName": "Marisela Beltrán Rivas",
+  "legalName": "Marisela Beltrán Rivera",
   "aliases": [
     "Marisela Beltrán"
   ],
@@ -29,7 +29,7 @@ export const artistContent: ArtistContent = {
       },
       {
         "label": "Nombre de nacimiento",
-        "value": "Marisela Beltrán Rivas"
+        "value": "Marisela Beltrán Rivera"
       },
       {
         "label": "Nacimiento",
